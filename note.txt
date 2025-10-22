@@ -1,0 +1,9 @@
+ 
+
+sửa lỗi Unicode
+Kéo 1 data conversion vào giữa flat và OLE, dổi data type thành DT_WSTR. Vào OLE kéo lại mapping với phần conversion vừa tạo.
+
+Nếu chưa được, có thể thử đổi ValidateExternalMetadata của OLE trong property thành false.
+
+ở phần load airport, trong conversion phải đổi longitude và latitude phải đổi thành DT_R8, length của airport đổi thành 255, dưới connection manager -> chọn vào flat file của airport, vào tab advance đổi length thành 255 sau đó mở lại flat file nhấn ok rồi chạy lại 
+
