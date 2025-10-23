@@ -25,7 +25,7 @@ CREATE TABLE stg.Airports (
 
 CREATE TABLE stg.Flights (
     [DATE] DATE NULL,
-    [AIRLINE] NVARCHAR(255) NULL,
+    [AIRLINE] NVARCHAR(10) NULL,
     [FLIGHT_NUMBER] NVARCHAR(20) NULL,
     [TAIL_NUMBER] NVARCHAR(20) NULL,
     [ORIGIN_AIRPORT] NVARCHAR(10) NULL,
@@ -70,4 +70,10 @@ VALUES
 ('Airports', NULL, NULL, NULL),
 ('Flights', NULL, NULL, NULL);
 
+select top 5* 
+from stg.Flights
 
+
+drop table stg.Airlines
+drop table stg.Airports
+drop table stg.Flights
