@@ -60,6 +60,12 @@ CREATE TABLE data_flowTable (
     FOREIGN KEY (status_key) REFERENCES statusTable(status_key)
 );
 
+
+
+
+
+
+
 ------------------------------------
 --DQ_METADATA
 ------------------------------------
@@ -155,13 +161,12 @@ INSERT INTO recipient_type VALUES
 ------------------------------------
 USE HTTTKD_STAGE
 GO
-
-
-
 select* from Airlines
 select* from Airports
 select top 5* from Flights
 select count(*) from Flights
+
+
 CREATE TABLE Airlines(
   IATA_CODE NVARCHAR(10),
   AIRLINE   NVARCHAR(255)
