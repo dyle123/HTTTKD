@@ -7,12 +7,12 @@
   DTS:CreatorName="DYLE\ADMIN"
   DTS:DTSID="{1AFE2FCE-D380-4693-ADCA-30683AEE886D}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="17.0.1008.3"
+  DTS:LastModifiedProductVersion="16.0.5685.2"
   DTS:LocaleID="1066"
   DTS:ObjectName="Source_to_Stage"
   DTS:PackageType="5"
-  DTS:VersionBuild="184"
-  DTS:VersionGUID="{B681AB01-55BF-4633-9428-0A900CE2A9BB}">
+  DTS:VersionBuild="201"
+  DTS:VersionGUID="{870FDF93-5D3E-4A9C-A2A7-486A55379C6B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -30,7 +30,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="65001"
-          DTS:ConnectionString="C:\Users\ADMIN\Downloads\dataset\airlines.csv">
+          DTS:ConnectionString="D:\YEAR4\HK1\HTTTPVTTKD\DoAn\DataSource\airlines.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -39,7 +39,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="IATA_CODE"
-              DTS:DTSID="{FDF968FD-FFB1-410F-8703-E40D1CB380F7}"
+              DTS:DTSID="{76B2A6FE-56D5-4CD2-9958-D354CEC1EC1F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -48,7 +48,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="AIRLINE"
-              DTS:DTSID="{FB205DFF-8710-4B13-BAAD-6C976C771D53}"
+              DTS:DTSID="{1E095C12-7F88-4FD6-A6B8-4E4EDE17F06D}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -68,7 +68,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="65001"
-          DTS:ConnectionString="C:\Users\ADMIN\Downloads\dataset\filtered_airpoirt.csv">
+          DTS:ConnectionString="D:\YEAR4\HK1\HTTTPVTTKD\DoAn\DataSource\filtered_airport.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -77,7 +77,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="s"
-              DTS:DTSID="{59B0D588-4375-4C9A-96E0-7C9388AFCF05}"
+              DTS:DTSID="{E970DE43-2D79-418E-ADC1-89B4805C482B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -86,7 +86,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="IATA_CODE"
-              DTS:DTSID="{793D2CB6-15F3-438F-AF40-6A89F9E56ABF}"
+              DTS:DTSID="{E637A5F6-FC8A-4F01-AD62-44ED4F2D5109}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -95,7 +95,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="AIRPORT"
-              DTS:DTSID="{6B5A85BE-0B84-4596-9739-6BAF24CF99AF}"
+              DTS:DTSID="{9DAE5134-84E9-4A4F-A13C-550738AF59BB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -104,7 +104,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CITY"
-              DTS:DTSID="{510D4024-B593-44C0-BB1B-A940EFB34AE9}"
+              DTS:DTSID="{CC916524-5A12-40A5-9A75-39147E5CFA7B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -113,7 +113,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="STATE"
-              DTS:DTSID="{EA9A9EC1-E0A6-461D-BAEC-A5D62C28A9C3}"
+              DTS:DTSID="{612AB5B9-68B7-47AB-B1CE-7F0465D216B4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -122,7 +122,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="COUNTRY"
-              DTS:DTSID="{5D1B6B90-7194-4155-A69A-71E3193AFD17}"
+              DTS:DTSID="{634F0640-B241-4717-9B2D-ECE7B87E3312}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -130,7 +130,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="LATITUDE"
-              DTS:DTSID="{EAFB5454-DAAB-43EB-AE7B-102E3DACCF7E}"
+              DTS:DTSID="{F9CB8028-FB67-4F30-A8C4-63C31D466649}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -138,7 +138,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="LONGITUDE"
-              DTS:DTSID="{E76C20CE-868F-4674-ABFE-C6C5A610BA4D}"
+              DTS:DTSID="{8418E5DE-A928-441B-881C-363F0B65E09D}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -194,7 +194,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="65001"
-          DTS:ConnectionString="C:\Users\ADMIN\Downloads\dataset\filtered_flights_1.csv">
+          DTS:ConnectionString="D:\YEAR4\HK1\HTTTPVTTKD\DoAn\DataSource\filtered_flights_1.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -202,7 +202,7 @@
               DTS:DataType="7"
               DTS:TextQualified="True"
               DTS:ObjectName="DATE"
-              DTS:DTSID="{118D735E-59B6-4D9E-93F1-DAE5672C9242}"
+              DTS:DTSID="{5829315A-D1FA-40AB-BC22-CA814142069A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -211,7 +211,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="AIRLINE"
-              DTS:DTSID="{E23D1AA5-1081-41F1-83AA-EB3D967AF49E}"
+              DTS:DTSID="{D95BD626-196A-46F6-9599-070C16C386DA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -220,7 +220,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FLIGHT_NUMBER"
-              DTS:DTSID="{5B1FA0EC-88D0-44B9-A66E-98C5BA458AAE}"
+              DTS:DTSID="{9B5A8F44-22B1-4307-A202-78D0454BC435}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -229,7 +229,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TAIL_NUMBER"
-              DTS:DTSID="{103CEAF6-B4E4-4351-BC27-82AFAE15E569}"
+              DTS:DTSID="{3D249664-7780-45E1-81FB-BC5BA5F271C0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -238,7 +238,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ORIGIN_AIRPORT"
-              DTS:DTSID="{0D73195D-AEE9-43F6-BBF9-B01B9A6C43FF}"
+              DTS:DTSID="{E73C4758-4C0E-492E-9C41-F03610D313F0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -247,7 +247,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="DESTINATION_AIRPORT"
-              DTS:DTSID="{8A978022-2770-458E-B2DC-C2D10F83905F}"
+              DTS:DTSID="{0484E753-ACF9-4312-AE6E-56643D21AA98}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -255,7 +255,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="SCHEDULED_DEPARTURE"
-              DTS:DTSID="{5814ECD5-1A80-4CBB-8320-5B44B7D14BFC}"
+              DTS:DTSID="{42B6ABEA-72FC-4DA5-ACAE-992248E11F2F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -263,7 +263,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="DEPARTURE_TIME"
-              DTS:DTSID="{E71E780B-1379-442A-A74E-D6B7DD3EFC43}"
+              DTS:DTSID="{918EECF3-81AC-4BEC-A7C3-7910650BDEEA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -271,7 +271,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="DEPARTURE_DELAY"
-              DTS:DTSID="{D9433D0F-8B60-45AF-A764-400801D2E24C}"
+              DTS:DTSID="{853945FF-0F52-42E0-A08C-F4D92D5713B2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -279,7 +279,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="TAXI_OUT"
-              DTS:DTSID="{80CAF581-6C00-4FC5-AD06-6915C610D320}"
+              DTS:DTSID="{811E6B2E-FA83-45B7-AED9-556D21C46099}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -287,7 +287,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="WHEELS_OFF"
-              DTS:DTSID="{6D16A1DD-A2B5-4EDA-AFBE-BD7CB29C0014}"
+              DTS:DTSID="{4C3D5D94-C4FD-415F-A410-51F968B8B819}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -295,7 +295,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="SCHEDULED_TIME"
-              DTS:DTSID="{45EF1CF2-C846-46D3-B025-D8EC8737F653}"
+              DTS:DTSID="{8556A112-80C0-4E06-8E93-030E58C6F11A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -303,7 +303,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="ELAPSED_TIME"
-              DTS:DTSID="{551D118E-6114-4040-B854-0B59B2C53CD2}"
+              DTS:DTSID="{9A8C972E-C81E-4ABE-9CD7-6AF7E81C67F9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -311,7 +311,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="AIR_TIME"
-              DTS:DTSID="{6C3F7DDC-6693-4BF7-B04F-9AB7E21A219D}"
+              DTS:DTSID="{82AE443F-6110-463F-8F71-C0CBBEB0DD49}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -319,7 +319,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="DISTANCE"
-              DTS:DTSID="{6A32AEA0-BB86-418A-AB73-AED02387304C}"
+              DTS:DTSID="{59671D7D-F104-4722-8234-3298DF340712}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -327,7 +327,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="WHEELS_ON"
-              DTS:DTSID="{5041C307-1A6A-41D0-93C1-F45CE47205FC}"
+              DTS:DTSID="{F150E6DC-AE36-4F13-995A-78D107A0466D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -335,7 +335,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="TAXI_IN"
-              DTS:DTSID="{1735E3A2-D6E4-4A3C-96C8-E0FB2982D52D}"
+              DTS:DTSID="{1B25775D-83C6-4C0A-B251-E00F809B1987}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -343,7 +343,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="SCHEDULED_ARRIVAL"
-              DTS:DTSID="{7486AB78-A8C2-4C5D-B751-257916FB9B19}"
+              DTS:DTSID="{46A8B7A4-E50E-420F-BF5E-CD578FC675CF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -351,7 +351,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="ARRIVAL_TIME"
-              DTS:DTSID="{65A2E2ED-C9E3-4E6D-AF04-609A79A5FF12}"
+              DTS:DTSID="{D11D7C0E-F788-40E9-A00D-AC404193A9F3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -359,7 +359,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="ARRIVAL_DELAY"
-              DTS:DTSID="{099B94F3-6668-4EAB-8388-CAF79E5DA005}"
+              DTS:DTSID="{9A2E4621-36B2-43F0-802C-4EEF9AE83F29}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -367,7 +367,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="DIVERTED"
-              DTS:DTSID="{77AB83DE-A462-4222-93A2-44036841DDE9}"
+              DTS:DTSID="{98C28493-6914-41D7-A1B6-EE4EAD0FCCAF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -375,7 +375,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="CANCELLED"
-              DTS:DTSID="{03828FA9-0FFB-4C49-9E02-87F6BE04C384}"
+              DTS:DTSID="{4C8F9178-43BD-4CD4-A33F-62B78074EDE9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -384,7 +384,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CANCELLATION_REASON"
-              DTS:DTSID="{7EB5CFE3-97CA-4C01-99D8-DAF0980B61AA}"
+              DTS:DTSID="{C5473EF6-8B61-4C40-96B1-800E9BAAD8AF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -392,7 +392,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="AIR_SYSTEM_DELAY"
-              DTS:DTSID="{3F167885-A432-4786-98A3-F0C2510F7872}"
+              DTS:DTSID="{EECF7225-9E82-405F-9AAC-149F77DE6AB0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -400,7 +400,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="SECURITY_DELAY"
-              DTS:DTSID="{16CCC0DA-C1AC-49C8-AE78-BA65AE3C9286}"
+              DTS:DTSID="{00E66B4E-5155-46DF-952A-23864D56E5BA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -408,7 +408,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="AIRLINE_DELAY"
-              DTS:DTSID="{C2167B2E-3923-42B0-9319-9DB208A31404}"
+              DTS:DTSID="{3C87D126-07EE-4DAC-B73E-F8175F450D29}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -416,7 +416,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="LATE_AIRCRAFT_DELAY"
-              DTS:DTSID="{6074C50F-E9A5-4B02-9CE6-71C6B9383845}"
+              DTS:DTSID="{E392373B-6D3E-4D81-9A72-37E145219ABE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -424,7 +424,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="WEATHER_DELAY"
-              DTS:DTSID="{2E42535D-CD77-445A-BC10-D338D0C4C514}"
+              DTS:DTSID="{69FA36E4-0BE3-420E-AA7B-2B1A94846141}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -432,7 +432,7 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="CREATED"
-              DTS:DTSID="{CE8C6D07-AA4E-4F4E-ADE9-ACC4A48C3B2A}"
+              DTS:DTSID="{B4983D25-A987-4ACE-AA63-540F4F02AFE6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -440,7 +440,7 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="MODIFIED"
-              DTS:DTSID="{5C965D75-D0FF-4CD9-A167-5205E0427A7A}"
+              DTS:DTSID="{FAC409B6-4B9D-42CE-A9EC-CD6BEA32659E}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -460,7 +460,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="65001"
-          DTS:ConnectionString="C:\Users\ADMIN\Downloads\dataset\filtered_flights_2.csv">
+          DTS:ConnectionString="D:\YEAR4\HK1\HTTTPVTTKD\DoAn\DataSource\filtered_flights_2.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -468,7 +468,7 @@
               DTS:DataType="7"
               DTS:TextQualified="True"
               DTS:ObjectName="DATE"
-              DTS:DTSID="{D248D0C1-D6C1-4291-8E09-5BF11399236F}"
+              DTS:DTSID="{55C807A3-13D3-4B21-97AD-B16E54DEE70D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -477,7 +477,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="AIRLINE"
-              DTS:DTSID="{121AB344-82C8-48CC-9AE9-80B325CA3EA2}"
+              DTS:DTSID="{2A935387-2580-45EB-9710-551FBEDE4217}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -486,7 +486,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FLIGHT_NUMBER"
-              DTS:DTSID="{8C89BF90-00FF-43B4-A071-18C340164E17}"
+              DTS:DTSID="{1CFF9D34-EB15-436D-A7AB-84D6F3B47AC6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -495,7 +495,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TAIL_NUMBER"
-              DTS:DTSID="{F9E858F8-7315-414F-8B03-F22652097928}"
+              DTS:DTSID="{2B7F5EA4-AFBD-49E6-8111-A40C2E55565B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -504,7 +504,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ORIGIN_AIRPORT"
-              DTS:DTSID="{6C2AC7DE-B6D4-4E38-9AA4-85E53D81237E}"
+              DTS:DTSID="{FDF198B6-69EC-4C8D-9ECE-6FA048FF3FD6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -513,7 +513,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="DESTINATION_AIRPORT"
-              DTS:DTSID="{3A0D62B3-6346-4B1A-A974-E229F60D8AF3}"
+              DTS:DTSID="{106CE8CC-6E2A-4C5E-A41D-E592592A5071}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -521,7 +521,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="SCHEDULED_DEPARTURE"
-              DTS:DTSID="{345A8019-3EEB-495E-A3CA-4E4B3CA3B623}"
+              DTS:DTSID="{1922CECD-F669-4FB9-8025-ED9BA6EB3CAA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -529,7 +529,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="DEPARTURE_TIME"
-              DTS:DTSID="{8A4BFEBE-71CA-4EE1-B051-C490C5543D7E}"
+              DTS:DTSID="{861C47AB-DC11-4DB7-B5D5-85848F77A156}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -537,7 +537,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="DEPARTURE_DELAY"
-              DTS:DTSID="{E0433062-CEA1-4309-8F0E-B3EDFE2169D5}"
+              DTS:DTSID="{3BA8346B-219F-4E17-8840-22BA6758E6A7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -545,7 +545,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="TAXI_OUT"
-              DTS:DTSID="{87867BDF-CD05-469D-802D-1B7E65028A0F}"
+              DTS:DTSID="{94238DB3-5D75-4432-B6AA-2EF6B74B3FF7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -553,7 +553,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="WHEELS_OFF"
-              DTS:DTSID="{197DE51E-6F6D-40A6-9A8F-B6FF452064A3}"
+              DTS:DTSID="{B5930B1C-A81C-414D-8AFD-6C4A68858909}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -561,7 +561,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="SCHEDULED_TIME"
-              DTS:DTSID="{1B4C01EB-ED2D-4AA6-8175-F757725619F4}"
+              DTS:DTSID="{CC51B599-01AB-44D3-827B-168C3C6D0D6C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -569,7 +569,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="ELAPSED_TIME"
-              DTS:DTSID="{579E9F06-8113-4072-AB85-753A3CB31458}"
+              DTS:DTSID="{AADB1055-AF6D-40E6-AEEA-9C9E713F84A5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -577,7 +577,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="AIR_TIME"
-              DTS:DTSID="{10897466-66B0-45E4-A923-FA41ADE3AD33}"
+              DTS:DTSID="{B0D3D232-3DFA-4F13-99FE-65624F4CCE20}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -585,7 +585,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="DISTANCE"
-              DTS:DTSID="{57CD3BA9-6ACA-455D-98C3-8F4FA19D43F9}"
+              DTS:DTSID="{E315568B-B626-49AF-B4F9-D77A7ED88285}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -593,7 +593,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="WHEELS_ON"
-              DTS:DTSID="{C5D85308-0B3D-474E-A828-C02B507D51CD}"
+              DTS:DTSID="{F348CC6A-76D8-428C-9AEF-EB5108BD30BE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -601,7 +601,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="TAXI_IN"
-              DTS:DTSID="{0F1F09A2-1ECA-4AC7-BC8B-55A89B5CB60B}"
+              DTS:DTSID="{8F127CE3-F78D-45DE-B252-6AAC7592AF54}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -609,7 +609,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="SCHEDULED_ARRIVAL"
-              DTS:DTSID="{4459CC88-C5B7-4FBD-8A11-2CE04379A72C}"
+              DTS:DTSID="{F6C7D342-2653-4741-800B-023798AB4A09}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -617,7 +617,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="ARRIVAL_TIME"
-              DTS:DTSID="{78DD0316-DC13-494B-B0FB-D36B4299B862}"
+              DTS:DTSID="{7A9A4FB6-5A08-4125-8ED9-6BCD80CECFBF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -625,7 +625,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="ARRIVAL_DELAY"
-              DTS:DTSID="{28BAE077-912E-4242-9955-6BD0F0F06974}"
+              DTS:DTSID="{B208F178-91BC-4882-AE2D-DCFC0622402E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -633,7 +633,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="DIVERTED"
-              DTS:DTSID="{7B18E234-AC68-4EBF-AC48-619A527B1FB3}"
+              DTS:DTSID="{6CEDB59B-AAD8-4007-AFED-EAB8D3D2AA5B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -641,7 +641,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="CANCELLED"
-              DTS:DTSID="{7A9142DE-CC45-4A7F-B111-6A17BBDA1BA9}"
+              DTS:DTSID="{B15F8001-9213-4318-80CB-DDF4AB3E0AE8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -650,7 +650,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CANCELLATION_REASON"
-              DTS:DTSID="{CBB76965-51F8-4C2B-B8FC-2162F210A917}"
+              DTS:DTSID="{A6939B9D-3996-40F5-815D-1B9DDF8CACC9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -658,7 +658,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="AIR_SYSTEM_DELAY"
-              DTS:DTSID="{86C86001-E5C1-4280-A917-FF0D61D33B05}"
+              DTS:DTSID="{6D914E20-9890-486F-9371-535E803E34B7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -666,7 +666,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="SECURITY_DELAY"
-              DTS:DTSID="{5E25E6FF-1DCD-4A09-AE34-61349BD79C86}"
+              DTS:DTSID="{C2D8884F-960E-4724-AFE2-8299A5CB0EE9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -674,7 +674,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="AIRLINE_DELAY"
-              DTS:DTSID="{5D45F63D-0BD6-48A9-A9E3-47F9F280CA47}"
+              DTS:DTSID="{C262F3DB-F72F-48AC-AB25-029359DE9945}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -682,7 +682,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="LATE_AIRCRAFT_DELAY"
-              DTS:DTSID="{2CA71AD3-0667-4744-9634-0BC8A4C4592F}"
+              DTS:DTSID="{F7245F2B-1F3B-4B2A-A647-05EE7EFB8D36}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -690,7 +690,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="WEATHER_DELAY"
-              DTS:DTSID="{5973C9C9-C86F-4AA9-ACDE-76FEEFC98270}"
+              DTS:DTSID="{5A0A1666-417A-4EBC-A54F-D66D9EF3C8E0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -698,7 +698,7 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="CREATED"
-              DTS:DTSID="{C7206F38-E917-4FF4-B1A9-96B9D016BCE5}"
+              DTS:DTSID="{0CE37F37-F4E5-4081-9EF5-B90A790E355F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -706,7 +706,7 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="MODIFIED"
-              DTS:DTSID="{585B2D22-CECB-4C11-B42B-942A36DB8E2A}"
+              DTS:DTSID="{DD155326-7B63-4034-9380-15BCD584DCB5}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -726,7 +726,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="65001"
-          DTS:ConnectionString="C:\Users\ADMIN\Downloads\dataset\filtered_flights_3.csv">
+          DTS:ConnectionString="D:\YEAR4\HK1\HTTTPVTTKD\DoAn\DataSource\filtered_flights_3.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -734,7 +734,7 @@
               DTS:DataType="7"
               DTS:TextQualified="True"
               DTS:ObjectName="DATE"
-              DTS:DTSID="{A2A0BCEA-23DA-4E9A-A83C-BC2564C79D76}"
+              DTS:DTSID="{D8BDE5E7-5B4E-448C-A89A-08817829C561}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -743,7 +743,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="AIRLINE"
-              DTS:DTSID="{5A3190D3-4E77-4162-BB84-4821F05CD113}"
+              DTS:DTSID="{B3A671B0-628E-43AB-BFF2-A74F73FE2FE4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -752,7 +752,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FLIGHT_NUMBER"
-              DTS:DTSID="{35F36ECB-7381-4EE0-8F29-939B08615704}"
+              DTS:DTSID="{51A08270-1E4C-4670-A1A5-DD3E15543C94}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -761,7 +761,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TAIL_NUMBER"
-              DTS:DTSID="{221E1FC5-21CF-403E-A4C0-8482256FB684}"
+              DTS:DTSID="{A66C0489-04D8-454D-ABED-4633747C3649}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -770,7 +770,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ORIGIN_AIRPORT"
-              DTS:DTSID="{24667930-54B8-45D5-AAC3-887C34AD243B}"
+              DTS:DTSID="{890787E0-DF62-40A0-92B9-5E3D7C73A29B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -779,7 +779,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="DESTINATION_AIRPORT"
-              DTS:DTSID="{3D6964A9-67B1-4E03-8E3C-37B3DC514314}"
+              DTS:DTSID="{0F8BF4AF-3A62-40AE-B0A6-5D469CE66473}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -787,7 +787,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="SCHEDULED_DEPARTURE"
-              DTS:DTSID="{5339100C-68F2-4C12-96DD-DB29430070CD}"
+              DTS:DTSID="{7EAFBB67-FA63-4AD2-8BD3-34B56EFA4DA8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -795,7 +795,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="DEPARTURE_TIME"
-              DTS:DTSID="{F90158BE-146B-42B7-8FE7-68BC2F5B27B2}"
+              DTS:DTSID="{2E984951-E48C-4716-B53A-DF8C7660E976}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -803,7 +803,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="DEPARTURE_DELAY"
-              DTS:DTSID="{796AC0C9-52E0-4038-A474-8869036CF126}"
+              DTS:DTSID="{FAF1E52D-0F93-4841-B7AB-F3623E940EC4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -811,7 +811,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="TAXI_OUT"
-              DTS:DTSID="{C5FFEEEE-1738-4DA5-BB2B-78888D6ABF36}"
+              DTS:DTSID="{E1E5F245-3274-49B0-A770-5E8A03BF455E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -819,7 +819,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="WHEELS_OFF"
-              DTS:DTSID="{DFDD6F47-F793-427E-8D86-B13C34D8C1E0}"
+              DTS:DTSID="{0561BFE9-2A05-4E06-A5F2-D51C142F51D1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -827,7 +827,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="SCHEDULED_TIME"
-              DTS:DTSID="{690198E4-CA45-41FF-84A1-5C4B339B548F}"
+              DTS:DTSID="{DE4AF0B0-8EDA-4D44-B222-87047C2D2B03}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -835,7 +835,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="ELAPSED_TIME"
-              DTS:DTSID="{6AD837A9-5E23-4B1D-8C89-3B88F6AAC19D}"
+              DTS:DTSID="{9ABE4B6A-725E-4DC6-8EAB-E1CA3F8A2DA6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -843,7 +843,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="AIR_TIME"
-              DTS:DTSID="{2A5E595F-45E9-414B-9D09-D470F28BC190}"
+              DTS:DTSID="{6312B268-9D41-41BC-9557-8D1E7E56CADC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -851,7 +851,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="DISTANCE"
-              DTS:DTSID="{7F9C2BDC-E844-41AC-8CC1-C81EE2D7659D}"
+              DTS:DTSID="{9E66EEBF-7BB0-453E-A866-B25D214602FD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -859,7 +859,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="WHEELS_ON"
-              DTS:DTSID="{237F78A1-5C88-4F55-9CAF-C776BAC9DE8E}"
+              DTS:DTSID="{AEAD3B9D-2AD9-4DE5-AA1C-FD6CCB74817A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -867,7 +867,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="TAXI_IN"
-              DTS:DTSID="{9A6E81FB-7976-4DB1-AE7A-187304C48E03}"
+              DTS:DTSID="{30AC5587-78EB-452D-BC51-25C7F8C5BCCE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -875,7 +875,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="SCHEDULED_ARRIVAL"
-              DTS:DTSID="{B4B777CE-0D2A-430A-A811-988DD6D7B4ED}"
+              DTS:DTSID="{3369AFFF-5391-4D9D-BC0A-B13B2B68F03D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -883,7 +883,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="ARRIVAL_TIME"
-              DTS:DTSID="{451DB87D-7432-4161-80E6-3E9D3AC2E3D8}"
+              DTS:DTSID="{638F6635-79C6-4EC1-A554-DD4E4E5D2A33}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -891,7 +891,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="ARRIVAL_DELAY"
-              DTS:DTSID="{CDAB594C-9A67-49A3-B5B3-9DA57A86A3B0}"
+              DTS:DTSID="{76419F91-C04A-46BA-A535-C26C1411EC89}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -899,7 +899,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="DIVERTED"
-              DTS:DTSID="{89E4F497-32A3-4942-8315-12026BC717CB}"
+              DTS:DTSID="{A6B9EDFA-E6C6-4F1A-8D02-C0E02B84712C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -907,7 +907,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="CANCELLED"
-              DTS:DTSID="{38F1AC79-EFB0-439E-B8BD-077F4939746E}"
+              DTS:DTSID="{1E6AC4D0-92B2-4D84-964A-2F2F71989167}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -916,7 +916,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CANCELLATION_REASON"
-              DTS:DTSID="{03A3AF75-AF67-4711-9C62-FF86BDB591DF}"
+              DTS:DTSID="{1859BC0C-0B11-47F0-A93A-17FF1EC3199C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -924,7 +924,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="AIR_SYSTEM_DELAY"
-              DTS:DTSID="{ADDDF86D-6515-4B7E-AAC1-8DD8276256E2}"
+              DTS:DTSID="{5EEAA91F-C371-4D64-A650-44503222E78A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -932,7 +932,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="SECURITY_DELAY"
-              DTS:DTSID="{2425987A-B051-4FBE-BA73-0CA7D952DD77}"
+              DTS:DTSID="{C730B39E-BA2B-4B3A-BD1A-4181F2ACC586}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -940,7 +940,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="AIRLINE_DELAY"
-              DTS:DTSID="{66BC4465-0980-4AF4-9DA2-52D17917E2F7}"
+              DTS:DTSID="{E5528A25-1579-4DCA-B422-C60A3CDD2450}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -948,7 +948,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="LATE_AIRCRAFT_DELAY"
-              DTS:DTSID="{66AC9481-7E2A-4386-91BE-25FAEFABE9E9}"
+              DTS:DTSID="{2D172C47-C1DE-43D7-88A5-67BE0B5C4C09}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -956,7 +956,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="WEATHER_DELAY"
-              DTS:DTSID="{DCE42F2B-D9C8-4C36-B9D3-AB921B31AA55}"
+              DTS:DTSID="{751D1DAB-4987-43CC-B3DA-15BC3E083FEF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -964,7 +964,7 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="CREATED"
-              DTS:DTSID="{B9C07F95-2D5C-474C-8E7A-4F2DD34C4E01}"
+              DTS:DTSID="{0FC7D190-CB0D-4043-9622-DB52A5C782A4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -972,9 +972,43 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="MODIFIED"
-              DTS:DTSID="{96FE6071-B731-4FD0-BFBB-080514173D14}"
+              DTS:DTSID="{01144DCA-2E51-419C-A70A-01BD23E34074}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[HoangDung.HTTTKD_ETL_Metadata.dungluonghoang]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{5EB914B5-B233-4344-980C-4F16DC92AC9F}"
+      DTS:ObjectName="HoangDung.HTTTKD_ETL_Metadata.dungluonghoang">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=HoangDung;User ID=dungluonghoang;Initial Catalog=HTTTKD_ETL_Metadata;Provider=MSOLEDBSQL.1;Application Name=SSIS-Source_to_Stage-{5EB914B5-B233-4344-980C-4F16DC92AC9F}HoangDung.HTTTKD_ETL_Metadata.dungluonghoang;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAl+Vvm4JYxE+oSNdX3tbQogAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACWocMSGaoXQfKdyE6Lt+mEPwY73aA5IChNn8w8J43jJgAAAAAOgAAAAAIAACAAAADIfwyMLUKS2ZmYwO4/NUNGe6Ddt4041pTqe7MkRRcymCAAAABvgN8DOB1/A4vZzcH+SZUQ+xySLk+nejy+4lx4wRGU10AAAADveymXZ9pj2jP7XWQLAu6fiuOBQ1n+pqPjn66QZcl5g5BUgT2k9X9FTG+8IpnK1vWzhW2kUiLKVg+YciM1OYX/</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[HoangDung.HTTTKD_STAGE.dungluonghoang]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{DDB56849-E99F-4398-A389-7ED97CED148D}"
+      DTS:ObjectName="HoangDung.HTTTKD_STAGE.dungluonghoang">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=HoangDung;User ID=dungluonghoang;Initial Catalog=HTTTKD_STAGE;Provider=MSOLEDBSQL.1;Application Name=SSIS-Source_to_Stage-{DDB56849-E99F-4398-A389-7ED97CED148D}HoangDung.HTTTKD_STAGE.dungluonghoang;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAl+Vvm4JYxE+oSNdX3tbQogAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACVYYCJCWqGsnHnaSmCKFMZFMx3gf3fsh5XZwG1mQE29wAAAAAOgAAAAAIAACAAAACpo7rsxWdAEssJfwWhAjwgajtImoWDjerh04V/lBhCUyAAAAA3Cm7INbJbKahnffGkbVRBcsjXguqjpXafF+QHz0AC8EAAAADoSqNVnSDqkPg4z0LNSyuVuy5v/6YvHvXIwlQUxU8A2tRZR3znPUexHDNkn/KQGU2WbbmYE8T4AocSQY/w5Zq6</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1041,7 +1075,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{56D8005A-AF9A-48EC-BAA4-B35979BA779B}"
+          SQLTask:Connection="{5EB914B5-B233-4344-980C-4F16DC92AC9F}"
           SQLTask:SqlStatementSource="DECLARE @tmpCET DATETIME;&#xA;&#xA;SELECT @tmpCET = CET&#xA;FROM HTTTKD_ETL_Metadata.dbo.data_flowTable&#xA;WHERE flow_name = 'Flights';&#xA;&#xA;UPDATE HTTTKD_ETL_Metadata.dbo.data_flowTable&#xA;SET LSET = @tmpCET,&#xA;    CET = NULL,&#xA;    status_key = 1&#xA;WHERE flow_name = 'Flights';&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -1060,7 +1094,7 @@
         <DTS:ObjectData>
           <ForEachFileEnumeratorProperties>
             <FEFEProperty
-              Folder="D:\sinhviennam4\HTTTPVTTKD\DoAnTH\HTTTKD\DataSource" />
+              Folder="D:\YEAR4\HK1\HTTTPVTTKD\DoAn\DataSource" />
             <FEFEProperty
               FileSpec="airlines*.csv" />
             <FEFEProperty
@@ -1080,7 +1114,7 @@
           DTS:ExecutableType="Microsoft.ScriptTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Detect Source System Airlines"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <ScriptProject
@@ -1090,35 +1124,14 @@
               Language="CSharp"
               ReadWriteVariables="User::FilePath,User::SourceName">
               <ProjectItem
-                Name="Properties\AssemblyInfo.cs"
-                Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_d23d686fda4a4134aa1d6af926d4d3d6")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_d23d686fda4a4134aa1d6af926d4d3d6")]
-[assembly: AssemblyCopyright("Copyright @  2025")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+                Name="Properties\Settings.settings"
+                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.resx"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -1239,104 +1252,34 @@ using System.Runtime.CompilerServices;
   </resheader>
 </root>]]></ProjectItem>
               <ProjectItem
-                Name="ST_d23d686fda4a4134aa1d6af926d4d3d6.csproj"
-                Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup>
-    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{65a6e5ed-01c4-42a5-b78b-144f1ded34f2}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ST_d23d686fda4a4134aa1d6af926d4d3d6</RootNamespace>
-    <AssemblyName>ST_d23d686fda4a4134aa1d6af926d4d3d6</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
-  </PropertyGroup>
+                Name="Properties\Settings.Designer.cs"
+                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
 
-  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>.\bin\Debug\</OutputPath>
-    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_d23d686fda4a4134aa1d6af926d4d3d6.Properties.Settings.get_Default():ST_d23d686fda4a4134aa1d6af926d4d3d6.Properties.Sett" +
+    "ings")]
 
-  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-    <DebugSymbols>false</DebugSymbols>
-    <Optimize>true</Optimize>
-    <OutputPath>.\bin\Release\</OutputPath>
-    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
-    <Reference Include="Microsoft.SqlServer.ManagedDTS, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
-    <Reference Include="Microsoft.SqlServer.ScriptTask, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <AppDesigner Include="Properties\" />
-    <Compile Include="Properties\AssemblyInfo.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <EmbeddedResource Include="Properties\Resources.resx">
-         <Generator>ResXFileCodeGenerator</Generator>
-         <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-             <AutoGen>True</AutoGen>
-         <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <None Include="Properties\Settings.settings">
-         <Generator>SettingsSingleFileGenerator</Generator>
-         <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <Compile Include="Properties\Settings.Designer.cs">
-         <AutoGen>True</AutoGen>
-         <DependentUpon>Settings.settings</DependentUpon>
-    </Compile>
-    <Compile Include="ScriptMain.cs">
-         <SubType>Code</SubType>
-    </Compile>
-  </ItemGroup>
-
-  <!-- Include the build rules for a C# project.-->
-  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-
-  <ProjectExtensions>
-    <VisualStudio>
-      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
-        <ProjectProperties HostName="ScriptTask"
-                           HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}"
-                           ApplicationType="usd"
-                           Language="cs"
-                           TemplatesPath=""
-                           DebugInfoCommandLine=""
-                           DebugInfoWorkingDir=""
-                           IconImageList=""/>
-        <Host Name="ScriptTask" GeneratedNamespace="$safeprojectname" IconIndex="">
-        </Host>
-        <ProjectClient>
-            <HostIdentifier>SSIS_ST160</HostIdentifier>
-        </ProjectClient>
-      </FlavorProperties>
-    </VisualStudio>
-  </ProjectExtensions>
-</Project>]]></ProjectItem>
+namespace ST_d23d686fda4a4134aa1d6af926d4d3d6.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
               <ProjectItem
                 Name="ScriptMain.cs"
                 Encoding="UTF8"><![CDATA[#region Namespaces
@@ -1389,12 +1332,12 @@ namespace ST_DetectSourceFile
               <ProjectItem
                 Name="Project"
                 Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
-<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="3.0" schemaVersion="1.0">
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
   <msb:PropertyGroup>
-    <msb:Language>msBuild</msb:Language>
     <msb:CodeName>ST_d23d686fda4a4134aa1d6af926d4d3d6</msb:CodeName>
+    <msb:Language>msBuild</msb:Language>
     <msb:DisplayName>ST_d23d686fda4a4134aa1d6af926d4d3d6</msb:DisplayName>
-    <msb:ProjectId>{6C8A6F9C-2EF5-4F6E-84DE-7994D325B168}</msb:ProjectId>
+    <msb:ProjectId>{896A2CB2-19A8-4E32-B3B8-672C194D15EE}</msb:ProjectId>
   </msb:PropertyGroup>
   <msb:ItemGroup>
     <msb:Project Include="ST_d23d686fda4a4134aa1d6af926d4d3d6.csproj" />
@@ -1407,43 +1350,121 @@ namespace ST_DetectSourceFile
   </msb:ItemGroup>
 </c:Project>]]></ProjectItem>
               <ProjectItem
-                Name="Properties\Settings.Designer.cs"
-                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
+                Name="Properties\AssemblyInfo.cs"
+                Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
 //
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_d23d686fda4a4134aa1d6af926d4d3d6")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_d23d686fda4a4134aa1d6af926d4d3d6")]
+[assembly: AssemblyCopyright("Copyright @  2025")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
 
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_d23d686fda4a4134aa1d6af926d4d3d6.Properties.Settings.get_Default():ST_d23d686fda4a4134aa1d6af926d4d3d6.Properties.Sett" +
-    "ings")]
-
-namespace ST_d23d686fda4a4134aa1d6af926d4d3d6.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
               <ProjectItem
-                Name="Properties\Settings.settings"
-                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+                Name="ST_d23d686fda4a4134aa1d6af926d4d3d6.csproj"
+                Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{65a6e5ed-01c4-42a5-b78b-144f1ded34f2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ST_d23d686fda4a4134aa1d6af926d4d3d6</RootNamespace>
+    <AssemblyName>ST_d23d686fda4a4134aa1d6af926d4d3d6</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
+    <TargetFrameworkProfile></TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.SqlServer.ManagedDTS, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.ScriptTask, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ScriptMain.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <!-- Include the build rules for a C# project.-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
+        <ProjectProperties HostName="ScriptTask" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" DebugInfoCommandLine="" DebugInfoWorkingDir="" IconImageList="" />
+        <Host Name="ScriptTask" GeneratedNamespace="$safeprojectname" IconIndex=""></Host>
+        <ProjectClient>
+          <HostIdentifier>SSIS_ST160</HostIdentifier>
+        </ProjectClient>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.Designer.cs"
                 Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -1515,14 +1536,14 @@ namespace ST_d23d686fda4a4134aa1d6af926d4d3d6.Properties {
               <BinaryItem
                 Name="ST_d23d686fda4a4134aa1d6af926d4d3d6.dll">TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
-ZGUuDQ0KJAAAAAAAAABQRQAATAEDAL0VBWkAAAAAAAAAAOAAIiALATAAABIAAAAIAAAAAAAADjAA
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAMYzEGkAAAAAAAAAAOAAIiALATAAABIAAAAIAAAAAAAACjAA
 AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
-ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAALwvAABPAAAAAEAAAGwEAAAAAAAAAAAAAAAAAAAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAALgvAABPAAAAAEAAAHgEAAAAAAAAAAAAAAAAAAAA
 AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAAFBAAAAAgAAAAEgAAAAIA
-AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAGwEAAAAQAAAAAYAAAAUAAAAAAAAAAAAAAAAAABAAABA
-LnJlbG9jAAAMAAAAAGAAAAACAAAAGgAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAADw
-LwAAAAAAAEgAAAACAAUAlCEAAHANAAABAAAAAAAAAAQvAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAAEBAAAAAgAAAAEgAAAAIA
+AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAHgEAAAAQAAAAAYAAAAUAAAAAAAAAAAAAAAAAABAAABA
+LnJlbG9jAAAMAAAAAGAAAAACAAAAGgAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAADs
+LwAAAAAAAEgAAAACAAUAlCEAAGwNAAABAAAAAAAAAAAvAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAABswBwC+AAAAAQAAEQIoEAAACm8RAAAKcgEAAHBvEgAACm8T
 AAAKbxQAAAoKBigVAAAKCwIoEAAACm8RAAAKch8AAHBvEgAACgdvFgAAChcMAigQAAAKbxcAAAoW
 ckEAAHByZwAAcAZyhwAAcAcoGAAACnKxAABwFhICbxkAAAoCKBAAAAoWbxoAAArePA0CKBAAAApv
@@ -1530,7 +1551,7 @@ FwAAChZyQQAAcHKzAABwCW8bAAAKKBwAAApysQAAcBZvHQAACiYCKBAAAAoXbxoAAAreACoAAAEQ
 AAAAAAAAgYEAPA8AAAEeAigeAAAKKh4CKB8AAAoqrn4BAAAELR5y4QAAcNADAAACKCAAAApvIQAA
 CnMiAAAKgAEAAAR+AQAABCoafgIAAAQqHgKAAgAABCoafgMAAAQqHgIoIwAACioucwgAAAaAAwAA
 BCoAAEJTSkIBAAEAAAAAAAwAAAB2NC4wLjMwMzE5AAAAAAUAbAAAAAQEAAAjfgAAcAQAAPwFAAAj
-U3RyaW5ncwAAAABsCgAAVAEAACNVUwDACwAAEAAAACNHVUlEAAAA0AsAAKABAAAjQmxvYgAAAAAA
+U3RyaW5ncwAAAABsCgAAVAEAACNVUwDACwAAEAAAACNHVUlEAAAA0AsAAJwBAAAjQmxvYgAAAAAA
 AAACAAABVx2iAQkDAAAA+gEzABYAAAEAAAAhAAAABQAAAAYAAAAJAAAAAQAAACMAAAACAAAAEAAA
 AAEAAAACAAAAAwAAAAQAAAABAAAABAAAAAEAAAABAAAAAACuAwEAAAAAAAYATwLSBAYA3gLSBAYA
 mwG/BA8ARgUAAAYAyAFYBAYAMgJYBAYAEwJYBAYAxQJYBAYAbwJYBAYAiAJYBAYA3wFYBAYA+gEW
@@ -1547,7 +1568,7 @@ UgDJAN4FAQB5AHgANwDxAMQFXQDpAKgEYwBxALIEBgCRALIEBgD5AJ8AbAD5AO0FdACZALIEegC5
 ALIEBgAIABQAlAAIABgAmQApAHMAAQEuAAsA2QAuABMA4gAuABsAAQEuACMACgEuACsAMwEuADMA
 MwEuADsAMwEuAEMACgEuAEsAOQEuAFMAMwEuAFsAUAFDAGMAmQBJAHMAAQFhAHsAmQBjAGsAmQAb
 AAMAAQAEAAMAAACEBMoAAAASAc8AAADWBdQAAgAEAAMAAgAFAAUAAQAGAAUAAgAHAAcABIAAAAEA
-AADcJFYVAAAAAAAAAQAAAAQAAAAAAAAAAAAAAIIAXwAAAAAAEAAAAAAAAAAAAAAAiwA+AwAAAAAE
+AADkJFteAAAAAAAAAQAAAAQAAAAAAAAAAAAAAIIAXwAAAAAAEAAAAAAAAAAAAAAAiwA+AwAAAAAE
 AAAAAAAAAAAAAACCAN8DAAAAABAAAAAAAAAAAAAAAIsAOAAAAAAAAAAAAAEAAAADBQAABQACAAAA
 AFNUX2QyM2Q2ODZmZGE0YTQxMzRhYTFkNmFmOTI2ZDRkM2Q2ADxNb2R1bGU+AFN5c3RlbS5JTwBN
 aWNyb3NvZnQuU3FsU2VydmVyLk1hbmFnZWREVFMAdmFsdWVfXwBtc2NvcmxpYgBkZWZhdWx0SW5z
@@ -1581,20 +1602,20 @@ ACVEAGUAdABlAGMAdAAgAFMAbwB1AHIAYwBlACAARgBpAGwAZQAAH0QAZQB0AGUAYwB0AGUAZAAg
 AGYAaQBsAGUAOgAgAAApCgBTAG8AdQByAGMAZQBOAGEAbQBlACAAcwBlAHQAIAB0AG8AOgAgAAAB
 AC1FAHIAcgBvAHIAIABkAGUAdABlAGMAdABpAG4AZwAgAGYAaQBsAGUAOgAgAABxUwBUAF8AZAAy
 ADMAZAA2ADgANgBmAGQAYQA0AGEANAAxADMANABhAGEAMQBkADYAYQBmADkAMgA2AGQANABkADMA
-ZAA2AC4AUAByAG8AcABlAHIAdABpAGUAcwAuAFIAZQBzAG8AdQByAGMAZQBzAAAAMEA7pkrXfEC/
-tvO/900SlAAEIAEBCAMgAAEFIAEBEREEIAEBDgUgAQERVQcHBA4OAhI9BCAAEmUEIAASaQUgARJt
+ZAA2AC4AUAByAG8AcABlAHIAdABpAGUAcwAuAFIAZQBzAG8AdQByAGMAZQBzAAAAZthetu6YbkGR
+rBYNk8oNNQAEIAEBCAMgAAEFIAEBEREEIAEBDgUgAQERVQcHBA4OAhI9BCAAEmUEIAASaQUgARJt
 HAMgABwDIAAOBAABDg4EIAEBHAQgABJ1BwAEDg4ODg4KIAYBCA4ODggQAgUAAg4ODgggBQIIDg4O
 CAcAARJ9EYCBBSAAEoCFByACAQ4SgIUIt3pcVhk04IkIiYRdzYCAzJEEAAAAAAQBAAAAAwYSTQMG
 ElEDBhIQAgYIAwYRFAQAABJNBAAAElEFAAEBElEEAAASEAMAAAEECAASTQQIABJRBAgAEhAIAQAI
 AAAAAAAeAQABAFQCFldyYXBOb25FeGNlcHRpb25UaHJvd3MBCAEAAgAAAAAAKAEAI1NUX2QyM2Q2
 ODZmZGE0YTQxMzRhYTFkNmFmOTI2ZDRkM2Q2AAAFAQAAAAAWAQARQ29weXJpZ2h0IEAgIDIwMjUA
-AE0BABwuTkVURnJhbWV3b3JrLFZlcnNpb249djQuNy4yAQBUDhRGcmFtZXdvcmtEaXNwbGF5TmFt
-ZRQuTkVUIEZyYW1ld29yayA0LjcuMgAAtAAAAM7K774BAAAAkQAAAGxTeXN0ZW0uUmVzb3VyY2Vz
-LlJlc291cmNlUmVhZGVyLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRy
-YWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkjU3lzdGVtLlJlc291cmNlcy5SdW50
-aW1lUmVzb3VyY2VTZXQCAAAAAAAAAAAAAABQQURQQURQtAAAAOQvAAAAAAAAAAAAAP4vAAAAIAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAADwLwAAAAAAAAAAAAAAAF9Db3JEbGxNYWluAG1zY29yZWUuZGxs
-AAAAAAD/JQAgABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AEkBABouTkVURnJhbWV3b3JrLFZlcnNpb249djQuNwEAVA4URnJhbWV3b3JrRGlzcGxheU5hbWUS
+Lk5FVCBGcmFtZXdvcmsgNC43AAC0AAAAzsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVz
+b3VyY2VSZWFkZXIsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwg
+UHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVS
+ZXNvdXJjZVNldAIAAAAAAAAAAAAAAFBBRFBBRFC0AAAA4C8AAAAAAAAAAAAA+i8AAAAgAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAOwvAAAAAAAAAAAAAAAAX0NvckRsbE1haW4AbXNjb3JlZS5kbGwAAAAA
+AP8lACAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -1604,32 +1625,32 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAEAEAAAABgAAIAAAAAAAAAAAAAAAAAAAAEAAQAAADAAAIAAAAAAAAAAAAAAAAAAAAEAAAAA
-AEgAAABYQAAAEAQAAAAAAAAAAAAAEAQ0AAAAVgBTAF8AVgBFAFIAUwBJAE8ATgBfAEkATgBGAE8A
-AAAAAL0E7/4AAAEAAAABAFYV3CQAAAEAVhXcJD8AAAAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAABE
+AEgAAABYQAAAGgQAAAAAAAAAAAAAGgQ0AAAAVgBTAF8AVgBFAFIAUwBJAE8ATgBfAEkATgBGAE8A
+AAAAAL0E7/4AAAEAAAABAFte5CQAAAEAW17kJD8AAAAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAABE
 AAAAAQBWAGEAcgBGAGkAbABlAEkAbgBmAG8AAAAAACQABAAAAFQAcgBhAG4AcwBsAGEAdABpAG8A
-bgAAAAAAAACwBHADAAABAFMAdAByAGkAbgBnAEYAaQBsAGUASQBuAGYAbwAAAEwDAAABADAAMAAw
+bgAAAAAAAACwBHoDAAABAFMAdAByAGkAbgBnAEYAaQBsAGUASQBuAGYAbwAAAFYDAAABADAAMAAw
 ADAAMAA0AGIAMAAAABoAAQABAEMAbwBtAG0AZQBuAHQAcwAAAAAAAAAiAAEAAQBDAG8AbQBwAGEA
 bgB5AE4AYQBtAGUAAAAAAAAAAABwACQAAQBGAGkAbABlAEQAZQBzAGMAcgBpAHAAdABpAG8AbgAA
 AAAAUwBUAF8AZAAyADMAZAA2ADgANgBmAGQAYQA0AGEANAAxADMANABhAGEAMQBkADYAYQBmADkA
-MgA2AGQANABkADMAZAA2AAAAPAAOAAEARgBpAGwAZQBWAGUAcgBzAGkAbwBuAAAAAAAxAC4AMAAu
-ADkANAAzADYALgA1ADQANgAyAAAAcAAoAAEASQBuAHQAZQByAG4AYQBsAE4AYQBtAGUAAABTAFQA
-XwBkADIAMwBkADYAOAA2AGYAZABhADQAYQA0ADEAMwA0AGEAYQAxAGQANgBhAGYAOQAyADYAZAA0
-AGQAMwBkADYALgBkAGwAbAAAAEgAEgABAEwAZQBnAGEAbABDAG8AcAB5AHIAaQBnAGgAdAAAAEMA
-bwBwAHkAcgBpAGcAaAB0ACAAQAAgACAAMgAwADIANQAAACoAAQABAEwAZQBnAGEAbABUAHIAYQBk
-AGUAbQBhAHIAawBzAAAAAAAAAAAAeAAoAAEATwByAGkAZwBpAG4AYQBsAEYAaQBsAGUAbgBhAG0A
-ZQAAAFMAVABfAGQAMgAzAGQANgA4ADYAZgBkAGEANABhADQAMQAzADQAYQBhADEAZAA2AGEAZgA5
-ADIANgBkADQAZAAzAGQANgAuAGQAbABsAAAAaAAkAAEAUAByAG8AZAB1AGMAdABOAGEAbQBlAAAA
-AABTAFQAXwBkADIAMwBkADYAOAA2AGYAZABhADQAYQA0ADEAMwA0AGEAYQAxAGQANgBhAGYAOQAy
-ADYAZAA0AGQAMwBkADYAAABAAA4AAQBQAHIAbwBkAHUAYwB0AFYAZQByAHMAaQBvAG4AAAAxAC4A
-MAAuADkANAAzADYALgA1ADQANgAyAAAARAAOAAEAQQBzAHMAZQBtAGIAbAB5ACAAVgBlAHIAcwBp
-AG8AbgAAADEALgAwAC4AOQA0ADMANgAuADUANAA2ADIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+MgA2AGQANABkADMAZAA2AAAAPgAPAAEARgBpAGwAZQBWAGUAcgBzAGkAbwBuAAAAAAAxAC4AMAAu
+ADkANAA0ADQALgAyADQAMQA1ADUAAAAAAHAAKAABAEkAbgB0AGUAcgBuAGEAbABOAGEAbQBlAAAA
+UwBUAF8AZAAyADMAZAA2ADgANgBmAGQAYQA0AGEANAAxADMANABhAGEAMQBkADYAYQBmADkAMgA2
+AGQANABkADMAZAA2AC4AZABsAGwAAABIABIAAQBMAGUAZwBhAGwAQwBvAHAAeQByAGkAZwBoAHQA
+AABDAG8AcAB5AHIAaQBnAGgAdAAgAEAAIAAgADIAMAAyADUAAAAqAAEAAQBMAGUAZwBhAGwAVABy
+AGEAZABlAG0AYQByAGsAcwAAAAAAAAAAAHgAKAABAE8AcgBpAGcAaQBuAGEAbABGAGkAbABlAG4A
+YQBtAGUAAABTAFQAXwBkADIAMwBkADYAOAA2AGYAZABhADQAYQA0ADEAMwA0AGEAYQAxAGQANgBh
+AGYAOQAyADYAZAA0AGQAMwBkADYALgBkAGwAbAAAAGgAJAABAFAAcgBvAGQAdQBjAHQATgBhAG0A
+ZQAAAAAAUwBUAF8AZAAyADMAZAA2ADgANgBmAGQAYQA0AGEANAAxADMANABhAGEAMQBkADYAYQBm
+ADkAMgA2AGQANABkADMAZAA2AAAAQgAPAAEAUAByAG8AZAB1AGMAdABWAGUAcgBzAGkAbwBuAAAA
+MQAuADAALgA5ADQANAA0AC4AMgA0ADEANQA1AAAAAABGAA8AAQBBAHMAcwBlAG0AYgBsAHkAIABW
+AGUAcgBzAGkAbwBuAAAAMQAuADAALgA5ADQANAA0AC4AMgA0ADEANQA1AAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAADAAAABAwAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAADAAAAAwwAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -1650,11 +1671,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Get CET_LSET from Metadata Airlines"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{56D8005A-AF9A-48EC-BAA4-B35979BA779B}"
+              SQLTask:Connection="{5EB914B5-B233-4344-980C-4F16DC92AC9F}"
               SQLTask:SqlStatementSource="SELECT &#xA;    LSET,&#xA;    CET&#xA;FROM data_flowTable&#xA;WHERE flow_name = 'Airlines';"
               SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ResultBinding
@@ -1823,7 +1844,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=17.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1836,7 +1857,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
                       dataType="System.Int32"
                       description="Specifies the mode used to access the database."
                       name="AccessMode"
-                      typeConverter="AccessMode">3</property>
+                      typeConverter="AccessMode">0</property>
                     <property
                       dataType="System.Boolean"
                       description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
@@ -1857,8 +1878,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
                   <connections>
                     <connection
                       refId="Package\Foreach Loop Airlines\Import data from Airline_csv to Stage\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[DYLE\MSSQLSERVER3.HTTTKD_STAGE]"
-                      connectionManagerRefId="Package.ConnectionManagers[DYLE\MSSQLSERVER3.HTTTKD_STAGE]"
+                      connectionManagerID="Package.ConnectionManagers[HoangDung.HTTTKD_STAGE.dungluonghoang]"
+                      connectionManagerRefId="Package.ConnectionManagers[HoangDung.HTTTKD_STAGE.dungluonghoang]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1944,11 +1965,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Set Source to Metadata"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{56D8005A-AF9A-48EC-BAA4-B35979BA779B}"
+              SQLTask:Connection="{5EB914B5-B233-4344-980C-4F16DC92AC9F}"
               SQLTask:SqlStatementSource="DECLARE @srcKey INT;&#xA;&#xA;IF NOT EXISTS (&#xA;    SELECT 1 FROM  HTTTKD_ETL_Metadata.dbo.sourceTable&#xA;    WHERE sourceName = ?&#xA;)&#xA;BEGIN&#xA;    INSERT INTO HTTTKD_ETL_Metadata.dbo.sourceTable&#xA;        (sourceName, sourcePath, lastExtract)&#xA;    VALUES (?, ?, GETDATE());&#xA;END;&#xA;&#xA;SELECT @srcKey = sourceID&#xA;FROM HTTTKD_ETL_Metadata.dbo.sourceTable&#xA;WHERE sourceName = ?;&#xA;&#xA;UPDATE HTTTKD_ETL_Metadata.dbo.data_flowTable&#xA;SET source = @srcKey&#xA;WHERE flow_name = 'Airlines';&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
@@ -2007,8 +2028,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{B6B1DE75-CC80-47F6-8F96-B03B147B960E}"
-          DTS:ObjectName="{B6B1DE75-CC80-47F6-8F96-B03B147B960E}"
+          DTS:DTSID="{6B2FD370-F23D-4A1C-A777-21B6294A9F5A}"
+          DTS:ObjectName="{6B2FD370-F23D-4A1C-A777-21B6294A9F5A}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::FilePath" />
       </DTS:ForEachVariableMappings>
@@ -2028,7 +2049,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
         <DTS:ObjectData>
           <ForEachFileEnumeratorProperties>
             <FEFEProperty
-              Folder="D:\sinhviennam4\HTTTPVTTKD\DoAnTH\HTTTKD\DataSource" />
+              Folder="D:\YEAR4\HK1\HTTTPVTTKD\DoAn\DataSource" />
             <FEFEProperty
               FileSpec="*flights*.csv" />
             <FEFEProperty
@@ -2057,6 +2078,36 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
               VSTAMinorVersion="0"
               Language="CSharp"
               ReadWriteVariables="User::FilePath,User::SourceName">
+              <ProjectItem
+                Name="Properties\AssemblyInfo.cs"
+                Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_581a3e063afc4f8e9ef1d99a79e2285b")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_581a3e063afc4f8e9ef1d99a79e2285b")]
+[assembly: AssemblyCopyright("Copyright @  2025")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.resx"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -2176,35 +2227,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 </root>]]></ProjectItem>
-              <ProjectItem
-                Name="Properties\Settings.Designer.cs"
-                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_581a3e063afc4f8e9ef1d99a79e2285b.Properties.Settings.get_Default():ST_581a3e063afc4f8e9ef1d99a79e2285b.Properties.Sett" +
-    "ings")]
-
-namespace ST_581a3e063afc4f8e9ef1d99a79e2285b.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
               <ProjectItem
                 Name="ScriptMain.cs"
                 Encoding="UTF8"><![CDATA[#region Namespaces
@@ -2343,35 +2365,34 @@ namespace ST_581a3e063afc4f8e9ef1d99a79e2285b.Properties {
   </msb:ItemGroup>
 </c:Project>]]></ProjectItem>
               <ProjectItem
-                Name="Properties\AssemblyInfo.cs"
-                Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
+                Name="Properties\Settings.Designer.cs"
+                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
 
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_581a3e063afc4f8e9ef1d99a79e2285b")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_581a3e063afc4f8e9ef1d99a79e2285b")]
-[assembly: AssemblyCopyright("Copyright @  2025")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_581a3e063afc4f8e9ef1d99a79e2285b.Properties.Settings.get_Default():ST_581a3e063afc4f8e9ef1d99a79e2285b.Properties.Sett" +
+    "ings")]
 
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+namespace ST_581a3e063afc4f8e9ef1d99a79e2285b.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Settings.settings"
                 Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
@@ -2609,7 +2630,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{56D8005A-AF9A-48EC-BAA4-B35979BA779B}"
+              SQLTask:Connection="{5EB914B5-B233-4344-980C-4F16DC92AC9F}"
               SQLTask:SqlStatementSource="SELECT &#xA;    LSET,&#xA;    CET&#xA;FROM data_flowTable&#xA;WHERE flow_name = 'Flights';"
               SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ResultBinding
@@ -3495,7 +3516,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=17.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -3508,7 +3529,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
                       dataType="System.Int32"
                       description="Specifies the mode used to access the database."
                       name="AccessMode"
-                      typeConverter="AccessMode">3</property>
+                      typeConverter="AccessMode">0</property>
                     <property
                       dataType="System.Boolean"
                       description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
@@ -3529,8 +3550,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
                   <connections>
                     <connection
                       refId="Package\Foreach Loop Container\Import data from Flight_csv to Stage\OLE DB Destination Flights.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[DYLE\MSSQLSERVER3.HTTTKD_STAGE]"
-                      connectionManagerRefId="Package.ConnectionManagers[DYLE\MSSQLSERVER3.HTTTKD_STAGE]"
+                      connectionManagerID="Package.ConnectionManagers[HoangDung.HTTTKD_STAGE.dungluonghoang]"
+                      connectionManagerRefId="Package.ConnectionManagers[HoangDung.HTTTKD_STAGE.dungluonghoang]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -3637,17 +3658,17 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\Import data from Flight_csv to Stage\OLE DB Destination Flights.Inputs[OLE DB Destination Input].ExternalColumns[SCHEDULED_DEPARTURE]"
                           dataType="wstr"
-                          length="10"
+                          length="50"
                           name="SCHEDULED_DEPARTURE" />
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\Import data from Flight_csv to Stage\OLE DB Destination Flights.Inputs[OLE DB Destination Input].ExternalColumns[DEPARTURE_TIME]"
                           dataType="wstr"
-                          length="10"
+                          length="50"
                           name="DEPARTURE_TIME" />
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\Import data from Flight_csv to Stage\OLE DB Destination Flights.Inputs[OLE DB Destination Input].ExternalColumns[DEPARTURE_DELAY]"
                           dataType="wstr"
-                          length="10"
+                          length="50"
                           name="DEPARTURE_DELAY" />
                       </externalMetadataColumns>
                     </input>
@@ -3702,7 +3723,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=17.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -3715,7 +3736,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
                       dataType="System.Int32"
                       description="Specifies the mode used to access the database."
                       name="AccessMode"
-                      typeConverter="AccessMode">3</property>
+                      typeConverter="AccessMode">0</property>
                     <property
                       dataType="System.Boolean"
                       description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
@@ -3736,8 +3757,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
                   <connections>
                     <connection
                       refId="Package\Foreach Loop Container\Import data from Flight_csv to Stage\OLE DB Destination Flights_detail.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[DYLE\MSSQLSERVER3.HTTTKD_STAGE]"
-                      connectionManagerRefId="Package.ConnectionManagers[DYLE\MSSQLSERVER3.HTTTKD_STAGE]"
+                      connectionManagerID="Package.ConnectionManagers[HoangDung.HTTTKD_STAGE.dungluonghoang]"
+                      connectionManagerRefId="Package.ConnectionManagers[HoangDung.HTTTKD_STAGE.dungluonghoang]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -4025,7 +4046,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{56D8005A-AF9A-48EC-BAA4-B35979BA779B}"
+              SQLTask:Connection="{5EB914B5-B233-4344-980C-4F16DC92AC9F}"
               SQLTask:SqlStatementSource="DECLARE @srcKey INT;&#xA;&#xA;IF NOT EXISTS (&#xA;    SELECT 1 FROM  HTTTKD_ETL_Metadata.dbo.sourceTable&#xA;    WHERE sourceName = ?&#xA;)&#xA;BEGIN&#xA;    INSERT INTO HTTTKD_ETL_Metadata.dbo.sourceTable&#xA;        (sourceName, sourcePath, lastExtract)&#xA;    VALUES (?, ?, GETDATE());&#xA;END;&#xA;&#xA;SELECT @srcKey = sourceID&#xA;FROM HTTTKD_ETL_Metadata.dbo.sourceTable&#xA;WHERE sourceName = ?;&#xA;&#xA;UPDATE HTTTKD_ETL_Metadata.dbo.data_flowTable&#xA;SET source = @srcKey&#xA;WHERE flow_name = 'Flights';&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
@@ -4084,8 +4105,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{CDDD2B48-6530-4C70-8E5D-EB9522F0C925}"
-          DTS:ObjectName="{CDDD2B48-6530-4C70-8E5D-EB9522F0C925}"
+          DTS:DTSID="{BA176728-5933-406D-BA27-3B3167162144}"
+          DTS:ObjectName="{BA176728-5933-406D-BA27-3B3167162144}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::FilePath" />
       </DTS:ForEachVariableMappings>
@@ -4105,7 +4126,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
         <DTS:ObjectData>
           <ForEachFileEnumeratorProperties>
             <FEFEProperty
-              Folder="D:\sinhviennam4\HTTTPVTTKD\DoAnTH\HTTTKD\DataSource" />
+              Folder="D:\YEAR4\HK1\HTTTPVTTKD\DoAn\DataSource" />
             <FEFEProperty
               FileSpec="*airport*.csv" />
             <FEFEProperty
@@ -4134,6 +4155,36 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
               VSTAMinorVersion="0"
               Language="CSharp"
               ReadWriteVariables="User::FilePath,User::SourceName">
+              <ProjectItem
+                Name="Properties\AssemblyInfo.cs"
+                Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_d23d686fda4a4134aa1d6af926d4d3d6")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_d23d686fda4a4134aa1d6af926d4d3d6")]
+[assembly: AssemblyCopyright("Copyright @  2025")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.resx"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -4253,35 +4304,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 </root>]]></ProjectItem>
-              <ProjectItem
-                Name="Properties\Settings.Designer.cs"
-                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_d23d686fda4a4134aa1d6af926d4d3d6.Properties.Settings.get_Default():ST_d23d686fda4a4134aa1d6af926d4d3d6.Properties.Sett" +
-    "ings")]
-
-namespace ST_d23d686fda4a4134aa1d6af926d4d3d6.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
               <ProjectItem
                 Name="ScriptMain.cs"
                 Encoding="UTF8"><![CDATA[#region Namespaces
@@ -4425,7 +4447,7 @@ namespace ST_DetectSourceFile
     <msb:CodeName>ST_77040d963bcb42939010e7e51c6f844b</msb:CodeName>
     <msb:Language>msBuild</msb:Language>
     <msb:DisplayName>ST_77040d963bcb42939010e7e51c6f844b</msb:DisplayName>
-    <msb:ProjectId>{26EF5DF6-AAFE-4E00-A2AE-22D298CE9C3A}</msb:ProjectId>
+    <msb:ProjectId>{D172D25E-68CE-4A28-A207-DB462448AFC4}</msb:ProjectId>
   </msb:PropertyGroup>
   <msb:ItemGroup>
     <msb:Project Include="ST_77040d963bcb42939010e7e51c6f844b.csproj" />
@@ -4438,35 +4460,34 @@ namespace ST_DetectSourceFile
   </msb:ItemGroup>
 </c:Project>]]></ProjectItem>
               <ProjectItem
-                Name="Properties\AssemblyInfo.cs"
-                Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
+                Name="Properties\Settings.Designer.cs"
+                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
 
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_d23d686fda4a4134aa1d6af926d4d3d6")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_d23d686fda4a4134aa1d6af926d4d3d6")]
-[assembly: AssemblyCopyright("Copyright @  2025")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_d23d686fda4a4134aa1d6af926d4d3d6.Properties.Settings.get_Default():ST_d23d686fda4a4134aa1d6af926d4d3d6.Properties.Sett" +
+    "ings")]
 
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+namespace ST_d23d686fda4a4134aa1d6af926d4d3d6.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Settings.settings"
                 Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
@@ -4547,12 +4568,12 @@ namespace ST_d23d686fda4a4134aa1d6af926d4d3d6.Properties {
               <BinaryItem
                 Name="ST_77040d963bcb42939010e7e51c6f844b.dll">TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
-ZGUuDQ0KJAAAAAAAAABQRQAATAEDAMk2BWkAAAAAAAAAAOAAIiALATAAABIAAAAIAAAAAAAACjAA
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAMMPEGkAAAAAAAAAAOAAIiALATAAABIAAAAIAAAAAAAACjAA
 AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
-ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAALgvAABPAAAAAEAAAGwEAAAAAAAAAAAAAAAAAAAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAALgvAABPAAAAAEAAAHgEAAAAAAAAAAAAAAAAAAAA
 AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAAEBAAAAAgAAAAEgAAAAIA
-AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAGwEAAAAQAAAAAYAAAAUAAAAAAAAAAAAAAAAAABAAABA
+AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAHgEAAAAQAAAAAYAAAAUAAAAAAAAAAAAAAAAAABAAABA
 LnJlbG9jAAAMAAAAAGAAAAACAAAAGgAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAADs
 LwAAAAAAAEgAAAACAAUAlCEAAGwNAAABAAAAAAAAAAAvAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAABswBwC+AAAAAQAAEQIoEAAACm8RAAAKcgEAAHBvEgAACm8T
@@ -4579,7 +4600,7 @@ UgDJAN4FAQB5AHgANwDxAMQFXQDpAKgEYwBxALIEBgCRALIEBgD5AJ8AbAD5AO0FdACZALIEegC5
 ALIEBgAIABQAlAAIABgAmQApAHMAAQEuAAsA2QAuABMA4gAuABsAAQEuACMACgEuACsAMwEuADMA
 MwEuADsAMwEuAEMACgEuAEsAOQEuAFMAMwEuAFsAUAFDAGMAmQBJAHMAAQFhAHsAmQBjAGsAmQAb
 AAMAAQAEAAMAAACEBMoAAAASAc8AAADWBdQAAgAEAAMAAgAFAAUAAQAGAAUAAgAHAAcABIAAAAEA
-AADcJNwlAAAAAAAAOwAAAAQAAAAAAAAAAAAAAIIAXwAAAAAAEAAAAAAAAAAAAAAAiwA+AwAAAAAE
+AADkJFlMAAAAAAAAOwAAAAQAAAAAAAAAAAAAAIIAXwAAAAAAEAAAAAAAAAAAAAAAiwA+AwAAAAAE
 AAAAAAAAAAAAAACCAN8DAAAAABAAAAAAAAAAAAAAAIsAFAAAAAAAAAAAAAEAAAADBQAABQACAAAA
 ADxNb2R1bGU+AFN5c3RlbS5JTwBNaWNyb3NvZnQuU3FsU2VydmVyLk1hbmFnZWREVFMAdmFsdWVf
 XwBTVF83NzA0MGQ5NjNiY2I0MjkzOTAxMGU3ZTUxYzZmODQ0YgBtc2NvcmxpYgBkZWZhdWx0SW5z
@@ -4613,8 +4634,8 @@ ACVEAGUAdABlAGMAdAAgAFMAbwB1AHIAYwBlACAARgBpAGwAZQAAH0QAZQB0AGUAYwB0AGUAZAAg
 AGYAaQBsAGUAOgAgAAApCgBTAG8AdQByAGMAZQBOAGEAbQBlACAAcwBlAHQAIAB0AG8AOgAgAAAB
 AC1FAHIAcgBvAHIAIABkAGUAdABlAGMAdABpAG4AZwAgAGYAaQBsAGUAOgAgAABxUwBUAF8AZAAy
 ADMAZAA2ADgANgBmAGQAYQA0AGEANAAxADMANABhAGEAMQBkADYAYQBmADkAMgA2AGQANABkADMA
-ZAA2AC4AUAByAG8AcABlAHIAdABpAGUAcwAuAFIAZQBzAG8AdQByAGMAZQBzAAAA1fUatFqNk0Wa
-R7aav+RkOAAEIAEBCAMgAAEFIAEBEREEIAEBDgUgAQERVQcHBA4OAhI9BCAAEmUEIAASaQUgARJt
+ZAA2AC4AUAByAG8AcABlAHIAdABpAGUAcwAuAFIAZQBzAG8AdQByAGMAZQBzAAAAXuDSCkP0wkCV
+nLDjBE2WkwAEIAEBCAMgAAEFIAEBEREEIAEBDgUgAQERVQcHBA4OAhI9BCAAEmUEIAASaQUgARJt
 HAMgABwDIAAOBAABDg4EIAEBHAQgABJ1BwAEDg4ODg4KIAYBCA4ODggQAgUAAg4ODgggBQIIDg4O
 CAcAARJ9EYCBBSAAEoCFByACAQ4SgIUIt3pcVhk04IkIiYRdzYCAzJEEAAAAAAQBAAAAAwYSTQMG
 ElEDBhIQAgYIAwYRFAQAABJNBAAAElEFAAEBElEEAAASEAMAAAEECAASTQQIABJRBAgAEhAIAQAI
@@ -4636,25 +4657,25 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAEAEAAAABgAAIAAAAAAAAAAAAAAAAAAAAEAAQAAADAAAIAAAAAAAAAAAAAAAAAAAAEAAAAA
-AEgAAABYQAAAEAQAAAAAAAAAAAAAEAQ0AAAAVgBTAF8AVgBFAFIAUwBJAE8ATgBfAEkATgBGAE8A
-AAAAAL0E7/4AAAEAAAABANwl3CQAAAEA3CXcJD8AAAAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAABE
+AEgAAABYQAAAGgQAAAAAAAAAAAAAGgQ0AAAAVgBTAF8AVgBFAFIAUwBJAE8ATgBfAEkATgBGAE8A
+AAAAAL0E7/4AAAEAAAABAFlM5CQAAAEAWUzkJD8AAAAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAABE
 AAAAAQBWAGEAcgBGAGkAbABlAEkAbgBmAG8AAAAAACQABAAAAFQAcgBhAG4AcwBsAGEAdABpAG8A
-bgAAAAAAAACwBHADAAABAFMAdAByAGkAbgBnAEYAaQBsAGUASQBuAGYAbwAAAEwDAAABADAAMAAw
+bgAAAAAAAACwBHoDAAABAFMAdAByAGkAbgBnAEYAaQBsAGUASQBuAGYAbwAAAFYDAAABADAAMAAw
 ADAAMAA0AGIAMAAAABoAAQABAEMAbwBtAG0AZQBuAHQAcwAAAAAAAAAiAAEAAQBDAG8AbQBwAGEA
 bgB5AE4AYQBtAGUAAAAAAAAAAABwACQAAQBGAGkAbABlAEQAZQBzAGMAcgBpAHAAdABpAG8AbgAA
 AAAAUwBUAF8AZAAyADMAZAA2ADgANgBmAGQAYQA0AGEANAAxADMANABhAGEAMQBkADYAYQBmADkA
-MgA2AGQANABkADMAZAA2AAAAPAAOAAEARgBpAGwAZQBWAGUAcgBzAGkAbwBuAAAAAAAxAC4AMAAu
-ADkANAAzADYALgA5ADYAOQAyAAAAcAAoAAEASQBuAHQAZQByAG4AYQBsAE4AYQBtAGUAAABTAFQA
-XwA3ADcAMAA0ADAAZAA5ADYAMwBiAGMAYgA0ADIAOQAzADkAMAAxADAAZQA3AGUANQAxAGMANgBm
-ADgANAA0AGIALgBkAGwAbAAAAEgAEgABAEwAZQBnAGEAbABDAG8AcAB5AHIAaQBnAGgAdAAAAEMA
-bwBwAHkAcgBpAGcAaAB0ACAAQAAgACAAMgAwADIANQAAACoAAQABAEwAZQBnAGEAbABUAHIAYQBk
-AGUAbQBhAHIAawBzAAAAAAAAAAAAeAAoAAEATwByAGkAZwBpAG4AYQBsAEYAaQBsAGUAbgBhAG0A
-ZQAAAFMAVABfADcANwAwADQAMABkADkANgAzAGIAYwBiADQAMgA5ADMAOQAwADEAMABlADcAZQA1
-ADEAYwA2AGYAOAA0ADQAYgAuAGQAbABsAAAAaAAkAAEAUAByAG8AZAB1AGMAdABOAGEAbQBlAAAA
-AABTAFQAXwBkADIAMwBkADYAOAA2AGYAZABhADQAYQA0ADEAMwA0AGEAYQAxAGQANgBhAGYAOQAy
-ADYAZAA0AGQAMwBkADYAAABAAA4AAQBQAHIAbwBkAHUAYwB0AFYAZQByAHMAaQBvAG4AAAAxAC4A
-MAAuADkANAAzADYALgA5ADYAOQAyAAAARAAOAAEAQQBzAHMAZQBtAGIAbAB5ACAAVgBlAHIAcwBp
-AG8AbgAAADEALgAwAC4AOQA0ADMANgAuADkANgA5ADIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+MgA2AGQANABkADMAZAA2AAAAPgAPAAEARgBpAGwAZQBWAGUAcgBzAGkAbwBuAAAAAAAxAC4AMAAu
+ADkANAA0ADQALgAxADkANQA0ADUAAAAAAHAAKAABAEkAbgB0AGUAcgBuAGEAbABOAGEAbQBlAAAA
+UwBUAF8ANwA3ADAANAAwAGQAOQA2ADMAYgBjAGIANAAyADkAMwA5ADAAMQAwAGUANwBlADUAMQBj
+ADYAZgA4ADQANABiAC4AZABsAGwAAABIABIAAQBMAGUAZwBhAGwAQwBvAHAAeQByAGkAZwBoAHQA
+AABDAG8AcAB5AHIAaQBnAGgAdAAgAEAAIAAgADIAMAAyADUAAAAqAAEAAQBMAGUAZwBhAGwAVABy
+AGEAZABlAG0AYQByAGsAcwAAAAAAAAAAAHgAKAABAE8AcgBpAGcAaQBuAGEAbABGAGkAbABlAG4A
+YQBtAGUAAABTAFQAXwA3ADcAMAA0ADAAZAA5ADYAMwBiAGMAYgA0ADIAOQAzADkAMAAxADAAZQA3
+AGUANQAxAGMANgBmADgANAA0AGIALgBkAGwAbAAAAGgAJAABAFAAcgBvAGQAdQBjAHQATgBhAG0A
+ZQAAAAAAUwBUAF8AZAAyADMAZAA2ADgANgBmAGQAYQA0AGEANAAxADMANABhAGEAMQBkADYAYQBm
+ADkAMgA2AGQANABkADMAZAA2AAAAQgAPAAEAUAByAG8AZAB1AGMAdABWAGUAcgBzAGkAbwBuAAAA
+MQAuADAALgA5ADQANAA0AC4AMQA5ADUANAA1AAAAAABGAA8AAQBBAHMAcwBlAG0AYgBsAHkAIABW
+AGUAcgBzAGkAbwBuAAAAMQAuADAALgA5ADQANAA0AC4AMQA5ADUANAA1AAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -4686,7 +4707,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{56D8005A-AF9A-48EC-BAA4-B35979BA779B}"
+              SQLTask:Connection="{5EB914B5-B233-4344-980C-4F16DC92AC9F}"
               SQLTask:SqlStatementSource="SELECT &#xA;    LSET,&#xA;    CET&#xA;FROM data_flowTable&#xA;WHERE flow_name = 'Airports';"
               SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ResultBinding
@@ -5009,7 +5030,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=17.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -5022,7 +5043,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
                       dataType="System.Int32"
                       description="Specifies the mode used to access the database."
                       name="AccessMode"
-                      typeConverter="AccessMode">3</property>
+                      typeConverter="AccessMode">0</property>
                     <property
                       dataType="System.Boolean"
                       description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
@@ -5043,8 +5064,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
                   <connections>
                     <connection
                       refId="Package\Foreach Loop Container Airports\Import data from Airport_csv to Stage\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[DYLE\MSSQLSERVER3.HTTTKD_STAGE]"
-                      connectionManagerRefId="Package.ConnectionManagers[DYLE\MSSQLSERVER3.HTTTKD_STAGE]"
+                      connectionManagerID="Package.ConnectionManagers[HoangDung.HTTTKD_STAGE.dungluonghoang]"
+                      connectionManagerRefId="Package.ConnectionManagers[HoangDung.HTTTKD_STAGE.dungluonghoang]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -5192,7 +5213,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{56D8005A-AF9A-48EC-BAA4-B35979BA779B}"
+              SQLTask:Connection="{5EB914B5-B233-4344-980C-4F16DC92AC9F}"
               SQLTask:SqlStatementSource="DECLARE @srcKey INT;&#xA;&#xA;IF NOT EXISTS (&#xA;    SELECT 1 FROM  HTTTKD_ETL_Metadata.dbo.sourceTable&#xA;    WHERE sourceName = ?&#xA;)&#xA;BEGIN&#xA;    INSERT INTO HTTTKD_ETL_Metadata.dbo.sourceTable&#xA;        (sourceName, sourcePath, lastExtract)&#xA;    VALUES (?, ?, GETDATE());&#xA;END;&#xA;&#xA;SELECT @srcKey = sourceID&#xA;FROM HTTTKD_ETL_Metadata.dbo.sourceTable&#xA;WHERE sourceName = ?;&#xA;&#xA;UPDATE HTTTKD_ETL_Metadata.dbo.data_flowTable&#xA;SET source = @srcKey&#xA;WHERE flow_name = 'Airports';&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
@@ -5251,8 +5272,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{D837565B-8D22-499F-895D-A9EDBC5CFC23}"
-          DTS:ObjectName="{D837565B-8D22-499F-895D-A9EDBC5CFC23}"
+          DTS:DTSID="{E92F031E-559D-4BBB-A6A7-A2EDDA1D2775}"
+          DTS:ObjectName="{E92F031E-559D-4BBB-A6A7-A2EDDA1D2775}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::FilePath" />
       </DTS:ForEachVariableMappings>
@@ -5265,11 +5286,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Set CET to Metadata Airlines"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{56D8005A-AF9A-48EC-BAA4-B35979BA779B}"
+          SQLTask:Connection="{5EB914B5-B233-4344-980C-4F16DC92AC9F}"
           SQLTask:SqlStatementSource="DECLARE @pkgKey INT;&#xA;IF NOT EXISTS (&#xA;    SELECT 1 FROM HTTTKD_ETL_Metadata.dbo.packageTable&#xA;    WHERE package_name = 'Source_to_Stage'&#xA;)&#xA;BEGIN&#xA;    INSERT INTO HTTTKD_ETL_Metadata.dbo.packageTable&#xA;        (package_name, description, schedule)&#xA;    VALUES&#xA;        ('Source_to_Stage',&#xA;         N'ETL process from CSV source to Stage',&#xA;         N'Run manually for now');&#xA;END;&#xA;&#xA;SELECT @pkgKey = package_key&#xA;FROM HTTTKD_ETL_Metadata.dbo.packageTable&#xA;WHERE package_name = 'Source_to_Stage';&#xA;&#xA;IF NOT EXISTS (&#xA;    SELECT 1 FROM HTTTKD_ETL_Metadata.dbo.data_flowTable&#xA;    WHERE flow_name = 'Airlines'&#xA;)&#xA;BEGIN&#xA;    INSERT INTO HTTTKD_ETL_Metadata.dbo.data_flowTable&#xA;        (flow_name, description, target, transformation, package_key, status_key, LSET, CET)&#xA;    VALUES&#xA;        ('Airlines',&#xA;         N'Extract Airlines data from source to stage',&#xA;         N'STG_Airlines',&#xA;         N'Full Load',&#xA;         @pkgKey,&#xA;         3,              -- &quot;In Progress&quot;&#xA;         '1900-01-01',&#xA;         GETDATE());&#xA;END&#xA;ELSE&#xA;BEGIN&#xA;    UPDATE HTTTKD_ETL_Metadata.dbo.data_flowTable&#xA;    SET CET = GETDATE(),&#xA;        status_key = 3&#xA;    WHERE flow_name = 'Airlines';&#xA;END;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -5281,11 +5302,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Set CET to Metadata Airports"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{56D8005A-AF9A-48EC-BAA4-B35979BA779B}"
+          SQLTask:Connection="{5EB914B5-B233-4344-980C-4F16DC92AC9F}"
           SQLTask:SqlStatementSource="DECLARE @pkgKey INT;&#xA;IF NOT EXISTS (&#xA;    SELECT 1 FROM HTTTKD_ETL_Metadata.dbo.packageTable&#xA;    WHERE package_name = 'Source_to_Stage'&#xA;)&#xA;BEGIN&#xA;    INSERT INTO HTTTKD_ETL_Metadata.dbo.packageTable&#xA;        (package_name, description, schedule)&#xA;    VALUES&#xA;        ('Source_to_Stage',&#xA;         N'ETL process from CSV source to Stage',&#xA;         N'Run manually for now');&#xA;END;&#xA;&#xA;SELECT @pkgKey = package_key&#xA;FROM HTTTKD_ETL_Metadata.dbo.packageTable&#xA;WHERE package_name = 'Source_to_Stage';&#xA;&#xA;IF NOT EXISTS (&#xA;    SELECT 1 FROM HTTTKD_ETL_Metadata.dbo.data_flowTable&#xA;    WHERE flow_name = 'Airports'&#xA;)&#xA;BEGIN&#xA;    INSERT INTO HTTTKD_ETL_Metadata.dbo.data_flowTable&#xA;        (flow_name, description, target, transformation, package_key, status_key, LSET, CET)&#xA;    VALUES&#xA;        ('Airports',&#xA;         N'Extract Airports data from source to stage',&#xA;         N'STG_Airports',&#xA;         N'Full Load',&#xA;         @pkgKey,&#xA;         3,              -- &quot;In Progress&quot;&#xA;         '1900-01-01',&#xA;         GETDATE());&#xA;END&#xA;ELSE&#xA;BEGIN&#xA;    UPDATE HTTTKD_ETL_Metadata.dbo.data_flowTable&#xA;    SET CET = GETDATE(),&#xA;        status_key = 3&#xA;    WHERE flow_name = 'Airports';&#xA;END;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -5301,7 +5322,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{56D8005A-AF9A-48EC-BAA4-B35979BA779B}"
+          SQLTask:Connection="{5EB914B5-B233-4344-980C-4F16DC92AC9F}"
           SQLTask:SqlStatementSource="DECLARE @pkgKey INT;&#xA;IF NOT EXISTS (&#xA;    SELECT 1 FROM HTTTKD_ETL_Metadata.dbo.packageTable&#xA;    WHERE package_name = 'Source_to_Stage'&#xA;)&#xA;BEGIN&#xA;    INSERT INTO HTTTKD_ETL_Metadata.dbo.packageTable&#xA;        (package_name, description, schedule)&#xA;    VALUES&#xA;        ('Source_to_Stage',&#xA;         N'ETL process from CSV source to Stage',&#xA;         N'Run manually for now');&#xA;END;&#xA;&#xA;SELECT @pkgKey = package_key&#xA;FROM HTTTKD_ETL_Metadata.dbo.packageTable&#xA;WHERE package_name = 'Source_to_Stage';&#xA;&#xA;IF NOT EXISTS (&#xA;    SELECT 1 FROM HTTTKD_ETL_Metadata.dbo.data_flowTable&#xA;    WHERE flow_name = 'Flights'&#xA;)&#xA;BEGIN&#xA;    INSERT INTO HTTTKD_ETL_Metadata.dbo.data_flowTable&#xA;        (flow_name, description, target, transformation, package_key, status_key, LSET, CET)&#xA;    VALUES&#xA;        ('Flights',&#xA;         N'Extract Flights data from source to stage',&#xA;         N'STG_Flights',&#xA;         N'Full Load',&#xA;         @pkgKey,&#xA;         3,              -- &quot;In Progress&quot;&#xA;         '1900-01-01',&#xA;         GETDATE());&#xA;END&#xA;ELSE&#xA;BEGIN&#xA;    UPDATE HTTTKD_ETL_Metadata.dbo.data_flowTable&#xA;    SET CET = GETDATE(),&#xA;        status_key = 3&#xA;    WHERE flow_name = 'Flights';&#xA;END;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -5313,11 +5334,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Truncate table Airlines"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{E80C67A6-D978-49ED-8E0A-F41DC1456686}"
+          SQLTask:Connection="{DDB56849-E99F-4398-A389-7ED97CED148D}"
           SQLTask:SqlStatementSource="TRUNCATE TABLE Airlines;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -5329,11 +5350,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Truncate table Airports"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{E80C67A6-D978-49ED-8E0A-F41DC1456686}"
+          SQLTask:Connection="{DDB56849-E99F-4398-A389-7ED97CED148D}"
           SQLTask:SqlStatementSource="TRUNCATE TABLE Airports;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -5349,7 +5370,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{E80C67A6-D978-49ED-8E0A-F41DC1456686}"
+          SQLTask:Connection="{DDB56849-E99F-4398-A389-7ED97CED148D}"
           SQLTask:SqlStatementSource="TRUNCATE TABLE Flights;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -5361,11 +5382,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Update LSET Airlines to Metadata"
-      DTS:ThreadHint="3">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{56D8005A-AF9A-48EC-BAA4-B35979BA779B}"
+          SQLTask:Connection="{5EB914B5-B233-4344-980C-4F16DC92AC9F}"
           SQLTask:SqlStatementSource="UPDATE HTTTKD_ETL_Metadata.dbo.data_flowTable&#xA;SET &#xA;    LSET = CET,       -- Lưu CET hiện tại làm mốc cho lần extract kế tiếp&#xA;    CET = NULL,       -- Xóa CET tạm&#xA;    status_key = 1    -- 1 = Success&#xA;WHERE flow_name = 'Airlines';" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -5381,7 +5402,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{56D8005A-AF9A-48EC-BAA4-B35979BA779B}"
+          SQLTask:Connection="{5EB914B5-B233-4344-980C-4F16DC92AC9F}"
           SQLTask:SqlStatementSource="UPDATE HTTTKD_ETL_Metadata.dbo.data_flowTable&#xA;SET &#xA;    LSET = CET,       -- Lưu CET hiện tại làm mốc cho lần extract kế tiếp&#xA;    CET = NULL,       -- Xóa CET tạm&#xA;    status_key = 1    -- 1 = Success&#xA;WHERE flow_name = 'Airports';" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -5489,6 +5510,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       <GraphLayout
         Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="164.8,41.6"
+          Id="Package\Execute SQL Task"
+          TopLeft="974.083284045675,753.41666192818" />
+        <NodeLayout
           Size="218.4,41.6"
           Id="Package\Foreach Loop Airlines\Detect Source System Airlines"
           TopLeft="35.6249947752801,10.2666653769547" />
@@ -5576,7 +5601,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           PanelSize="300.8,376"
           Size="300.8,419.2"
           Id="Package\Foreach Loop Airlines"
-          TopLeft="118.425919455419,278.933332200315" />
+          TopLeft="120.925919318825,278.066665539675" />
         <NodeLayout
           Size="209.6,41.6"
           Id="Package\Foreach Loop Container\Detect Source System Flight"
@@ -5791,6 +5816,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           Size="178.4,41.6"
           Id="Package\Truncate table Flights"
           TopLeft="911.666616855399,152.285713226738" />
+        <NodeLayout
+          Size="235.2,41.6"
+          Id="Package\Update LSET Airlines to Metadata"
+          TopLeft="149.458333253653,729.816663871789" />
+        <NodeLayout
+          Size="236.8,41.6"
+          Id="Package\Update LSET Airports to Metadata"
+          TopLeft="536.89285695748,753.747616153085" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="246.911896647573,115.019047108501">
@@ -5819,26 +5852,48 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="24.692594499849,68.3333333755201"
+              EndConnector="27.1925943632551,67.4666667148801"
               Start="0,0"
-              End="24.692594499849,60.8333333755201">
+              End="27.1925943632551,59.9666667148801">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,30.1666666877601" />
+                    End="0,29.7333333574401" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,30.1666666877601"
-                    Point2="0,34.1666666877601"
-                    Point3="4,34.1666666877601" />
+                    Point1="0,29.7333333574401"
+                    Point2="0,33.7333333574401"
+                    Point3="4,33.7333333574401" />
                   <mssgle:LineSegment
-                    End="20.692594499849,34.1666666877601" />
+                    End="23.1925943632551,33.7333333574401" />
                   <mssgle:CubicBezierSegment
-                    Point1="20.692594499849,34.1666666877601"
-                    Point2="24.692594499849,34.1666666877601"
-                    Point3="24.692594499849,38.1666666877601" />
+                    Point1="23.1925943632551,33.7333333574401"
+                    Point2="27.1925943632551,33.7333333574401"
+                    Point3="27.1925943632551,37.7333333574401" />
                   <mssgle:LineSegment
-                    End="24.692594499849,60.8333333755201" />
+                    End="27.1925943632551,59.9666667148801" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 10]"
+          TopLeft="1059.31066518506,689.885712141934">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,63.5309497862462"
+              Start="0,0"
+              End="0,56.0309497862462">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,56.0309497862462" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5875,26 +5930,26 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="12.2821445792025,82.9357142889433"
+              EndConnector="12.2821445792028,82.935714288943"
               Start="0,0"
-              End="12.2821445792025,75.4357142889433">
+              End="12.2821445792028,75.435714288943">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,37.4678571444716" />
+                    End="0,37.4678571444715" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,37.4678571444716"
-                    Point2="0,41.4678571444716"
-                    Point3="4,41.4678571444716" />
+                    Point1="0,37.4678571444715"
+                    Point2="0,41.4678571444715"
+                    Point3="4,41.4678571444715" />
                   <mssgle:LineSegment
-                    End="8.28214457920251,41.4678571444716" />
+                    End="8.28214457920285,41.4678571444715" />
                   <mssgle:CubicBezierSegment
-                    Point1="8.28214457920251,41.4678571444716"
-                    Point2="12.2821445792025,41.4678571444716"
-                    Point3="12.2821445792025,45.4678571444716" />
+                    Point1="8.28214457920285,41.4678571444715"
+                    Point2="12.2821445792028,41.4678571444715"
+                    Point3="12.2821445792028,45.4678571444715" />
                   <mssgle:LineSegment
-                    End="12.2821445792025,75.4357142889433" />
+                    End="12.2821445792028,75.435714288943" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5905,30 +5960,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="419.225919455419,488.533332200315">
+          TopLeft="421.725919318825,487.666665539675">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="95.7990523720746,21.2499999954801"
+              EndConnector="93.2990525086689,22.1166666561198"
               Start="0,0"
-              End="88.2990523720746,21.2499999954801">
+              End="85.7990525086689,22.1166666561198">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="43.8995261860373,0" />
+                    End="42.6495262543344,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="43.8995261860373,0"
-                    Point2="47.8995261860373,0"
-                    Point3="47.8995261860373,4" />
+                    Point1="42.6495262543344,0"
+                    Point2="46.6495262543344,0"
+                    Point3="46.6495262543344,4" />
                   <mssgle:LineSegment
-                    End="47.8995261860373,17.2499999954801" />
+                    End="46.6495262543344,18.1166666561198" />
                   <mssgle:CubicBezierSegment
-                    Point1="47.8995261860373,17.2499999954801"
-                    Point2="47.8995261860373,21.2499999954801"
-                    Point3="51.8995261860373,21.2499999954801" />
+                    Point1="46.6495262543344,18.1166666561198"
+                    Point2="46.6495262543344,22.1166666561198"
+                    Point3="50.6495262543344,22.1166666561198" />
                   <mssgle:LineSegment
-                    End="88.2990523720746,21.2499999954801" />
+                    End="85.7990525086689,22.1166666561198" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6027,24 +6082,20 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="235.2,41.6"
-          Id="Package\Update LSET Airlines to Metadata"
-          TopLeft="149.458333253653,729.816663871789" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 8]"
-          TopLeft="267.942126354536,698.133332200315">
+          TopLeft="269.192126286239,697.266665539675">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,31.6833316714743"
+              EndConnector="0,32.5499983321139"
               Start="0,0"
-              End="0,24.1833316714743">
+              End="0,25.0499983321139">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,24.1833316714743" />
+                    End="0,25.0499983321139" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6053,50 +6104,20 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="236.8,41.6"
-          Id="Package\Update LSET Airports to Metadata"
-          TopLeft="536.89285695748,753.747616153085" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 9]"
           TopLeft="655.958914392487,730.983332195795">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,22.76428395729"
+              EndConnector="0,22.7642839572901"
               Start="0,0"
-              End="0,15.26428395729">
+              End="0,15.2642839572901">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,15.26428395729" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="164.8,41.6"
-          Id="Package\Execute SQL Task"
-          TopLeft="974.083284045675,753.41666192818" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 10]"
-          TopLeft="1059.31066518506,689.885712141934">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,63.5309497862462"
-              Start="0,0"
-              End="0,56.0309497862462">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,56.0309497862462" />
+                    End="0,15.2642839572901" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

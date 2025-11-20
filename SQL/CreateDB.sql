@@ -162,6 +162,8 @@ select* from Airlines
 select* from Airports
 select top 5* from Flights
 select count(*) from Flights
+
+
 CREATE TABLE Airlines(
   IATA_CODE NVARCHAR(10),
   AIRLINE   NVARCHAR(255)
@@ -220,13 +222,36 @@ CREATE TABLE Flights_detail (
 GO
 
 
+---------------NDS AIRLINES------------------------
+
+USE HTTTKD_NDS
+GO
+
+-- 1. Tạo bảng Airlines trong NDS
+CREATE TABLE AirlinesNDS (
+    Airline_SK INT IDENTITY(1,1) PRIMARY KEY, -- Surrogate Key (Khóa tự tăng của hệ thống mình)
+    Airline_IATA NVARCHAR(10),                -- Business Key (Mã từ hệ thống nguồn)
+    Airline_Name NVARCHAR(255),
+    SourceID INT,                             -- Lấy từ bảng sourceTable bên Metadata
+    CreatedDate DATETIME DEFAULT GETDATE(),
+    UpdatedDate DATETIME DEFAULT GETDATE()
+);
+GO
+
+USE HTTTKD_NDS
+GO
+SELECT *
+FROM AirlinesNDS
 
 
 
 
+USE HTTTKD_STAGE
+GO
+-- Cập nhật tên hãng bay tại nguồn Stage
+UPDATE Airlines
+SET AIRLINE = 'United Airlines NEW TEST'
+WHERE IATA_CODE = 'UA';
 
-
-
-
-
-
+-- Kiểm tra lại xem đã đổi chưa
+SELECT * FROM Airlines WHERE IATA_CODE = 'UA';
