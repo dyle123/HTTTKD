@@ -15,7 +15,6 @@ select* from packageTable
 select* from data_flowTable
 select* from sourceTable
 
-
 CREATE TABLE packageTable 
 (
     package_key INT PRIMARY KEY IDENTITY(1,1),
@@ -179,6 +178,8 @@ CREATE TABLE Airports (
 );
 GO
 
+
+
 CREATE TABLE Flights (
 
     [DATE] NVARCHAR(20) NULL,
@@ -218,6 +219,23 @@ CREATE TABLE Flights_detail (
     [MODIFIED] DATETIME NULL             -- thời điểm cập nhật gần nhất
 );
 GO
+
+use HTTTKD_NDS
+go
+
+CREATE TABLE AirportsNDS (
+    Airport_SK INT PRIMARY KEY IDENTITY(1,1), 
+    IATA_CODE NVARCHAR(10) NOT NULL,
+    AIRPORT NVARCHAR(255),
+    CITY NVARCHAR(255),
+    STATE NVARCHAR(50),
+    COUNTRY NVARCHAR(50),
+    LATITUDE DECIMAL(9, 6),
+	LONGITUDE DECIMAL(9, 6),
+	UpdatedAt DATETIME
+);
+GO
+
 
 
 

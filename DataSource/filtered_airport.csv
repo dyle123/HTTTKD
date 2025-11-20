@@ -8,7 +8,7 @@ s,IATA_CODE,AIRPORT,CITY,STATE,COUNTRY,LATITUDE,LONGITUDE
 86,DFW,Dallas/Fort Worth International Airport,Dallas-Fort Worth,TX,USA,32.89595,-97.0372
 106,EWR,Newark Liberty International Airport,Newark,NJ,USA,40.6925,-74.16866
 151,IAH,George Bush Intercontinental Airport,Houston,TX,USA,29.98047,-95.33972
-166,JFK,John F. Kennedy International Airport (New York International Airport),New York,NY,USA,40.63975,-73.77893
+166,JFK,John F. Kennedy International Airport,New York International Airp,New York,NY,USA,40.63975,-73.77893
 176,LAX,Los Angeles International Airport,Los Angeles,CA,USA,33.94254,-118.40807
 182,LGA,LaGuardia Airport (Marine Air Terminal),New York,NY,USA,40.77724,-73.87261
 195,MDW,Chicago Midway International Airport,Chicago,IL,USA,41.78598,-87.75242

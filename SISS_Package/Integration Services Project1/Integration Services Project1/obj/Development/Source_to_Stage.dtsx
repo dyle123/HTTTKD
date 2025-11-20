@@ -7,12 +7,12 @@
   DTS:CreatorName="DYLE\ADMIN"
   DTS:DTSID="{1AFE2FCE-D380-4693-ADCA-30683AEE886D}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="17.0.1008.3"
+  DTS:LastModifiedProductVersion="16.0.5685.2"
   DTS:LocaleID="1066"
   DTS:ObjectName="Source_to_Stage"
   DTS:PackageType="5"
-  DTS:VersionBuild="196"
-  DTS:VersionGUID="{D154EF32-08F9-493D-BF01-A71CDBDCC233}">
+  DTS:VersionBuild="202"
+  DTS:VersionGUID="{32D8A72A-EED5-47DD-8A9B-51D3F62A2181}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -77,7 +77,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="s"
-              DTS:DTSID="{49A2B8E5-15F8-4DB8-B6F3-5ED5E4280D40}"
+              DTS:DTSID="{E505F3CC-6971-4D47-8C0C-C11780AEA0EC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -86,7 +86,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="IATA_CODE"
-              DTS:DTSID="{25AD8EE0-EAC0-4F3B-949E-6AF21A0B74D9}"
+              DTS:DTSID="{B08AA50A-F67B-4B3A-9A60-A19F5EBAFE71}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -95,7 +95,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="AIRPORT"
-              DTS:DTSID="{0B0112D4-5B7E-4C4C-AB83-5E440CE33207}"
+              DTS:DTSID="{020615FD-B788-4DD6-82A0-34A47044CB1F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -104,7 +104,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CITY"
-              DTS:DTSID="{D76A696F-D326-4C87-BF32-D1BA4CC54FB8}"
+              DTS:DTSID="{EAAC7FAA-9B92-4F2E-A4A5-051DB9AF22F3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -113,7 +113,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="STATE"
-              DTS:DTSID="{3BA4E423-A568-4688-B697-CDA54A26B0A9}"
+              DTS:DTSID="{55C5A699-022A-423D-8DC8-5EDE26A4B1C2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -122,23 +122,25 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="COUNTRY"
-              DTS:DTSID="{71AB5459-54E3-4500-8EE3-D751F8EF7278}"
+              DTS:DTSID="{1822FCAA-F76F-451A-A27C-A73DE70D0313}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="5"
+              DTS:MaximumWidth="10"
+              DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="LATITUDE"
-              DTS:DTSID="{62975A9A-1DF8-478C-A25F-87A41D20CB50}"
+              DTS:DTSID="{B0B4B91D-FF0B-4833-8FDB-42DA4BCC70E2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:DataType="5"
+              DTS:MaximumWidth="10"
+              DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="LONGITUDE"
-              DTS:DTSID="{AAF6086D-F22B-4C6E-A2EC-B67368FD794F}"
+              DTS:DTSID="{886D852D-FC6A-4D4D-B641-40E3DF9603F3}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -157,7 +159,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA3yYHH1ZwXka+yJZmX7J+PQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC1IUSPWuh9WkIO18CrCSVmrH8poVv1YYnZIrDZ/w17egAAAAAOgAAAAAIAACAAAAA1BpPWELntM0N8LE5dLkIL3lFxmeaTboqxEf5Ox18gORAAAACdqBJnY9dB3/jf4Hs5+LgJQAAAABJta5viAgivQkgWaZisMrHOReVJcj8+ggaSCMfvqLTzvZbtSi6bMXfkrGgwyWOHKpMRf3MKY/W3zGch9/Aqpec</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA3yYHH1ZwXka+yJZmX7J+PQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAChKxg8Xu+kCTsP/A1uEZVwPI28YyL1yubas9r4jOEj8AAAAAAOgAAAAAIAACAAAAC6sD49ANDiWDrOI1JK2FfhUpidXj1asVxPs/3wawuF8hAAAAB1pDfK0n41yQM8BmBB9rHuQAAAAO93es48xr9g+m8fNSmBCV9822c7jJp7Jb3SKnd5GvS2o8HW9qd4al4qDWQltrGYz3isrpdQJq+5Smicvb80lNU</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -174,7 +176,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA3yYHH1ZwXka+yJZmX7J+PQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACAcxLn9+p8kQ3TMAhFKbOyxU3Fe3DSr9BF34v4/tR3uAAAAAAOgAAAAAIAACAAAABa6lY1OTr+wMioYKbyo22QJX3wupMAkRYc5lbpUCUGehAAAAAmZIo0K+hmqmDvB3Ixe9TaQAAAAK6HAqocYt1SU8wQ9t8JvVqwXLUdB4DL55LNnhsc0uQ2yuakmLSVfO6seoZWGp7sf6FISV+ARMF8UrRzjFT81Cw</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA3yYHH1ZwXka+yJZmX7J+PQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABW/43gwkiLM/47tPa4zCg5sMH2fYZSxKbAn3S3Q+jvPgAAAAAOgAAAAAIAACAAAAAOLSGWwMrh/pqzH4AGnHnR/673OKQ55k8NapSxFgTocBAAAABJ5Rr43OLk5a5uqPDm7cqPQAAAAOVIDi6F9wxGwCO35FetAcj5dqSP28qF+yiQMQ6QoOTV1pQpEguVFmURcOCIrfrOluSG7m/9t8AzHwYAuzqj/s0</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1114,7 +1116,7 @@
           DTS:ExecutableType="Microsoft.ScriptTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Detect Source System Airlines"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <ScriptProject
@@ -1124,35 +1126,14 @@
               Language="CSharp"
               ReadWriteVariables="User::FilePath,User::SourceName">
               <ProjectItem
-                Name="Properties\AssemblyInfo.cs"
-                Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_d23d686fda4a4134aa1d6af926d4d3d6")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_d23d686fda4a4134aa1d6af926d4d3d6")]
-[assembly: AssemblyCopyright("Copyright @  2025")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+                Name="Properties\Settings.settings"
+                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.resx"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -1273,6 +1254,134 @@ using System.Runtime.CompilerServices;
   </resheader>
 </root>]]></ProjectItem>
               <ProjectItem
+                Name="Properties\Settings.Designer.cs"
+                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_d23d686fda4a4134aa1d6af926d4d3d6.Properties.Settings.get_Default():ST_d23d686fda4a4134aa1d6af926d4d3d6.Properties.Sett" +
+    "ings")]
+
+namespace ST_d23d686fda4a4134aa1d6af926d4d3d6.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
+              <ProjectItem
+                Name="ScriptMain.cs"
+                Encoding="UTF8"><![CDATA[#region Namespaces
+using System;
+using System.IO;
+using Microsoft.SqlServer.Dts.Runtime;
+#endregion
+
+namespace ST_DetectSourceFile
+{
+    [Microsoft.SqlServer.Dts.Tasks.ScriptTask.SSISScriptTaskEntryPointAttribute]
+    public partial class ScriptMain : Microsoft.SqlServer.Dts.Tasks.ScriptTask.VSTARTScriptObjectModelBase
+    {
+        public void Main()
+        {
+            try
+            {
+                // ?? L?y ???ng d?n file t? bi?n User::FilePath
+                string filePath = Dts.Variables["User::FilePath"].Value.ToString();
+
+                // ?? L?y t�n file (kh�ng k�m ph?n m? r?ng)
+                string fileNameNoExt = Path.GetFileNameWithoutExtension(filePath);
+
+                // ?? G�n l?i v�o bi?n SourceName
+                Dts.Variables["User::SourceName"].Value = fileNameNoExt;
+
+                // ?? In ra log ?? d? debug
+                bool fireAgain = true;
+                Dts.Events.FireInformation(0, "Detect Source File",
+                    $"Detected file: {filePath}\nSourceName set to: {fileNameNoExt}",
+                    "", 0, ref fireAgain);
+
+                Dts.TaskResult = (int)ScriptResults.Success;
+            }
+            catch (Exception ex)
+            {
+                Dts.Events.FireError(0, "Detect Source File",
+                    "Error detecting file: " + ex.Message, "", 0);
+                Dts.TaskResult = (int)ScriptResults.Failure;
+            }
+        }
+
+        enum ScriptResults
+        {
+            Success = Microsoft.SqlServer.Dts.Runtime.DTSExecResult.Success,
+            Failure = Microsoft.SqlServer.Dts.Runtime.DTSExecResult.Failure
+        };
+    }
+}]]></ProjectItem>
+              <ProjectItem
+                Name="Project"
+                Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="3.0" schemaVersion="1.0">
+  <msb:PropertyGroup>
+    <msb:Language>msBuild</msb:Language>
+    <msb:CodeName>ST_d23d686fda4a4134aa1d6af926d4d3d6</msb:CodeName>
+    <msb:DisplayName>ST_d23d686fda4a4134aa1d6af926d4d3d6</msb:DisplayName>
+    <msb:ProjectId>{6C8A6F9C-2EF5-4F6E-84DE-7994D325B168}</msb:ProjectId>
+  </msb:PropertyGroup>
+  <msb:ItemGroup>
+    <msb:Project Include="ST_d23d686fda4a4134aa1d6af926d4d3d6.csproj" />
+    <msb:File Include="Properties\Settings.settings" />
+    <msb:File Include="Properties\AssemblyInfo.cs" />
+    <msb:File Include="Properties\Resources.resx" />
+    <msb:File Include="Properties\Resources.Designer.cs" />
+    <msb:File Include="Properties\Settings.Designer.cs" />
+    <msb:File Include="ScriptMain.cs" />
+  </msb:ItemGroup>
+</c:Project>]]></ProjectItem>
+              <ProjectItem
+                Name="Properties\AssemblyInfo.cs"
+                Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_d23d686fda4a4134aa1d6af926d4d3d6")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_d23d686fda4a4134aa1d6af926d4d3d6")]
+[assembly: AssemblyCopyright("Copyright @  2025")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+              <ProjectItem
                 Name="ST_d23d686fda4a4134aa1d6af926d4d3d6.csproj"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -1371,113 +1480,6 @@ using System.Runtime.CompilerServices;
     </VisualStudio>
   </ProjectExtensions>
 </Project>]]></ProjectItem>
-              <ProjectItem
-                Name="ScriptMain.cs"
-                Encoding="UTF8"><![CDATA[#region Namespaces
-using System;
-using System.IO;
-using Microsoft.SqlServer.Dts.Runtime;
-#endregion
-
-namespace ST_DetectSourceFile
-{
-    [Microsoft.SqlServer.Dts.Tasks.ScriptTask.SSISScriptTaskEntryPointAttribute]
-    public partial class ScriptMain : Microsoft.SqlServer.Dts.Tasks.ScriptTask.VSTARTScriptObjectModelBase
-    {
-        public void Main()
-        {
-            try
-            {
-                // ?? L?y ???ng d?n file t? bi?n User::FilePath
-                string filePath = Dts.Variables["User::FilePath"].Value.ToString();
-
-                // ?? L?y t�n file (kh�ng k�m ph?n m? r?ng)
-                string fileNameNoExt = Path.GetFileNameWithoutExtension(filePath);
-
-                // ?? G�n l?i v�o bi?n SourceName
-                Dts.Variables["User::SourceName"].Value = fileNameNoExt;
-
-                // ?? In ra log ?? d? debug
-                bool fireAgain = true;
-                Dts.Events.FireInformation(0, "Detect Source File",
-                    $"Detected file: {filePath}\nSourceName set to: {fileNameNoExt}",
-                    "", 0, ref fireAgain);
-
-                Dts.TaskResult = (int)ScriptResults.Success;
-            }
-            catch (Exception ex)
-            {
-                Dts.Events.FireError(0, "Detect Source File",
-                    "Error detecting file: " + ex.Message, "", 0);
-                Dts.TaskResult = (int)ScriptResults.Failure;
-            }
-        }
-
-        enum ScriptResults
-        {
-            Success = Microsoft.SqlServer.Dts.Runtime.DTSExecResult.Success,
-            Failure = Microsoft.SqlServer.Dts.Runtime.DTSExecResult.Failure
-        };
-    }
-}]]></ProjectItem>
-              <ProjectItem
-                Name="Project"
-                Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
-<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="3.0" schemaVersion="1.0">
-  <msb:PropertyGroup>
-    <msb:Language>msBuild</msb:Language>
-    <msb:CodeName>ST_d23d686fda4a4134aa1d6af926d4d3d6</msb:CodeName>
-    <msb:DisplayName>ST_d23d686fda4a4134aa1d6af926d4d3d6</msb:DisplayName>
-    <msb:ProjectId>{6C8A6F9C-2EF5-4F6E-84DE-7994D325B168}</msb:ProjectId>
-  </msb:PropertyGroup>
-  <msb:ItemGroup>
-    <msb:Project Include="ST_d23d686fda4a4134aa1d6af926d4d3d6.csproj" />
-    <msb:File Include="Properties\Settings.settings" />
-    <msb:File Include="Properties\AssemblyInfo.cs" />
-    <msb:File Include="Properties\Resources.resx" />
-    <msb:File Include="Properties\Resources.Designer.cs" />
-    <msb:File Include="Properties\Settings.Designer.cs" />
-    <msb:File Include="ScriptMain.cs" />
-  </msb:ItemGroup>
-</c:Project>]]></ProjectItem>
-              <ProjectItem
-                Name="Properties\Settings.Designer.cs"
-                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_d23d686fda4a4134aa1d6af926d4d3d6.Properties.Settings.get_Default():ST_d23d686fda4a4134aa1d6af926d4d3d6.Properties.Sett" +
-    "ings")]
-
-namespace ST_d23d686fda4a4134aa1d6af926d4d3d6.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
-              <ProjectItem
-                Name="Properties\Settings.settings"
-                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.Designer.cs"
                 Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -1684,7 +1686,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Get CET_LSET from Metadata Airlines"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -1857,7 +1859,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=17.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1978,7 +1980,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Set Source to Metadata"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -2092,35 +2094,54 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
               Language="CSharp"
               ReadWriteVariables="User::FilePath,User::SourceName">
               <ProjectItem
-                Name="Properties\AssemblyInfo.cs"
-                Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
+                Name="ScriptMain.cs"
+                Encoding="UTF8"><![CDATA[#region Namespaces
+using System;
+using System.IO;
+using Microsoft.SqlServer.Dts.Runtime;
+#endregion
 
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_581a3e063afc4f8e9ef1d99a79e2285b")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_581a3e063afc4f8e9ef1d99a79e2285b")]
-[assembly: AssemblyCopyright("Copyright @  2025")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
+namespace ST_DetectSourceFile
+{
+    [Microsoft.SqlServer.Dts.Tasks.ScriptTask.SSISScriptTaskEntryPointAttribute]
+    public partial class ScriptMain : Microsoft.SqlServer.Dts.Tasks.ScriptTask.VSTARTScriptObjectModelBase
+    {
+        public void Main()
+        {
+            try
+            {
+                // ?? L?y ???ng d?n file t? bi?n User::FilePath
+                string filePath = Dts.Variables["User::FilePath"].Value.ToString();
 
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+                // ?? L?y t�n file (kh�ng k�m ph?n m? r?ng)
+                string fileNameNoExt = Path.GetFileNameWithoutExtension(filePath);
+
+                // ?? G�n l?i v�o bi?n SourceName
+                Dts.Variables["User::SourceName"].Value = fileNameNoExt;
+
+                // ?? In ra log ?? d? debug
+                bool fireAgain = true;
+                Dts.Events.FireInformation(0, "Detect Source File",
+                    $"Detected file: {filePath}\nSourceName set to: {fileNameNoExt}",
+                    "", 0, ref fireAgain);
+
+                Dts.TaskResult = (int)ScriptResults.Success;
+            }
+            catch (Exception ex)
+            {
+                Dts.Events.FireError(0, "Detect Source File",
+                    "Error detecting file: " + ex.Message, "", 0);
+                Dts.TaskResult = (int)ScriptResults.Failure;
+            }
+        }
+
+        enum ScriptResults
+        {
+            Success = Microsoft.SqlServer.Dts.Runtime.DTSExecResult.Success,
+            Failure = Microsoft.SqlServer.Dts.Runtime.DTSExecResult.Failure
+        };
+    }
+}]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.resx"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -2241,180 +2262,35 @@ using System.Runtime.CompilerServices;
   </resheader>
 </root>]]></ProjectItem>
               <ProjectItem
-                Name="ScriptMain.cs"
-                Encoding="UTF8"><![CDATA[#region Namespaces
-using System;
-using System.IO;
-using Microsoft.SqlServer.Dts.Runtime;
-#endregion
+                Name="Properties\AssemblyInfo.cs"
+                Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
 
-namespace ST_DetectSourceFile
-{
-    [Microsoft.SqlServer.Dts.Tasks.ScriptTask.SSISScriptTaskEntryPointAttribute]
-    public partial class ScriptMain : Microsoft.SqlServer.Dts.Tasks.ScriptTask.VSTARTScriptObjectModelBase
-    {
-        public void Main()
-        {
-            try
-            {
-                // ?? L?y ???ng d?n file t? bi?n User::FilePath
-                string filePath = Dts.Variables["User::FilePath"].Value.ToString();
-
-                // ?? L?y t�n file (kh�ng k�m ph?n m? r?ng)
-                string fileNameNoExt = Path.GetFileNameWithoutExtension(filePath);
-
-                // ?? G�n l?i v�o bi?n SourceName
-                Dts.Variables["User::SourceName"].Value = fileNameNoExt;
-
-                // ?? In ra log ?? d? debug
-                bool fireAgain = true;
-                Dts.Events.FireInformation(0, "Detect Source File",
-                    $"Detected file: {filePath}\nSourceName set to: {fileNameNoExt}",
-                    "", 0, ref fireAgain);
-
-                Dts.TaskResult = (int)ScriptResults.Success;
-            }
-            catch (Exception ex)
-            {
-                Dts.Events.FireError(0, "Detect Source File",
-                    "Error detecting file: " + ex.Message, "", 0);
-                Dts.TaskResult = (int)ScriptResults.Failure;
-            }
-        }
-
-        enum ScriptResults
-        {
-            Success = Microsoft.SqlServer.Dts.Runtime.DTSExecResult.Success,
-            Failure = Microsoft.SqlServer.Dts.Runtime.DTSExecResult.Failure
-        };
-    }
-}]]></ProjectItem>
-              <ProjectItem
-                Name="Properties\Resources.Designer.cs"
-                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
 //
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_581a3e063afc4f8e9ef1d99a79e2285b.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
-    "rceManager")]
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_581a3e063afc4f8e9ef1d99a79e2285b.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
-    "fo")]
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_581a3e063afc4f8e9ef1d99a79e2285b.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
-    "):Void")]
-
-namespace ST_581a3e063afc4f8e9ef1d99a79e2285b.Properties {
-    
-    
-    /// <summary>
-    ///   A strongly-typed resource class, for looking up localized strings, etc.
-    /// </summary>
-    // This class was auto-generated by the StronglyTypedResourceBuilder
-    // class via a tool like ResGen or Visual Studio.
-    // To add or remove a member, edit your .ResX file then rerun ResGen
-    // with the /str option, or rebuild your VS project.
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    internal class Resources {
-        
-        private static global::System.Resources.ResourceManager resourceMan;
-        
-        private static global::System.Globalization.CultureInfo resourceCulture;
-        
-        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources() {
-        }
-        
-        /// <summary>
-        ///   Returns the cached ResourceManager instance used by this class.
-        /// </summary>
-        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
-            get {
-                if ((resourceMan == null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ST_581a3e063afc4f8e9ef1d99a79e2285b.Properties.Resources", typeof(Resources).Assembly);
-                    resourceMan = temp;
-                }
-                return resourceMan;
-            }
-        }
-        
-        /// <summary>
-        ///   Overrides the current thread's CurrentUICulture property for all
-        ///   resource lookups using this strongly typed resource class.
-        /// </summary>
-        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
-            get {
-                return resourceCulture;
-            }
-            set {
-                resourceCulture = value;
-            }
-        }
-    }
-}]]></ProjectItem>
-              <ProjectItem
-                Name="Project"
-                Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
-<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
-  <msb:PropertyGroup>
-    <msb:CodeName>ST_581a3e063afc4f8e9ef1d99a79e2285b</msb:CodeName>
-    <msb:Language>msBuild</msb:Language>
-    <msb:DisplayName>ST_581a3e063afc4f8e9ef1d99a79e2285b</msb:DisplayName>
-    <msb:ProjectId>{0F1CB116-817D-445D-B2DB-7C497BD092C1}</msb:ProjectId>
-  </msb:PropertyGroup>
-  <msb:ItemGroup>
-    <msb:Project Include="ST_581a3e063afc4f8e9ef1d99a79e2285b.csproj" />
-    <msb:File Include="Properties\Resources.Designer.cs" />
-    <msb:File Include="Properties\Settings.settings" />
-    <msb:File Include="Properties\AssemblyInfo.cs" />
-    <msb:File Include="Properties\Resources.resx" />
-    <msb:File Include="Properties\Settings.Designer.cs" />
-    <msb:File Include="ScriptMain.cs" />
-  </msb:ItemGroup>
-</c:Project>]]></ProjectItem>
-              <ProjectItem
-                Name="Properties\Settings.Designer.cs"
-                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
 //
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
+[assembly: AssemblyTitle("ST_581a3e063afc4f8e9ef1d99a79e2285b")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_581a3e063afc4f8e9ef1d99a79e2285b")]
+[assembly: AssemblyCopyright("Copyright @  2025")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
 
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_581a3e063afc4f8e9ef1d99a79e2285b.Properties.Settings.get_Default():ST_581a3e063afc4f8e9ef1d99a79e2285b.Properties.Sett" +
-    "ings")]
-
-namespace ST_581a3e063afc4f8e9ef1d99a79e2285b.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
-              <ProjectItem
-                Name="Properties\Settings.settings"
-                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
               <ProjectItem
                 Name="ST_581a3e063afc4f8e9ef1d99a79e2285b.csproj"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -2501,6 +2377,132 @@ namespace ST_581a3e063afc4f8e9ef1d99a79e2285b.Properties {
     </VisualStudio>
   </ProjectExtensions>
 </Project>]]></ProjectItem>
+              <ProjectItem
+                Name="Project"
+                Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
+  <msb:PropertyGroup>
+    <msb:CodeName>ST_581a3e063afc4f8e9ef1d99a79e2285b</msb:CodeName>
+    <msb:Language>msBuild</msb:Language>
+    <msb:DisplayName>ST_581a3e063afc4f8e9ef1d99a79e2285b</msb:DisplayName>
+    <msb:ProjectId>{0F1CB116-817D-445D-B2DB-7C497BD092C1}</msb:ProjectId>
+  </msb:PropertyGroup>
+  <msb:ItemGroup>
+    <msb:Project Include="ST_581a3e063afc4f8e9ef1d99a79e2285b.csproj" />
+    <msb:File Include="Properties\Resources.Designer.cs" />
+    <msb:File Include="Properties\Settings.settings" />
+    <msb:File Include="Properties\AssemblyInfo.cs" />
+    <msb:File Include="Properties\Resources.resx" />
+    <msb:File Include="Properties\Settings.Designer.cs" />
+    <msb:File Include="ScriptMain.cs" />
+  </msb:ItemGroup>
+</c:Project>]]></ProjectItem>
+              <ProjectItem
+                Name="Properties\Settings.Designer.cs"
+                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_581a3e063afc4f8e9ef1d99a79e2285b.Properties.Settings.get_Default():ST_581a3e063afc4f8e9ef1d99a79e2285b.Properties.Sett" +
+    "ings")]
+
+namespace ST_581a3e063afc4f8e9ef1d99a79e2285b.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
+              <ProjectItem
+                Name="Properties\Settings.settings"
+                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
+              <ProjectItem
+                Name="Properties\Resources.Designer.cs"
+                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_581a3e063afc4f8e9ef1d99a79e2285b.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
+    "rceManager")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_581a3e063afc4f8e9ef1d99a79e2285b.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
+    "fo")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_581a3e063afc4f8e9ef1d99a79e2285b.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
+    "):Void")]
+
+namespace ST_581a3e063afc4f8e9ef1d99a79e2285b.Properties {
+    
+    
+    /// <summary>
+    ///   A strongly-typed resource class, for looking up localized strings, etc.
+    /// </summary>
+    // This class was auto-generated by the StronglyTypedResourceBuilder
+    // class via a tool like ResGen or Visual Studio.
+    // To add or remove a member, edit your .ResX file then rerun ResGen
+    // with the /str option, or rebuild your VS project.
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    internal class Resources {
+        
+        private static global::System.Resources.ResourceManager resourceMan;
+        
+        private static global::System.Globalization.CultureInfo resourceCulture;
+        
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+        internal Resources() {
+        }
+        
+        /// <summary>
+        ///   Returns the cached ResourceManager instance used by this class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if ((resourceMan == null)) {
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ST_581a3e063afc4f8e9ef1d99a79e2285b.Properties.Resources", typeof(Resources).Assembly);
+                    resourceMan = temp;
+                }
+                return resourceMan;
+            }
+        }
+        
+        /// <summary>
+        ///   Overrides the current thread's CurrentUICulture property for all
+        ///   resource lookups using this strongly typed resource class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
+                return resourceCulture;
+            }
+            set {
+                resourceCulture = value;
+            }
+        }
+    }
+}]]></ProjectItem>
               <BinaryItem
                 Name="ST_581a3e063afc4f8e9ef1d99a79e2285b.dll">TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
@@ -3529,7 +3531,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=17.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -3736,7 +3738,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=17.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -4906,10 +4908,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
                         </outputColumn>
                         <outputColumn
                           refId="Package\Foreach Loop Container Airports\Import data from Airport_csv to Stage\Airport.Outputs[Flat File Source Output].Columns[LATITUDE]"
-                          dataType="r8"
+                          dataType="wstr"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Foreach Loop Container Airports\Import data from Airport_csv to Stage\Airport.Outputs[Flat File Source Output].ExternalColumns[LATITUDE]"
+                          length="10"
                           lineageId="Package\Foreach Loop Container Airports\Import data from Airport_csv to Stage\Airport.Outputs[Flat File Source Output].Columns[LATITUDE]"
                           name="LATITUDE"
                           truncationRowDisposition="FailComponent">
@@ -4926,10 +4929,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
                         </outputColumn>
                         <outputColumn
                           refId="Package\Foreach Loop Container Airports\Import data from Airport_csv to Stage\Airport.Outputs[Flat File Source Output].Columns[LONGITUDE]"
-                          dataType="r8"
+                          dataType="wstr"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Foreach Loop Container Airports\Import data from Airport_csv to Stage\Airport.Outputs[Flat File Source Output].ExternalColumns[LONGITUDE]"
+                          length="10"
                           lineageId="Package\Foreach Loop Container Airports\Import data from Airport_csv to Stage\Airport.Outputs[Flat File Source Output].Columns[LONGITUDE]"
                           name="LONGITUDE"
                           truncationRowDisposition="FailComponent">
@@ -4980,11 +4984,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
                           name="COUNTRY" />
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container Airports\Import data from Airport_csv to Stage\Airport.Outputs[Flat File Source Output].ExternalColumns[LATITUDE]"
-                          dataType="r8"
+                          dataType="wstr"
+                          length="10"
                           name="LATITUDE" />
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container Airports\Import data from Airport_csv to Stage\Airport.Outputs[Flat File Source Output].ExternalColumns[LONGITUDE]"
-                          dataType="r8"
+                          dataType="wstr"
+                          length="10"
                           name="LONGITUDE" />
                       </externalMetadataColumns>
                     </output>
@@ -5043,7 +5049,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=17.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -5127,13 +5133,15 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
                           lineageId="Package\Foreach Loop Container Airports\Import data from Airport_csv to Stage\Airport.Outputs[Flat File Source Output].Columns[COUNTRY]" />
                         <inputColumn
                           refId="Package\Foreach Loop Container Airports\Import data from Airport_csv to Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LATITUDE]"
-                          cachedDataType="r8"
+                          cachedDataType="wstr"
+                          cachedLength="10"
                           cachedName="LATITUDE"
                           externalMetadataColumnId="Package\Foreach Loop Container Airports\Import data from Airport_csv to Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LATITUDE]"
                           lineageId="Package\Foreach Loop Container Airports\Import data from Airport_csv to Stage\Airport.Outputs[Flat File Source Output].Columns[LATITUDE]" />
                         <inputColumn
                           refId="Package\Foreach Loop Container Airports\Import data from Airport_csv to Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LONGITUDE]"
-                          cachedDataType="r8"
+                          cachedDataType="wstr"
+                          cachedLength="10"
                           cachedName="LONGITUDE"
                           externalMetadataColumnId="Package\Foreach Loop Container Airports\Import data from Airport_csv to Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LONGITUDE]"
                           lineageId="Package\Foreach Loop Container Airports\Import data from Airport_csv to Stage\Airport.Outputs[Flat File Source Output].Columns[LONGITUDE]" />
@@ -5299,7 +5307,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Set CET to Metadata Airlines"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -5315,7 +5323,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Set CET to Metadata Airports"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -5347,7 +5355,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Truncate table Airlines"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -5363,7 +5371,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Truncate table Airports"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -5395,7 +5403,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Update LSET Airlines to Metadata"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="3">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -5535,7 +5543,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           Id="Package\Foreach Loop Airlines\Get CET_LSET from Metadata Airlines"
           TopLeft="15.2916673610194,158.249998937796" />
         <NodeLayout
-          Size="248.666666666667,41.3333333333334"
+          Size="254.666666666667,42.6666666666667"
           Id="Package\Foreach Loop Airlines\Import data from Airline_csv to Stage"
           TopLeft="21.7500003414848,239.499998372793" />
         <NodeLayout
@@ -5588,18 +5596,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Foreach Loop Airlines.PrecedenceConstraints[Constraint 3]"
-          TopLeft="144.920833851252,199.849998937796">
+          TopLeft="146.354167184585,199.583332271129">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,39.6499994349979"
+              EndConnector="0,39.9166661016637"
               Start="0,0"
-              End="0,32.1499994349979">
+              End="0,32.4166661016637">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,32.1499994349979" />
+                    End="0,32.4166661016637" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5611,8 +5619,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="300.666666666667,376.666666666667"
-          Size="300.666666666667,419.333333333334"
+          PanelSize="300.666666666667,377.333333333334"
+          Size="300.666666666667,420"
           Id="Package\Foreach Loop Airlines"
           TopLeft="118.425919455419,278.933332200315" />
         <NodeLayout
@@ -5806,7 +5814,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           Id="Package\Foreach Loop Container Airports"
           TopLeft="515.024971827494,288.583332195795" />
         <NodeLayout
-          Size="212,41.3333333333334"
+          Size="217.333333333334,42.6666666666667"
           Id="Package\Set CET to Metadata Airlines"
           TopLeft="143.690468339575,73.4190471085007" />
         <NodeLayout
@@ -5839,18 +5847,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           TopLeft="539.392856845721,791.379194687266" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="246.911896647573,115.019047108501">
+          TopLeft="252.357135006242,116.085713775167">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,53.9809517162943"
+              EndConnector="-8.35714338400498,52.9142850496276"
               Start="0,0"
-              End="0,46.4809517162943">
+              End="-8.35714338400498,45.4142850496276">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,46.4809517162943" />
+                    End="0,22.4571425248138" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.4571425248138"
+                    Point2="0,26.4571425248138"
+                    Point3="-4,26.4571425248138" />
+                  <mssgle:LineSegment
+                    End="-4.35714338400498,26.4571425248138" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-4.35714338400498,26.4571425248138"
+                    Point2="-8.35714338400498,26.4571425248138"
+                    Point3="-8.35714338400498,30.4571425248138" />
+                  <mssgle:LineSegment
+                    End="-8.35714338400498,45.4142850496276" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6146,7 +6166,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
     design-time-name="Package\Foreach Loop Airlines\Import data from Airline_csv to Stage">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="171.333333333334,41.3333333333334"
           Id="Package\Foreach Loop Airlines\Import data from Airline_csv to Stage\OLE DB Destination"
@@ -6174,7 +6194,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -6197,7 +6219,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
     design-time-name="Package\Foreach Loop Container\Import data from Flight_csv to Stage">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="119.333333333334,41.3333333333334"
           Id="Package\Foreach Loop Container\Import data from Flight_csv to Stage\Multicast"
@@ -6233,7 +6255,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6267,7 +6291,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6301,7 +6327,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
