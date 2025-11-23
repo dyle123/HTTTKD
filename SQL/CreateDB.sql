@@ -66,6 +66,7 @@ CREATE TABLE data_flowTable (
 
 
 
+
 ------------------------------------
 --DQ_METADATA
 ------------------------------------
@@ -147,6 +148,28 @@ CREATE TABLE recipient_type (
     description NVARCHAR(50)
 );
 
+CREATE TABLE DQ_Log (
+    dq_log_id INT IDENTITY(1,1) PRIMARY KEY,
+
+    table_name NVARCHAR(100) NOT NULL,        -- Flights, Flights_detail, ...
+    column_name NVARCHAR(100) NULL,           -- Cột gây lỗi
+
+    business_key NVARCHAR(200) NULL,          -- DATE + AIRLINE + FLIGHT_NUMBER
+    source_id INT NULL,                       -- từ sourceTable
+
+    rule_key INT NULL,                        -- liên kết tới DQ_Rules
+    error_type NVARCHAR(50),                  -- Conversion|Lookup|Constraint
+
+    error_message NVARCHAR(2000),             -- thông báo lỗi
+    raw_value NVARCHAR(500) NULL,             -- giá trị gây lỗi (DATE='ABC', DELAY='N/A')
+    full_row NVARCHAR(MAX) NULL,              -- lưu full row Stage (dạng text), không cần JSON
+
+    created_at DATETIME DEFAULT GETDATE(),
+
+    FOREIGN KEY (rule_key) REFERENCES DQ_Rules(rule_key)
+);
+GO
+
 INSERT INTO recipient_type VALUES
 ('I', 'Individual'),
 ('G', 'Group');
@@ -225,13 +248,262 @@ CREATE TABLE Flights_detail (
 GO
 
 
+------------------------------------
+--NDS
+------------------------------------
+use HTTTKD_NDS
+go
+select* from AirlinesNDS
+
+
+CREATE TABLE AirportsNDS (
+    Airport_SK INT PRIMARY KEY IDENTITY(1,1), 
+    IATA_CODE NVARCHAR(10) NOT NULL,
+    AIRPORT NVARCHAR(255),
+    CITY NVARCHAR(255),
+    STATE NVARCHAR(50),
+    COUNTRY NVARCHAR(50),
+    LATITUDE DECIMAL(9, 6),
+	LONGITUDE DECIMAL(9, 6),
+	UpdatedAt DATETIME
+);
+GO
+
+
+CREATE TABLE AirlinesNDS (
+    Airline_SK INT IDENTITY(1,1) PRIMARY KEY, -- Surrogate Key (Khóa tự tăng của hệ thống mình)
+    Airline_IATA NVARCHAR(10),                -- Business Key (Mã từ hệ thống nguồn)
+    Airline_Name NVARCHAR(255),
+    SourceID INT,                             -- Lấy từ bảng sourceTable bên Metadata
+    CreatedDate DATETIME DEFAULT GETDATE(),
+    UpdatedDate DATETIME DEFAULT GETDATE()
+);
+GO
+
+
+CREATE TABLE NDS_Flights (
+    Flight_SK INT IDENTITY(1,1) PRIMARY KEY,
+    SourceID INT,                       -- sẽ được add trong Derived Column
+    Flight_BK NVARCHAR(200),            -- Business Key (DATE + AIRLINE + FLIGHT_NUMBER)
+    [DATE] DATE NULL,
+    AIRLINE NVARCHAR(10),
+    FLIGHT_NUMBER NVARCHAR(50),
+    TAIL_NUMBER NVARCHAR(50),
+    ORIGIN_AIRPORT NVARCHAR(50),
+    DESTINATION_AIRPORT NVARCHAR(50),
+    SCHEDULED_DEPARTURE INT NULL,
+    DEPARTURE_TIME INT NULL,
+    DEPARTURE_DELAY INT NULL,
+    CreatedDate DATETIME DEFAULT GETDATE(),
+    LastUpdatedDate DATETIME NULL
+);
+ALTER TABLE NDS_Flights
+ALTER COLUMN SourceID NVARCHAR(50);
+GO
+
+CREATE TABLE NDS_Flight_Detail (
+    Detail_SK INT IDENTITY(1,1) PRIMARY KEY,
+    Flight_SK INT FOREIGN KEY REFERENCES NDS_Flights(Flight_SK),
+
+    TAXI_OUT INT,
+    WHEELS_OFF INT,
+    SCHEDULED_TIME INT,
+    ELAPSED_TIME INT,        
+    AIR_TIME INT,
+    DISTANCE INT,
+    WHEELS_ON INT,
+    TAXI_IN INT,
+    SCHEDULED_ARRIVAL INT,
+    ARRIVAL_TIME INT,
+    ARRIVAL_DELAY INT,
+    DIVERTED BIT,
+    CANCELLED BIT,
+    CANCELLATION_REASON NVARCHAR(50),
+    AIR_SYSTEM_DELAY INT,
+    SECURITY_DELAY INT,
+    AIRLINE_DELAY INT,
+    LATE_AIRCRAFT_DELAY INT,
+    WEATHER_DELAY INT,
+
+    CreatedDate DATETIME DEFAULT GETDATE(),
+    LastUpdatedDate DATETIME NULL
+);
+GO
+
+
+
+------------------------------------
+--DDS
+------------------------------------
+use HTTTKD_DDS
+go
+
+CREATE TABLE DimDate (
+    Date_SK INT IDENTITY(1,1) PRIMARY KEY,
+    FullDate DATE,
+    Day INT,
+    Month INT,
+    MonthName NVARCHAR(20),
+    Quarter INT,
+    Year INT,
+	CreatedDate DATETIME DEFAULT GETDATE(),
+    UpdatedDate DATETIME DEFAULT GETDATE()
+);
+-- là System-generated Dimensions nên cần tạo ra 
+DECLARE @StartDate DATE = '2015-01-01';
+DECLARE @EndDate DATE = '2025-12-31';
+
+WHILE @StartDate <= @EndDate
+BEGIN
+    INSERT INTO DimDate (FullDate, Day, Month, MonthName, Quarter, Year)
+    VALUES (
+        @StartDate,
+        DAY(@StartDate),
+        MONTH(@StartDate),
+        DATENAME(MONTH, @StartDate),
+        DATEPART(QUARTER, @StartDate),
+        YEAR(@StartDate)
+    )
+
+    SET @StartDate = DATEADD(DAY, 1, @StartDate)
+END
+-------------\\------------------------
+
+CREATE TABLE DimTime (
+    Time_SK INT IDENTITY(1,1) PRIMARY KEY,
+    Hour INT,
+    Minute INT,
+    Period NVARCHAR(10),  -- Morning / Afternoon / Evening / Night,
+	CreatedDate DATETIME DEFAULT GETDATE(),
+    UpdatedDate DATETIME DEFAULT GETDATE()
+);
+--Tương tự như DimDate
+DECLARE @Hour INT = 0
+DECLARE @Minute INT = 0
+
+WHILE @Hour < 24
+BEGIN
+    SET @Minute = 0
+
+    WHILE @Minute < 60
+    BEGIN
+        INSERT INTO DimTime (Hour, Minute, Period)
+        VALUES (
+            @Hour,
+            @Minute,
+            CASE 
+                WHEN @Hour < 12 THEN 'Morning'
+                WHEN @Hour < 17 THEN 'Afternoon'
+                WHEN @Hour < 21 THEN 'Evening'
+                ELSE 'Night'
+            END
+        )
+
+        SET @Minute = @Minute + 1
+    END
+
+    SET @Hour = @Hour + 1
+END
+
+-------------\\------------------------
+
+CREATE TABLE DimCancellationReason (
+    Reason_SK INT IDENTITY(1,1) PRIMARY KEY,
+    Reason_Code NVARCHAR(10),
+    Description NVARCHAR(255),
+	CreatedDate DATETIME DEFAULT GETDATE(),
+    UpdatedDate DATETIME DEFAULT GETDATE()
+);
+INSERT INTO DimCancellationReason (Reason_Code, Description, CreatedDate) VALUES
+('A', 'Airline/Carrier', getdate()),
+('B', 'Weather', getdate()),
+('C', 'National Air System', getdate()),
+('D', 'Security', getdate());
 
 
 
 
+--------------------------==========================================
+--------------------------==========================================
+
+
+CREATE TABLE DimAirline (
+    Airline_SK INT IDENTITY(1,1) PRIMARY KEY,
+    Airline_IATA NVARCHAR(10),
+    Airline_Name NVARCHAR(255),
+	CreatedDate DATETIME DEFAULT GETDATE(),
+    UpdatedDate DATETIME DEFAULT GETDATE()
+);	
+
+
+CREATE TABLE DimAirport (
+    Airport_SK INT IDENTITY(1,1) PRIMARY KEY,
+    IATA_CODE NVARCHAR(10),
+    AIRPORT NVARCHAR(255),
+    CITY NVARCHAR(255),
+    STATE NVARCHAR(50),
+    COUNTRY NVARCHAR(50),
+	CreatedDate DATETIME DEFAULT GETDATE(),
+    UpdatedDate DATETIME DEFAULT GETDATE()
+);
 
 
 
 
+CREATE TABLE FactFlight (
+    Flight_SK INT IDENTITY(1,1) PRIMARY KEY,
+    Date_SK INT,
+    Airline_SK INT,
+    Flight_Number NVARCHAR(50),
+    Origin_Airport_SK INT,
+    Dest_Airport_SK INT,
+    Scheduled_Departure_Time_SK INT,
+	CreatedDate DATETIME DEFAULT GETDATE(),
+    UpdatedDate DATETIME DEFAULT GETDATE(),
+    
+    FOREIGN KEY (Date_SK) REFERENCES DimDate(Date_SK),
+    FOREIGN KEY (Airline_SK) REFERENCES DimAirline(Airline_SK),
+    FOREIGN KEY (Origin_Airport_SK) REFERENCES DimAirport(Airport_SK),
+    FOREIGN KEY (Dest_Airport_SK) REFERENCES DimAirport(Airport_SK),
+    FOREIGN KEY (Scheduled_Departure_Time_SK) REFERENCES DimTime(Time_SK)
+);
 
+
+CREATE TABLE FactFlightDetail (
+    Detail_SK INT IDENTITY(1,1) PRIMARY KEY,
+    Flight_SK INT,
+    Date_SK INT,
+    Airline_SK INT,
+    Origin_Airport_SK INT,
+    Dest_Airport_SK INT,
+
+    Distance INT,
+    Taxi_Out INT,
+    Taxi_In INT,
+    Air_Time INT,
+    Scheduled_Time INT,
+    Elapsed_Time INT,
+
+    Departure_Delay INT,
+    Arrival_Delay INT,
+
+    Cancelled BIT,
+    Cancellation_Reason_SK INT,
+    Diverted BIT,
+
+    Air_System_Delay INT,
+    Security_Delay INT,
+    Airline_Delay INT,
+    Late_Aircraft_Delay INT,
+    Weather_Delay INT,
+	CreatedDate DATETIME DEFAULT GETDATE(),
+    UpdatedDate DATETIME DEFAULT GETDATE(),
+
+    FOREIGN KEY (Flight_SK) REFERENCES FactFlight(Flight_SK),
+    FOREIGN KEY (Date_SK) REFERENCES DimDate(Date_SK),
+    FOREIGN KEY (Airline_SK) REFERENCES DimAirline(Airline_SK),
+    FOREIGN KEY (Origin_Airport_SK) REFERENCES DimAirport(Airport_SK),
+    FOREIGN KEY (Dest_Airport_SK) REFERENCES DimAirport(Airport_SK),
+    FOREIGN KEY (Cancellation_Reason_SK) REFERENCES DimCancellationReason(Reason_SK)
+);
 

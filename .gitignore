@@ -1,0 +1,14 @@
+# Ignore VS cache
+.vs/
+.vs/*
+*.*.db
+
+# Build folders
+bin/
+obj/
+
+# User-specific settings
+*.user
+*.suo
+*.cache
+*.tmp
