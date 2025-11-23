@@ -5,8 +5,7 @@ CREATE DATABASE HTTTKD_DQ_Metadata
 CREATE DATABASE HTTTKD_ETL_Metadata
 go
 
-
-------------------------------------
+------------------------
 --ETL_PROCESSING_METADATA
 ------------------------------------
 USE HTTTKD_ETL_Metadata
@@ -14,6 +13,7 @@ GO
 select* from packageTable
 select* from data_flowTable
 select* from sourceTable
+
 
 
 CREATE TABLE packageTable 
@@ -218,11 +218,6 @@ CREATE TABLE Flights (
     [SCHEDULED_DEPARTURE] NVARCHAR(50)  NULL,
     [DEPARTURE_TIME] NVARCHAR(50)  NULL,
     [DEPARTURE_DELAY] NVARCHAR(50)  NULL,
-    
-);
-GO
-
-CREATE TABLE Flights_detail (
     [TAXI_OUT] INT NULL,                 -- thời gian di chuyển ra đường băng (phút)
     [WHEELS_OFF] INT NULL,               -- thời điểm cất cánh (phút từ 0h)
     [SCHEDULED_TIME] INT NULL,           -- tổng thời gian dự kiến (phút)
@@ -253,7 +248,7 @@ GO
 ------------------------------------
 use HTTTKD_NDS
 go
-select* from AirlinesNDS
+--select* from AirlinesNDS
 
 
 CREATE TABLE AirportsNDS (
@@ -329,6 +324,10 @@ CREATE TABLE NDS_Flight_Detail (
     LastUpdatedDate DATETIME NULL
 );
 GO
+
+
+
+
 
 
 
@@ -420,9 +419,6 @@ INSERT INTO DimCancellationReason (Reason_Code, Description, CreatedDate) VALUES
 ('C', 'National Air System', getdate()),
 ('D', 'Security', getdate());
 
-
-
-
 --------------------------==========================================
 --------------------------==========================================
 
@@ -448,35 +444,34 @@ CREATE TABLE DimAirport (
 );
 
 
-
-
 CREATE TABLE FactFlight (
     Flight_SK INT IDENTITY(1,1) PRIMARY KEY,
+
+    -- Dimension Keys
     Date_SK INT,
     Airline_SK INT,
-    Flight_Number NVARCHAR(50),
     Origin_Airport_SK INT,
     Dest_Airport_SK INT,
     Scheduled_Departure_Time_SK INT,
-	CreatedDate DATETIME DEFAULT GETDATE(),
-    UpdatedDate DATETIME DEFAULT GETDATE(),
-    
-    FOREIGN KEY (Date_SK) REFERENCES DimDate(Date_SK),
-    FOREIGN KEY (Airline_SK) REFERENCES DimAirline(Airline_SK),
-    FOREIGN KEY (Origin_Airport_SK) REFERENCES DimAirport(Airport_SK),
-    FOREIGN KEY (Dest_Airport_SK) REFERENCES DimAirport(Airport_SK),
-    FOREIGN KEY (Scheduled_Departure_Time_SK) REFERENCES DimTime(Time_SK)
-);
+    Scheduled_Arrival_Time_SK INT,
+    Cancellation_Reason_SK INT NULL,
 
+    -- Flight Information
+    Flight_Number NVARCHAR(50),
+    Cancelled BIT,
+    Diverted BIT,
 
-CREATE TABLE FactFlightDetail (
-    Detail_SK INT IDENTITY(1,1) PRIMARY KEY,
-    Flight_SK INT,
-    Date_SK INT,
-    Airline_SK INT,
-    Origin_Airport_SK INT,
-    Dest_Airport_SK INT,
+    -- Delay Measures
+    Departure_Delay INT,
+    Arrival_Delay INT,
 
+    Air_System_Delay INT,
+    Security_Delay INT,
+    Airline_Delay INT,
+    Late_Aircraft_Delay INT,
+    Weather_Delay INT,
+
+    -- Performance Measures
     Distance INT,
     Taxi_Out INT,
     Taxi_In INT,
@@ -484,26 +479,23 @@ CREATE TABLE FactFlightDetail (
     Scheduled_Time INT,
     Elapsed_Time INT,
 
-    Departure_Delay INT,
-    Arrival_Delay INT,
+    -- Derived Performance
+    Is_OnTime_Departure BIT,
+    Is_OnTime_Arrival BIT,
+    Is_Delay_15 BIT,
 
-    Cancelled BIT,
-    Cancellation_Reason_SK INT,
-    Diverted BIT,
-
-    Air_System_Delay INT,
-    Security_Delay INT,
-    Airline_Delay INT,
-    Late_Aircraft_Delay INT,
-    Weather_Delay INT,
-	CreatedDate DATETIME DEFAULT GETDATE(),
+    CreatedDate DATETIME DEFAULT GETDATE(),
     UpdatedDate DATETIME DEFAULT GETDATE(),
 
-    FOREIGN KEY (Flight_SK) REFERENCES FactFlight(Flight_SK),
     FOREIGN KEY (Date_SK) REFERENCES DimDate(Date_SK),
     FOREIGN KEY (Airline_SK) REFERENCES DimAirline(Airline_SK),
     FOREIGN KEY (Origin_Airport_SK) REFERENCES DimAirport(Airport_SK),
     FOREIGN KEY (Dest_Airport_SK) REFERENCES DimAirport(Airport_SK),
+    FOREIGN KEY (Scheduled_Departure_Time_SK) REFERENCES DimTime(Time_SK),
+    FOREIGN KEY (Scheduled_Arrival_Time_SK) REFERENCES DimTime(Time_SK),
     FOREIGN KEY (Cancellation_Reason_SK) REFERENCES DimCancellationReason(Reason_SK)
 );
+
+
+
 
