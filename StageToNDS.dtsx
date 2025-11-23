@@ -1,0 +1,2611 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="11/15/2025 5:37:23 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-N65THF0"
+  DTS:CreatorName="DESKTOP-N65THF0\nhing"
+  DTS:DTSID="{603F337F-3F2F-4B27-B93D-913B83FF4937}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5685.2"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="StageToNDS"
+  DTS:PackageType="5"
+  DTS:VersionBuild="34"
+  DTS:VersionGUID="{DFE3A4A6-2C81-4BA1-A998-43A5B5C8365A}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Satge to NDS FlightDetail"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:Disabled="True"
+      DTS:DTSID="{75413E1E-82AA-447A-94D8-608F4B118E90}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Satge to NDS FlightDetail"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Satge to NDS FlightDetail\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Satge to NDS FlightDetail\OLE DB Source.Connections[OleDbConnection]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Satge to NDS FlightDetail\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <externalMetadataColumns
+                    isUsed="True" />
+                </output>
+                <output
+                  refId="Package\Satge to NDS FlightDetail\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Satge to NDS FlightDetail\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Satge to NDS FlightDetail\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Satge to NDS FlightDetail\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Satge to NDS FlightDetail\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Stage to NDS Flights"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{9DC068D5-8E01-4074-A5F4-7D00215921F3}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Stage to NDS Flights"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Stage to NDS Flights\Add Error Info"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Add Error Info"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Stage to NDS Flights\Add Error Info.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Stage to NDS Flights\Add Error Info.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Stage to NDS Flights\Add Error Info.Inputs[Derived Column Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Stage to NDS Flights\Add Error Info.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Stage to NDS Flights\Add Error Info.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\Add Error Info.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Stage to NDS Flights\Add Error Info.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\Add Error Info.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Stage to NDS Flights\Add Error Info.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Stage to NDS Flights\Data Conversion"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Stage to NDS Flights\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Stage to NDS Flights\Data Conversion.Inputs[Data Conversion Input].Columns[SCHEDULED_DEPARTURE]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="SCHEDULED_DEPARTURE"
+                      lineageId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[SCHEDULED_DEPARTURE]" />
+                    <inputColumn
+                      refId="Package\Stage to NDS Flights\Data Conversion.Inputs[Data Conversion Input].Columns[DEPARTURE_TIME]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="DEPARTURE_TIME"
+                      lineageId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[DEPARTURE_TIME]" />
+                    <inputColumn
+                      refId="Package\Stage to NDS Flights\Data Conversion.Inputs[Data Conversion Input].Columns[DEPARTURE_DELAY]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="DEPARTURE_DELAY"
+                      lineageId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[DEPARTURE_DELAY]" />
+                    <inputColumn
+                      refId="Package\Stage to NDS Flights\Data Conversion.Inputs[Data Conversion Input].Columns[DATE]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="DATE"
+                      lineageId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[DATE]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Stage to NDS Flights\Data Conversion.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\Stage to NDS Flights\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of SCHEDULED_DEPARTURE]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      lineageId="Package\Stage to NDS Flights\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of SCHEDULED_DEPARTURE]"
+                      name="Copy of SCHEDULED_DEPARTURE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[SCHEDULED_DEPARTURE]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DEPARTURE_TIME]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      lineageId="Package\Stage to NDS Flights\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DEPARTURE_TIME]"
+                      name="Copy of DEPARTURE_TIME"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[DEPARTURE_TIME]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DEPARTURE_DELAY]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      lineageId="Package\Stage to NDS Flights\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DEPARTURE_DELAY]"
+                      name="Copy of DEPARTURE_DELAY"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[DEPARTURE_DELAY]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DATE]"
+                      dataType="date"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      lineageId="Package\Stage to NDS Flights\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DATE]"
+                      name="Copy of DATE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[DATE]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Stage to NDS Flights\Data Conversion.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\Stage to NDS Flights\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Stage to NDS Flights\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Stage to NDS Flights\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Stage to NDS Flights\Data Conversion 1"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion 1"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Stage to NDS Flights\Data Conversion 1.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Stage to NDS Flights\Data Conversion 1.Inputs[Data Conversion Input].Columns[SCHEDULED_DEPARTURE]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="SCHEDULED_DEPARTURE"
+                      lineageId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[SCHEDULED_DEPARTURE]" />
+                    <inputColumn
+                      refId="Package\Stage to NDS Flights\Data Conversion 1.Inputs[Data Conversion Input].Columns[DEPARTURE_TIME]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="DEPARTURE_TIME"
+                      lineageId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[DEPARTURE_TIME]" />
+                    <inputColumn
+                      refId="Package\Stage to NDS Flights\Data Conversion 1.Inputs[Data Conversion Input].Columns[DEPARTURE_DELAY]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="DEPARTURE_DELAY"
+                      lineageId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[DEPARTURE_DELAY]" />
+                    <inputColumn
+                      refId="Package\Stage to NDS Flights\Data Conversion 1.Inputs[Data Conversion Input].Columns[DATE]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="DATE"
+                      lineageId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[DATE]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Stage to NDS Flights\Data Conversion 1.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\Stage to NDS Flights\Data Conversion 1.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of SCHEDULED_DEPARTURE]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      lineageId="Package\Stage to NDS Flights\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of SCHEDULED_DEPARTURE]"
+                      name="Copy of SCHEDULED_DEPARTURE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[SCHEDULED_DEPARTURE]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of DEPARTURE_TIME]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      lineageId="Package\Stage to NDS Flights\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of DEPARTURE_TIME]"
+                      name="Copy of DEPARTURE_TIME"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[DEPARTURE_TIME]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of DEPARTURE_DELAY]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      lineageId="Package\Stage to NDS Flights\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of DEPARTURE_DELAY]"
+                      name="Copy of DEPARTURE_DELAY"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[DEPARTURE_DELAY]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of DATE]"
+                      dataType="date"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      lineageId="Package\Stage to NDS Flights\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of DATE]"
+                      name="Copy of DATE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[DATE]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Stage to NDS Flights\Data Conversion 1.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\Stage to NDS Flights\Data Conversion 1.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\Data Conversion 1.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Stage to NDS Flights\Data Conversion 1.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\Data Conversion 1.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Stage to NDS Flights\Data Conversion 1.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Stage to NDS Flights\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Stage to NDS Flights\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Stage to NDS Flights\Derived Column.Inputs[Derived Column Input].Columns[DATE]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="DATE"
+                      lineageId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[DATE]" />
+                    <inputColumn
+                      refId="Package\Stage to NDS Flights\Derived Column.Inputs[Derived Column Input].Columns[AIRLINE]"
+                      cachedDataType="wstr"
+                      cachedLength="10"
+                      cachedName="AIRLINE"
+                      lineageId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[AIRLINE]" />
+                    <inputColumn
+                      refId="Package\Stage to NDS Flights\Derived Column.Inputs[Derived Column Input].Columns[FLIGHT_NUMBER]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="FLIGHT_NUMBER"
+                      lineageId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[FLIGHT_NUMBER]" />
+                    <inputColumn
+                      refId="Package\Stage to NDS Flights\Derived Column.Inputs[Derived Column Input].Columns[ORIGIN_AIRPORT]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="ORIGIN_AIRPORT"
+                      lineageId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[ORIGIN_AIRPORT]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Stage to NDS Flights\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Stage to NDS Flights\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\Derived Column.Outputs[Derived Column Output].Columns[Flight_BK]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="200"
+                      lineageId="Package\Stage to NDS Flights\Derived Column.Outputs[Derived Column Output].Columns[Flight_BK]"
+                      name="Flight_BK"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_WSTR,200)(#{Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[DATE]} + "_" + #{Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[AIRLINE]} + "_" + #{Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[FLIGHT_NUMBER]} + "_" + #{Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[ORIGIN_AIRPORT]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_WSTR,200)(DATE + "_" + AIRLINE + "_" + FLIGHT_NUMBER + "_" + ORIGIN_AIRPORT)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\Derived Column.Outputs[Derived Column Output].Columns[SourceID]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="6"
+                      lineageId="Package\Stage to NDS Flights\Derived Column.Outputs[Derived Column Output].Columns[SourceID]"
+                      name="SourceID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">"Flight"</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">"Flight"</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Stage to NDS Flights\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Stage to NDS Flights\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Stage to NDS Flights\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Stage to NDS Flights\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Stage to NDS Flights\DQ Log"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="DQ Log"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[DQ_Log]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Stage to NDS Flights\DQ Log.Connections[OleDbConnection]"
+                  connectionManagerID="{9293FF33-1086-4704-B45A-AE66AA3414EC}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-N65THF0.HTTTKD_DQ_Metadata.yennhi]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Stage to NDS Flights\DQ Log.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Stage to NDS Flights\DQ Log.Inputs[OLE DB Destination Input].Columns[SourceID]"
+                      cachedDataType="wstr"
+                      cachedLength="6"
+                      cachedName="SourceID"
+                      externalMetadataColumnId="Package\Stage to NDS Flights\DQ Log.Inputs[OLE DB Destination Input].ExternalColumns[table_name]"
+                      lineageId="Package\Stage to NDS Flights\Derived Column.Outputs[Derived Column Output].Columns[SourceID]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Stage to NDS Flights\DQ Log.Inputs[OLE DB Destination Input].ExternalColumns[dq_log_id]"
+                      dataType="i4"
+                      name="dq_log_id" />
+                    <externalMetadataColumn
+                      refId="Package\Stage to NDS Flights\DQ Log.Inputs[OLE DB Destination Input].ExternalColumns[table_name]"
+                      dataType="wstr"
+                      length="100"
+                      name="table_name" />
+                    <externalMetadataColumn
+                      refId="Package\Stage to NDS Flights\DQ Log.Inputs[OLE DB Destination Input].ExternalColumns[column_name]"
+                      dataType="wstr"
+                      length="100"
+                      name="column_name" />
+                    <externalMetadataColumn
+                      refId="Package\Stage to NDS Flights\DQ Log.Inputs[OLE DB Destination Input].ExternalColumns[business_key]"
+                      dataType="wstr"
+                      length="200"
+                      name="business_key" />
+                    <externalMetadataColumn
+                      refId="Package\Stage to NDS Flights\DQ Log.Inputs[OLE DB Destination Input].ExternalColumns[source_id]"
+                      dataType="i4"
+                      name="source_id" />
+                    <externalMetadataColumn
+                      refId="Package\Stage to NDS Flights\DQ Log.Inputs[OLE DB Destination Input].ExternalColumns[rule_key]"
+                      dataType="i4"
+                      name="rule_key" />
+                    <externalMetadataColumn
+                      refId="Package\Stage to NDS Flights\DQ Log.Inputs[OLE DB Destination Input].ExternalColumns[error_type]"
+                      dataType="wstr"
+                      length="50"
+                      name="error_type" />
+                    <externalMetadataColumn
+                      refId="Package\Stage to NDS Flights\DQ Log.Inputs[OLE DB Destination Input].ExternalColumns[error_message]"
+                      dataType="wstr"
+                      length="2000"
+                      name="error_message" />
+                    <externalMetadataColumn
+                      refId="Package\Stage to NDS Flights\DQ Log.Inputs[OLE DB Destination Input].ExternalColumns[raw_value]"
+                      dataType="wstr"
+                      length="500"
+                      name="raw_value" />
+                    <externalMetadataColumn
+                      refId="Package\Stage to NDS Flights\DQ Log.Inputs[OLE DB Destination Input].ExternalColumns[full_row]"
+                      dataType="nText"
+                      name="full_row" />
+                    <externalMetadataColumn
+                      refId="Package\Stage to NDS Flights\DQ Log.Inputs[OLE DB Destination Input].ExternalColumns[created_at]"
+                      dataType="dbTimeStamp"
+                      name="created_at" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Stage to NDS Flights\DQ Log.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Stage to NDS Flights\DQ Log.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\DQ Log.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Stage to NDS Flights\DQ Log.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\DQ Log.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Stage to NDS Flights\DQ Log.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Stage to NDS Flights\Lookup"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[NDS_Flights]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[NDS_Flights]) [refTable]
+where [refTable].[Flight_BK] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="Flight_SK" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SourceID" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Flight_BK" dataType="DT_WSTR" length="200" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DATE" dataType="DT_DBDATE" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="AIRLINE" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="FLIGHT_NUMBER" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="TAIL_NUMBER" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ORIGIN_AIRPORT" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DESTINATION_AIRPORT" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SCHEDULED_DEPARTURE" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DEPARTURE_TIME" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DEPARTURE_DELAY" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CreatedDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LastUpdatedDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\Stage to NDS Flights\Derived Column.Outputs[Derived Column Output].Columns[Flight_BK]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Stage to NDS Flights\Lookup.Connections[OleDbConnection]"
+                  connectionManagerID="{5A814734-C64C-4B37-84F9-4D35F1D5295A}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-N65THF0.HTTTKD_NDS.yennhi]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Stage to NDS Flights\Lookup.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Stage to NDS Flights\Lookup.Inputs[Lookup Input].Columns[Flight_BK]"
+                      cachedDataType="wstr"
+                      cachedLength="200"
+                      cachedName="Flight_BK"
+                      lineageId="Package\Stage to NDS Flights\Derived Column.Outputs[Derived Column Output].Columns[Flight_BK]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">Flight_BK</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Stage to NDS Flights\Lookup.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Stage to NDS Flights\Lookup.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\Lookup.Outputs[Lookup Match Output].Columns[Flight_SK]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\Stage to NDS Flights\Lookup.Outputs[Lookup Match Output].Columns[Flight_SK]"
+                      name="Flight_SK"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">Flight_SK</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Stage to NDS Flights\Lookup.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Stage to NDS Flights\Lookup.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Stage to NDS Flights\Lookup.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Stage to NDS Flights\Lookup.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Stage to NDS Flights\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Stage to NDS Flights\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Stage to NDS Flights\Lookup AIRLINE"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup AIRLINE"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[Airlines]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[Airlines]) [refTable]
+where [refTable].[IATA_CODE] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="IATA_CODE" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="AIRLINE" dataType="DT_WSTR" length="255" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[AIRLINE]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Stage to NDS Flights\Lookup AIRLINE.Connections[OleDbConnection]"
+                  connectionManagerID="{C60B81AC-98A4-42CB-A3FD-F950D2805D65}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-N65THF0.HTTTKD_STAGE.yennhi]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Stage to NDS Flights\Lookup AIRLINE.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Stage to NDS Flights\Lookup AIRLINE.Inputs[Lookup Input].Columns[AIRLINE]"
+                      cachedDataType="wstr"
+                      cachedLength="10"
+                      cachedName="AIRLINE"
+                      lineageId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[AIRLINE]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">IATA_CODE</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Stage to NDS Flights\Lookup AIRLINE.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Stage to NDS Flights\Lookup AIRLINE.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Stage to NDS Flights\Lookup AIRLINE.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Stage to NDS Flights\Lookup AIRLINE.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Stage to NDS Flights\Lookup AIRLINE.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Stage to NDS Flights\Lookup AIRLINE.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\Lookup AIRLINE.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Stage to NDS Flights\Lookup AIRLINE.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\Lookup AIRLINE.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Stage to NDS Flights\Lookup AIRLINE.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Stage to NDS Flights\Lookup D_Airport"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup D_Airport"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[Airports]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[Airports]) [refTable]
+where [refTable].[IATA_CODE] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="IATA_CODE" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="AIRPORT" dataType="DT_WSTR" length="255" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CITY" dataType="DT_WSTR" length="255" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="STATE" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="COUNTRY" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LATITUDE" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LONGITUDE" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[DESTINATION_AIRPORT]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Stage to NDS Flights\Lookup D_Airport.Connections[OleDbConnection]"
+                  connectionManagerID="{C60B81AC-98A4-42CB-A3FD-F950D2805D65}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-N65THF0.HTTTKD_STAGE.yennhi]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Stage to NDS Flights\Lookup D_Airport.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Stage to NDS Flights\Lookup D_Airport.Inputs[Lookup Input].Columns[DESTINATION_AIRPORT]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="DESTINATION_AIRPORT"
+                      lineageId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[DESTINATION_AIRPORT]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">IATA_CODE</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Stage to NDS Flights\Lookup D_Airport.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Stage to NDS Flights\Lookup D_Airport.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Stage to NDS Flights\Lookup D_Airport.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Stage to NDS Flights\Lookup D_Airport.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Stage to NDS Flights\Lookup D_Airport.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Stage to NDS Flights\Lookup D_Airport.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\Lookup D_Airport.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Stage to NDS Flights\Lookup D_Airport.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\Lookup D_Airport.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Stage to NDS Flights\Lookup D_Airport.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Stage to NDS Flights\Lookup O_Airport"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup O_Airport"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[Airports]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[Airports]) [refTable]
+where [refTable].[IATA_CODE] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="IATA_CODE" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="AIRPORT" dataType="DT_WSTR" length="255" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CITY" dataType="DT_WSTR" length="255" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="STATE" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="COUNTRY" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LATITUDE" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LONGITUDE" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[ORIGIN_AIRPORT]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Stage to NDS Flights\Lookup O_Airport.Connections[OleDbConnection]"
+                  connectionManagerID="{C60B81AC-98A4-42CB-A3FD-F950D2805D65}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-N65THF0.HTTTKD_STAGE.yennhi]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Stage to NDS Flights\Lookup O_Airport.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Stage to NDS Flights\Lookup O_Airport.Inputs[Lookup Input].Columns[ORIGIN_AIRPORT]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="ORIGIN_AIRPORT"
+                      lineageId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[ORIGIN_AIRPORT]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">IATA_CODE</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Stage to NDS Flights\Lookup O_Airport.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Stage to NDS Flights\Lookup O_Airport.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Stage to NDS Flights\Lookup O_Airport.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Stage to NDS Flights\Lookup O_Airport.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Stage to NDS Flights\Lookup O_Airport.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Stage to NDS Flights\Lookup O_Airport.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\Lookup O_Airport.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Stage to NDS Flights\Lookup O_Airport.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\Lookup O_Airport.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Stage to NDS Flights\Lookup O_Airport.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Stage to NDS Flights\OLE DB Command"
+              componentClassID="Microsoft.OLEDBCommand"
+              contactInfo="OLE DB Command;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Runs an SQL statement for each row in a data flow. For example, call a 'new employee setup' stored procedure for each row in the 'new employees' table. Note: running an SQL statement for each row of a large data flow may take a long time."
+              name="OLE DB Command"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">UPDATE NDS_Flights
+SET 
+    Departure_Delay = ?,
+    LastUpdatedDate = GETDATE()
+WHERE Flight_SK = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Stage to NDS Flights\OLE DB Command.Connections[OleDbConnection]"
+                  connectionManagerID="{5A814734-C64C-4B37-84F9-4D35F1D5295A}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-N65THF0.HTTTKD_NDS.yennhi]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Stage to NDS Flights\OLE DB Command.Inputs[OLE DB Command Input]"
+                  errorOrTruncationOperation="Command Execution"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Command Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Command.Inputs[OLE DB Command Input].Columns[Copy of DEPARTURE_DELAY]"
+                      cachedDataType="i4"
+                      cachedName="Copy of DEPARTURE_DELAY"
+                      externalMetadataColumnId="Package\Stage to NDS Flights\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                      lineageId="Package\Stage to NDS Flights\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of DEPARTURE_DELAY]" />
+                    <inputColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Command.Inputs[OLE DB Command Input].Columns[Flight_SK]"
+                      cachedDataType="i4"
+                      cachedName="Flight_SK"
+                      externalMetadataColumnId="Package\Stage to NDS Flights\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                      lineageId="Package\Stage to NDS Flights\Lookup.Outputs[Lookup Match Output].Columns[Flight_SK]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                      dataType="i4"
+                      name="Param_0">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                      dataType="i4"
+                      name="Param_1">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Stage to NDS Flights\OLE DB Command.Outputs[OLE DB Command Output]"
+                  exclusionGroup="1"
+                  name="OLE DB Command Output"
+                  synchronousInputId="Package\Stage to NDS Flights\OLE DB Command.Inputs[OLE DB Command Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Stage to NDS Flights\OLE DB Command.Outputs[OLE DB Command Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Command Error Output"
+                  synchronousInputId="Package\Stage to NDS Flights\OLE DB Command.Inputs[OLE DB Command Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Stage to NDS Flights\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Stage to NDS Flights\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Stage to NDS Flights\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[NDS_Flights]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Stage to NDS Flights\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="{5A814734-C64C-4B37-84F9-4D35F1D5295A}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-N65THF0.HTTTKD_NDS.yennhi]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Stage to NDS Flights\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[AIRLINE]"
+                      cachedDataType="wstr"
+                      cachedLength="10"
+                      cachedName="AIRLINE"
+                      externalMetadataColumnId="Package\Stage to NDS Flights\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AIRLINE]"
+                      lineageId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[AIRLINE]" />
+                    <inputColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FLIGHT_NUMBER]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="FLIGHT_NUMBER"
+                      externalMetadataColumnId="Package\Stage to NDS Flights\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FLIGHT_NUMBER]"
+                      lineageId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[FLIGHT_NUMBER]" />
+                    <inputColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ORIGIN_AIRPORT]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="ORIGIN_AIRPORT"
+                      externalMetadataColumnId="Package\Stage to NDS Flights\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ORIGIN_AIRPORT]"
+                      lineageId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[ORIGIN_AIRPORT]" />
+                    <inputColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Flight_BK]"
+                      cachedDataType="wstr"
+                      cachedLength="200"
+                      cachedName="Flight_BK"
+                      externalMetadataColumnId="Package\Stage to NDS Flights\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Flight_BK]"
+                      lineageId="Package\Stage to NDS Flights\Derived Column.Outputs[Derived Column Output].Columns[Flight_BK]" />
+                    <inputColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SourceID]"
+                      cachedDataType="wstr"
+                      cachedLength="6"
+                      cachedName="SourceID"
+                      externalMetadataColumnId="Package\Stage to NDS Flights\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SourceID]"
+                      lineageId="Package\Stage to NDS Flights\Derived Column.Outputs[Derived Column Output].Columns[SourceID]" />
+                    <inputColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of DEPARTURE_DELAY]"
+                      cachedDataType="i4"
+                      cachedName="Copy of DEPARTURE_DELAY"
+                      externalMetadataColumnId="Package\Stage to NDS Flights\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEPARTURE_DELAY]"
+                      lineageId="Package\Stage to NDS Flights\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DEPARTURE_DELAY]" />
+                    <inputColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of DEPARTURE_TIME]"
+                      cachedDataType="i4"
+                      cachedName="Copy of DEPARTURE_TIME"
+                      externalMetadataColumnId="Package\Stage to NDS Flights\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEPARTURE_TIME]"
+                      lineageId="Package\Stage to NDS Flights\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DEPARTURE_TIME]" />
+                    <inputColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of SCHEDULED_DEPARTURE]"
+                      cachedDataType="i4"
+                      cachedName="Copy of SCHEDULED_DEPARTURE"
+                      externalMetadataColumnId="Package\Stage to NDS Flights\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SCHEDULED_DEPARTURE]"
+                      lineageId="Package\Stage to NDS Flights\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of SCHEDULED_DEPARTURE]" />
+                    <inputColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DESTINATION_AIRPORT]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="DESTINATION_AIRPORT"
+                      externalMetadataColumnId="Package\Stage to NDS Flights\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DESTINATION_AIRPORT]"
+                      lineageId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[DESTINATION_AIRPORT]" />
+                    <inputColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TAIL_NUMBER]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TAIL_NUMBER"
+                      externalMetadataColumnId="Package\Stage to NDS Flights\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TAIL_NUMBER]"
+                      lineageId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[TAIL_NUMBER]" />
+                    <inputColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of DATE]"
+                      cachedDataType="date"
+                      cachedName="Copy of DATE"
+                      externalMetadataColumnId="Package\Stage to NDS Flights\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DATE]"
+                      lineageId="Package\Stage to NDS Flights\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DATE]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Flight_SK]"
+                      dataType="i4"
+                      name="Flight_SK" />
+                    <externalMetadataColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SourceID]"
+                      dataType="wstr"
+                      length="50"
+                      name="SourceID" />
+                    <externalMetadataColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Flight_BK]"
+                      dataType="wstr"
+                      length="200"
+                      name="Flight_BK" />
+                    <externalMetadataColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DATE]"
+                      dataType="dbDate"
+                      name="DATE" />
+                    <externalMetadataColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AIRLINE]"
+                      dataType="wstr"
+                      length="10"
+                      name="AIRLINE" />
+                    <externalMetadataColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FLIGHT_NUMBER]"
+                      dataType="wstr"
+                      length="50"
+                      name="FLIGHT_NUMBER" />
+                    <externalMetadataColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TAIL_NUMBER]"
+                      dataType="wstr"
+                      length="50"
+                      name="TAIL_NUMBER" />
+                    <externalMetadataColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ORIGIN_AIRPORT]"
+                      dataType="wstr"
+                      length="50"
+                      name="ORIGIN_AIRPORT" />
+                    <externalMetadataColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DESTINATION_AIRPORT]"
+                      dataType="wstr"
+                      length="50"
+                      name="DESTINATION_AIRPORT" />
+                    <externalMetadataColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SCHEDULED_DEPARTURE]"
+                      dataType="i4"
+                      name="SCHEDULED_DEPARTURE" />
+                    <externalMetadataColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEPARTURE_TIME]"
+                      dataType="i4"
+                      name="DEPARTURE_TIME" />
+                    <externalMetadataColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEPARTURE_DELAY]"
+                      dataType="i4"
+                      name="DEPARTURE_DELAY" />
+                    <externalMetadataColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CreatedDate]"
+                      dataType="dbTimeStamp"
+                      name="CreatedDate" />
+                    <externalMetadataColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LastUpdatedDate]"
+                      dataType="dbTimeStamp"
+                      name="LastUpdatedDate" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Stage to NDS Flights\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Stage to NDS Flights\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Stage to NDS Flights\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Stage to NDS Flights\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Stage to NDS Flights\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Flights]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Stage to NDS Flights\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="{C60B81AC-98A4-42CB-A3FD-F950D2805D65}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-N65THF0.HTTTKD_STAGE.yennhi]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[DATE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DATE]"
+                      length="20"
+                      lineageId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[DATE]"
+                      name="DATE"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[AIRLINE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AIRLINE]"
+                      length="10"
+                      lineageId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[AIRLINE]"
+                      name="AIRLINE"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[FLIGHT_NUMBER]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FLIGHT_NUMBER]"
+                      length="50"
+                      lineageId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[FLIGHT_NUMBER]"
+                      name="FLIGHT_NUMBER"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[TAIL_NUMBER]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[TAIL_NUMBER]"
+                      length="50"
+                      lineageId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[TAIL_NUMBER]"
+                      name="TAIL_NUMBER"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[ORIGIN_AIRPORT]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ORIGIN_AIRPORT]"
+                      length="50"
+                      lineageId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[ORIGIN_AIRPORT]"
+                      name="ORIGIN_AIRPORT"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[DESTINATION_AIRPORT]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DESTINATION_AIRPORT]"
+                      length="50"
+                      lineageId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[DESTINATION_AIRPORT]"
+                      name="DESTINATION_AIRPORT"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[SCHEDULED_DEPARTURE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SCHEDULED_DEPARTURE]"
+                      length="50"
+                      lineageId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[SCHEDULED_DEPARTURE]"
+                      name="SCHEDULED_DEPARTURE"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[DEPARTURE_TIME]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DEPARTURE_TIME]"
+                      length="50"
+                      lineageId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[DEPARTURE_TIME]"
+                      name="DEPARTURE_TIME"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[DEPARTURE_DELAY]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DEPARTURE_DELAY]"
+                      length="50"
+                      lineageId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].Columns[DEPARTURE_DELAY]"
+                      name="DEPARTURE_DELAY"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DATE]"
+                      dataType="wstr"
+                      length="20"
+                      name="DATE" />
+                    <externalMetadataColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AIRLINE]"
+                      dataType="wstr"
+                      length="10"
+                      name="AIRLINE" />
+                    <externalMetadataColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FLIGHT_NUMBER]"
+                      dataType="wstr"
+                      length="50"
+                      name="FLIGHT_NUMBER" />
+                    <externalMetadataColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[TAIL_NUMBER]"
+                      dataType="wstr"
+                      length="50"
+                      name="TAIL_NUMBER" />
+                    <externalMetadataColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ORIGIN_AIRPORT]"
+                      dataType="wstr"
+                      length="50"
+                      name="ORIGIN_AIRPORT" />
+                    <externalMetadataColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DESTINATION_AIRPORT]"
+                      dataType="wstr"
+                      length="50"
+                      name="DESTINATION_AIRPORT" />
+                    <externalMetadataColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SCHEDULED_DEPARTURE]"
+                      dataType="wstr"
+                      length="50"
+                      name="SCHEDULED_DEPARTURE" />
+                    <externalMetadataColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DEPARTURE_TIME]"
+                      dataType="wstr"
+                      length="50"
+                      name="DEPARTURE_TIME" />
+                    <externalMetadataColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DEPARTURE_DELAY]"
+                      dataType="wstr"
+                      length="50"
+                      name="DEPARTURE_DELAY" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DATE]"
+                      dataType="wstr"
+                      length="20"
+                      lineageId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DATE]"
+                      name="DATE" />
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AIRLINE]"
+                      dataType="wstr"
+                      length="10"
+                      lineageId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AIRLINE]"
+                      name="AIRLINE" />
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FLIGHT_NUMBER]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FLIGHT_NUMBER]"
+                      name="FLIGHT_NUMBER" />
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[TAIL_NUMBER]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[TAIL_NUMBER]"
+                      name="TAIL_NUMBER" />
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ORIGIN_AIRPORT]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ORIGIN_AIRPORT]"
+                      name="ORIGIN_AIRPORT" />
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DESTINATION_AIRPORT]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DESTINATION_AIRPORT]"
+                      name="DESTINATION_AIRPORT" />
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[SCHEDULED_DEPARTURE]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[SCHEDULED_DEPARTURE]"
+                      name="SCHEDULED_DEPARTURE" />
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DEPARTURE_TIME]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DEPARTURE_TIME]"
+                      name="DEPARTURE_TIME" />
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DEPARTURE_DELAY]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DEPARTURE_DELAY]"
+                      name="DEPARTURE_DELAY" />
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Stage to NDS Flights.Paths[Data Conversion Error Output]"
+              endId="Package\Stage to NDS Flights\Add Error Info.Inputs[Derived Column Input]"
+              name="Data Conversion Error Output"
+              startId="Package\Stage to NDS Flights\Data Conversion.Outputs[Data Conversion Error Output]" />
+            <path
+              refId="Package\Stage to NDS Flights.Paths[Data Conversion Output]"
+              endId="Package\Stage to NDS Flights\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Data Conversion Output"
+              startId="Package\Stage to NDS Flights\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Stage to NDS Flights.Paths[Data Conversion Output1]"
+              endId="Package\Stage to NDS Flights\OLE DB Command.Inputs[OLE DB Command Input]"
+              name="Data Conversion Output"
+              startId="Package\Stage to NDS Flights\Data Conversion 1.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Stage to NDS Flights.Paths[Derived Column Output]"
+              endId="Package\Stage to NDS Flights\Lookup AIRLINE.Inputs[Lookup Input]"
+              name="Derived Column Output"
+              startId="Package\Stage to NDS Flights\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Stage to NDS Flights.Paths[Derived Column Output1]"
+              endId="Package\Stage to NDS Flights\DQ Log.Inputs[OLE DB Destination Input]"
+              name="Derived Column Output"
+              startId="Package\Stage to NDS Flights\Add Error Info.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Stage to NDS Flights.Paths[Lookup Match Output]"
+              endId="Package\Stage to NDS Flights\Lookup O_Airport.Inputs[Lookup Input]"
+              name="Lookup Match Output"
+              startId="Package\Stage to NDS Flights\Lookup AIRLINE.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Stage to NDS Flights.Paths[Lookup Match Output1]"
+              endId="Package\Stage to NDS Flights\Lookup D_Airport.Inputs[Lookup Input]"
+              name="Lookup Match Output"
+              startId="Package\Stage to NDS Flights\Lookup O_Airport.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Stage to NDS Flights.Paths[Lookup Match Output2]"
+              endId="Package\Stage to NDS Flights\Lookup.Inputs[Lookup Input]"
+              name="Lookup Match Output"
+              startId="Package\Stage to NDS Flights\Lookup D_Airport.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Stage to NDS Flights.Paths[Lookup Match Output3]"
+              endId="Package\Stage to NDS Flights\Data Conversion 1.Inputs[Data Conversion Input]"
+              name="Lookup Match Output"
+              startId="Package\Stage to NDS Flights\Lookup.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Stage to NDS Flights.Paths[Lookup No Match Output]"
+              endId="Package\Stage to NDS Flights\Data Conversion.Inputs[Data Conversion Input]"
+              name="Lookup No Match Output"
+              startId="Package\Stage to NDS Flights\Lookup.Outputs[Lookup No Match Output]" />
+            <path
+              refId="Package\Stage to NDS Flights.Paths[OLE DB Source Output]"
+              endId="Package\Stage to NDS Flights\Derived Column.Inputs[Derived Column Input]"
+              name="OLE DB Source Output"
+              startId="Package\Stage to NDS Flights\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{ABA8BD85-8C3F-4CC5-8D16-793F809D3059}"
+      DTS:From="Package\Stage to NDS Flights"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Satge to NDS FlightDetail" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="196.8,41.6"
+          Id="Package\Satge to NDS FlightDetail"
+          TopLeft="420.833310340015,154.266665593916" />
+        <NodeLayout
+          Size="175.2,41.6"
+          Id="Package\Stage to NDS Flights"
+          TopLeft="124.166659882499,155.133332254555" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="299.366659882499,175.499998924236">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="121.466650457515,0"
+              Start="0,0"
+              End="113.966650457515,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="113.966650457515,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Satge to NDS FlightDetail">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="152,41.6"
+          Id="Package\Satge to NDS FlightDetail\OLE DB Source"
+          TopLeft="254.999996200204,103.999998450279" />
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\Stage to NDS Flights">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="159.2,41.6"
+          Id="Package\Stage to NDS Flights\Lookup D_Airport"
+          TopLeft="627.999990642071,236.999996468425" />
+        <NodeLayout
+          Size="114.4,41.6"
+          Id="Package\Stage to NDS Flights\DQ Log"
+          TopLeft="593.99999114871,442.999993398785" />
+        <NodeLayout
+          Size="156,41.6"
+          Id="Package\Stage to NDS Flights\Data Conversion 1"
+          TopLeft="402.999993994832,339.999994933605" />
+        <NodeLayout
+          Size="152,41.6"
+          Id="Package\Stage to NDS Flights\OLE DB Source"
+          TopLeft="148.999997779727,46.9999992996454" />
+        <NodeLayout
+          Size="112.8,41.6"
+          Id="Package\Stage to NDS Flights\Lookup"
+          TopLeft="186.999997213483,334.999995008111" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Stage to NDS Flights\OLE DB Destination"
+          TopLeft="67.999998986721,518.999992266297" />
+        <NodeLayout
+          Size="160,41.6"
+          Id="Package\Stage to NDS Flights\Lookup O_Airport"
+          TopLeft="403.999993979931,241.999996393919" />
+        <NodeLayout
+          Size="152.8,41.6"
+          Id="Package\Stage to NDS Flights\Derived Column"
+          TopLeft="148.499997869134,155.499997764826" />
+        <NodeLayout
+          Size="156,41.6"
+          Id="Package\Stage to NDS Flights\Lookup AIRLINE"
+          TopLeft="174.499997928739,243.499996900559" />
+        <NodeLayout
+          Size="156,41.6"
+          Id="Package\Stage to NDS Flights\Data Conversion"
+          TopLeft="64.9999990314246,443.999993383884" />
+        <NodeLayout
+          Size="167.2,41.6"
+          Id="Package\Stage to NDS Flights\OLE DB Command"
+          TopLeft="642.999990418553,334.999995008111" />
+        <NodeLayout
+          Size="143.2,41.6"
+          Id="Package\Stage to NDS Flights\Add Error Info"
+          TopLeft="354.999994710088,439.999993443489" />
+        <EdgeLayout
+          Id="Package\Stage to NDS Flights.Paths[OLE DB Source Output]"
+          TopLeft="224.94999782443,88.5999992996454">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,66.8999984651804"
+              Start="0,0"
+              End="0,59.3999984651804">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,59.3999984651804" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Stage to NDS Flights.Paths[Lookup No Match Output]"
+          TopLeft="243.399997213483,376.599995008111">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-100.399998182058,67.3999983757734"
+              Start="0,0"
+              End="-100.399998182058,59.8999983757734">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.6999991878867" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,29.6999991878867"
+                    Point2="0,33.6999991878867"
+                    Point3="-4,33.6999991878867" />
+                  <mssgle:LineSegment
+                    End="-96.3999981820583,33.6999991878867" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-96.3999981820583,33.6999991878867"
+                    Point2="-100.399998182058,33.6999991878867"
+                    Point3="-100.399998182058,37.6999991878867" />
+                  <mssgle:LineSegment
+                    End="-100.399998182058,59.8999983757734" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-106.006385809779,38.6999991878867,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Stage to NDS Flights.Paths[Lookup Match Output3]"
+          TopLeft="299.799997213483,358.299994970858">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="103.199996781349,0"
+              Start="0,0"
+              End="95.6999967813492,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="95.6999967813492,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-0.341388328075418,5,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Stage to NDS Flights.Paths[Lookup Match Output2]"
+          TopLeft="707.599990642071,278.599996468425">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-464.199993428588,56.3999985396862"
+              Start="0,0"
+              End="-464.199993428588,48.8999985396862">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.1999992698431" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24.1999992698431"
+                    Point2="0,28.1999992698431"
+                    Point3="-4,28.1999992698431" />
+                  <mssgle:LineSegment
+                    End="-460.199993428588,28.1999992698431" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-460.199993428588,28.1999992698431"
+                    Point2="-464.199993428588,28.1999992698431"
+                    Point3="-464.199993428588,32.1999992698431" />
+                  <mssgle:LineSegment
+                    End="-464.199993428588,48.8999985396862" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-280.291383433044,33.1999992698431,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Stage to NDS Flights.Paths[Lookup Match Output1]"
+          TopLeft="563.999993979931,260.299996431172">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="63.99999666214,0"
+              Start="0,0"
+              End="56.49999666214,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="56.49999666214,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-19.94138838768,5,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Stage to NDS Flights.Paths[Lookup Match Output]"
+          TopLeft="330.499997928739,263.549996647239">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="73.4999960511922,0"
+              Start="0,0"
+              End="65.9999960511922,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="65.9999960511922,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-15.1913886931539,5,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Stage to NDS Flights.Paths[Derived Column Output1]"
+          TopLeft="498.199994710088,462.299993421137">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="95.7999964386224,0"
+              Start="0,0"
+              End="88.2999964386224,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="88.2999964386224,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Stage to NDS Flights.Paths[Derived Column Output]"
+          TopLeft="224.899997869134,197.099997764826">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="27.6000000596047,46.3999991357327"
+              Start="0,0"
+              End="27.6000000596047,38.8999991357327">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.1999995678664" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.1999995678664"
+                    Point2="0,23.1999995678664"
+                    Point3="4,23.1999995678664" />
+                  <mssgle:LineSegment
+                    End="23.6000000596047,23.1999995678664" />
+                  <mssgle:CubicBezierSegment
+                    Point1="23.6000000596047,23.1999995678664"
+                    Point2="27.6000000596047,23.1999995678664"
+                    Point3="27.6000000596047,27.1999995678664" />
+                  <mssgle:LineSegment
+                    End="27.6000000596047,38.8999991357327" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Stage to NDS Flights.Paths[Data Conversion Output1]"
+          TopLeft="558.999993994832,358.299994970858">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="83.9999964237213,0"
+              Start="0,0"
+              End="76.4999964237213,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="76.4999964237213,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Stage to NDS Flights.Paths[Data Conversion Output]"
+          TopLeft="142.999999031425,485.599993383885">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="10.5999999552965,33.3999988824128"
+              Start="0,0"
+              End="10.5999999552965,25.8999988824128">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,12.6999994412064" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,12.6999994412064"
+                    Point2="0,16.6999994412064"
+                    Point3="4,16.6999994412064" />
+                  <mssgle:LineSegment
+                    End="6.59999995529648,16.6999994412064" />
+                  <mssgle:CubicBezierSegment
+                    Point1="6.59999995529648,16.6999994412064"
+                    Point2="10.5999999552965,16.6999994412064"
+                    Point3="10.5999999552965,20.6999994412064" />
+                  <mssgle:LineSegment
+                    End="10.5999999552965,25.8999988824128" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Stage to NDS Flights.Paths[Data Conversion Error Output]"
+          TopLeft="220.999999031425,462.799993413687">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="133.999995678663,0"
+              Start="0,0"
+              End="126.499995678663,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="126.499995678663,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-2.83638887941832,5,132.1727734375,11.43359375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Stage to NDS Flights\Lookup O_Airport">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[Airports]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Stage to NDS Flights\Lookup">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[NDS_Flights]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Stage to NDS Flights\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Stage to NDS Flights\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Stage to NDS Flights\Lookup D_Airport">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[Airports]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Stage to NDS Flights\Lookup AIRLINE">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[Airlines]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Stage to NDS Flights\DQ Log">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
