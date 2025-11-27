@@ -159,7 +159,8 @@ GO
 
 select* from Airlines
 select* from Airports
-select top 5* from Flights
+select * from Flights
+select * from Flights_detail
 select count(*) from Flights
 CREATE TABLE Airlines(
   IATA_CODE NVARCHAR(10),
@@ -220,6 +221,9 @@ CREATE TABLE Flights_detail (
 );
 GO
 
+drop table Flights
+drop table Flights_detail
+
 use HTTTKD_NDS
 go
 
@@ -235,6 +239,35 @@ CREATE TABLE AirportsNDS (
 	UpdatedAt DATETIME
 );
 GO
+
+CREATE TABLE AirlinesNDS (
+    Airline_SK INT IDENTITY(1,1) PRIMARY KEY, -- Surrogate Key (Khóa tự tăng của hệ thống mình)
+    Airline_IATA NVARCHAR(10),                -- Business Key (Mã từ hệ thống nguồn)
+    Airline_Name NVARCHAR(255),
+    SourceID INT,                             -- Lấy từ bảng sourceTable bên Metadata
+    CreatedDate DATETIME DEFAULT GETDATE(),
+    UpdatedDate DATETIME DEFAULT GETDATE()
+);
+GO
+
+CREATE TABLE NDS_Flights (
+    Flight_SK INT IDENTITY(1,1) PRIMARY KEY,
+    SourceID INT,                       -- sẽ được add trong Derived Column
+    Flight_BK NVARCHAR(200),            -- Business Key (DATE + AIRLINE + FLIGHT_NUMBER)
+    [DATE] DATE NULL,
+    AIRLINE NVARCHAR(10),
+    FLIGHT_NUMBER NVARCHAR(50),
+    TAIL_NUMBER NVARCHAR(50),
+    ORIGIN_AIRPORT INT,
+    DESTINATION_AIRPORT INT,
+    SCHEDULED_DEPARTURE INT NULL,
+    DEPARTURE_TIME INT NULL,
+    DEPARTURE_DELAY INT NULL,
+    CreatedDate DATETIME DEFAULT GETDATE(),
+    LastUpdatedDate DATETIME NULL
+);
+
+
 
 
 

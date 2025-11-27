@@ -2,18 +2,18 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>Integration Services Project1</Name>
-    <LastWriteTime>2025-11-20T09:34:14.1439409Z</LastWriteTime>
+    <LastWriteTime>2025-11-23T10:42:28.4369698Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>Source_to_Stage.dtsx</Name>
-      <LastWriteTime>2025-11-20T09:34:14.0690144Z</LastWriteTime>
+      <LastWriteTime>2025-11-23T10:59:43.7482091Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Stage_to_NDS.dtsx</Name>
-      <LastWriteTime>2025-11-20T09:37:47.4967653Z</LastWriteTime>
+      <LastWriteTime>2025-11-23T10:35:10.8354372Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
