@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Stage_to_NDS"
   DTS:PackageType="5"
-  DTS:VersionBuild="43"
-  DTS:VersionGUID="{812C693F-9D5F-4E74-B63B-BF7960C16511}">
+  DTS:VersionBuild="45"
+  DTS:VersionGUID="{1C5E556E-FD22-41CF-BD5C-0C2386027B5A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA3yYHH1ZwXka+yJZmX7J+PQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB0TZeLxmQBHEzsmKzl6yADPpL27TBWSNqsoVqzhReZ2wAAAAAOgAAAAAIAACAAAABbqLFWoibrntT3Y2h7kGUS1x+2hXOQ38swTG60Uad/PRAAAADC4Nx4XFDpPMK8ng+60CTZQAAAAI0SJAuRfDvxj/pKceSbj1EP/Ptj2xz1noO252CCT5TCRfT6jF9tpJ1tju/yZoMAp1n/E/CI6wgA2c9C1e1i4MI</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA3yYHH1ZwXka+yJZmX7J+PQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADSTOKy7CXY5WY4N+BSaF9uxEehlJ6WpN4234/0Cg6nkwAAAAAOgAAAAAIAACAAAADepkzCgD+3OMuoRP9xE7+SgNMHIebuZd/gp7Du3aYbPhAAAACIKzHtem0iIMo4PGDRyeuDQAAAAKigvR18Q5R+N4H5bJfgBtV835141gUPryEEX7B0xX8VAHchA4CD8Dvm369QNCYgHEZfBNHSbXTxA5yB3oldoak</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA3yYHH1ZwXka+yJZmX7J+PQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABfDzSIBoxWmyGkkD/g3blEDjTsAkX2peBe5vMzIyulmwAAAAAOgAAAAAIAACAAAADd5ab+/rRDrHKNY8lKG5Ny1V1f2CjfePzqvEsJQeEwXRAAAABJGo+UI1rDc72tJp/usF/oQAAAAIS6/sd/7iYXhTdOa9ZLlN7bHIS3ijM/OGtO0XEkAhg8JhVMNWy5aQPhp2pW9QznFu1zpSZyb1AwDo0s5xJVUCw</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA3yYHH1ZwXka+yJZmX7J+PQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABsC5N5R7Qcy5u7PXOhI5ddh/VAOKCAoX4LijuHoUT29QAAAAAOgAAAAAIAACAAAACL1Yy/aW3MURRzI8XRvthGHpexrlDW2i/QRCH/37OxtRAAAACLnoZGYGW4Qm9CNjZ41hC5QAAAAFmioXa0hL55H4zWYx+iA4SgqgkOxGg0lm2PUPhxREjDikQIb55k84QSWvWMR8JUJwEEEIceMc4y0B4AlIfDK/4</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -63,7 +63,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA3yYHH1ZwXka+yJZmX7J+PQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC1RI9klKoWvOfkEe6I9JIOWlSRDaeu8JLG34zoOusaNAAAAAAOgAAAAAIAACAAAADtQKud89l3mZqXKJfdjGqagYbyRi+j34itdrm1296QRxAAAAA6k/muNMsdsco6LVEh/F1MQAAAAA9lj5oaJ8QjEU9cpwFDQZ6yB7LFcoPnffkow1Nw1KVJf0r+gpzfbJP0GFlrSzK1VUBArMQfzjxRjosD01lrACk</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA3yYHH1ZwXka+yJZmX7J+PQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADEC+pvSrilUwMc/zdBd4Q7fnznixntVu4PsPCko5akKgAAAAAOgAAAAAIAACAAAADPrwG7F4OtA39FpCL1TlkQeTgcIDQy9ZQ82XS5fvi65xAAAABPp0mgvBzr3Ly1ZE/06zbKQAAAAP5nE1cclde8ThhXBA8N+ioFLXUsQgIjYAyrF38UDqiAeXRGiqhH6p7JgwBt1G1390bShwq64U6AURl6kO47jxM</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -74,6 +74,7 @@
       DTS:refId="Package\Airlines to AirlinesNDS"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Sequence Container"
+      DTS:Disabled="True"
       DTS:DTSID="{3358721A-2843-4F50-896F-9BFAB5CA99CB}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
@@ -1005,6 +1006,7 @@ WHERE Airline_IATA = ?</property>
       DTS:refId="Package\Airports to AirportsNDS"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Sequence Container"
+      DTS:Disabled="True"
       DTS:DTSID="{B91B4973-4165-4050-9D8C-F799C6D5CEF8}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
@@ -1374,11 +1376,11 @@ WHERE Airline_IATA = ?</property>
                   </outputs>
                 </component>
                 <component
-                  refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert Dim_Airports"
+                  refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert AirportsNDS"
                   componentClassID="Microsoft.OLEDBDestination"
                   contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
                   description="OLE DB Destination"
-                  name="Insert Dim_Airports"
+                  name="Insert AirportsNDS"
                   usesDispositions="true"
                   version="4">
                   <properties>
@@ -1431,7 +1433,7 @@ WHERE Airline_IATA = ?</property>
                   </properties>
                   <connections>
                     <connection
-                      refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert Dim_Airports.Connections[OleDbConnection]"
+                      refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert AirportsNDS.Connections[OleDbConnection]"
                       connectionManagerID="Package.ConnectionManagers[DESKTOP-G9815ER.HTTTKD_NDS.BENU]"
                       connectionManagerRefId="Package.ConnectionManagers[DESKTOP-G9815ER.HTTTKD_NDS.BENU]"
                       description="The OLE DB runtime connection used to access the database."
@@ -1439,115 +1441,115 @@ WHERE Airline_IATA = ?</property>
                   </connections>
                   <inputs>
                     <input
-                      refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert Dim_Airports.Inputs[OLE DB Destination Input]"
+                      refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert AirportsNDS.Inputs[OLE DB Destination Input]"
                       errorOrTruncationOperation="Insert"
                       errorRowDisposition="FailComponent"
                       hasSideEffects="true"
                       name="OLE DB Destination Input">
                       <inputColumns>
                         <inputColumn
-                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert Dim_Airports.Inputs[OLE DB Destination Input].Columns[IATA_CODE]"
+                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert AirportsNDS.Inputs[OLE DB Destination Input].Columns[IATA_CODE]"
                           cachedDataType="wstr"
                           cachedLength="10"
                           cachedName="IATA_CODE"
-                          externalMetadataColumnId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert Dim_Airports.Inputs[OLE DB Destination Input].ExternalColumns[IATA_CODE]"
+                          externalMetadataColumnId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert AirportsNDS.Inputs[OLE DB Destination Input].ExternalColumns[IATA_CODE]"
                           lineageId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[IATA_CODE]" />
                         <inputColumn
-                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert Dim_Airports.Inputs[OLE DB Destination Input].Columns[AIRPORT]"
+                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert AirportsNDS.Inputs[OLE DB Destination Input].Columns[AIRPORT]"
                           cachedDataType="wstr"
                           cachedLength="255"
                           cachedName="AIRPORT"
-                          externalMetadataColumnId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert Dim_Airports.Inputs[OLE DB Destination Input].ExternalColumns[AIRPORT]"
+                          externalMetadataColumnId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert AirportsNDS.Inputs[OLE DB Destination Input].ExternalColumns[AIRPORT]"
                           lineageId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[AIRPORT]" />
                         <inputColumn
-                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert Dim_Airports.Inputs[OLE DB Destination Input].Columns[CITY]"
+                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert AirportsNDS.Inputs[OLE DB Destination Input].Columns[CITY]"
                           cachedDataType="wstr"
                           cachedLength="255"
                           cachedName="CITY"
-                          externalMetadataColumnId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert Dim_Airports.Inputs[OLE DB Destination Input].ExternalColumns[CITY]"
+                          externalMetadataColumnId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert AirportsNDS.Inputs[OLE DB Destination Input].ExternalColumns[CITY]"
                           lineageId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[CITY]" />
                         <inputColumn
-                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert Dim_Airports.Inputs[OLE DB Destination Input].Columns[STATE]"
+                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert AirportsNDS.Inputs[OLE DB Destination Input].Columns[STATE]"
                           cachedDataType="wstr"
                           cachedLength="50"
                           cachedName="STATE"
-                          externalMetadataColumnId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert Dim_Airports.Inputs[OLE DB Destination Input].ExternalColumns[STATE]"
+                          externalMetadataColumnId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert AirportsNDS.Inputs[OLE DB Destination Input].ExternalColumns[STATE]"
                           lineageId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[STATE]" />
                         <inputColumn
-                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert Dim_Airports.Inputs[OLE DB Destination Input].Columns[COUNTRY]"
+                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert AirportsNDS.Inputs[OLE DB Destination Input].Columns[COUNTRY]"
                           cachedDataType="wstr"
                           cachedLength="50"
                           cachedName="COUNTRY"
-                          externalMetadataColumnId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert Dim_Airports.Inputs[OLE DB Destination Input].ExternalColumns[COUNTRY]"
+                          externalMetadataColumnId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert AirportsNDS.Inputs[OLE DB Destination Input].ExternalColumns[COUNTRY]"
                           lineageId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[COUNTRY]" />
                         <inputColumn
-                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert Dim_Airports.Inputs[OLE DB Destination Input].Columns[LATITUDE_converted]"
+                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert AirportsNDS.Inputs[OLE DB Destination Input].Columns[LATITUDE_converted]"
                           cachedDataType="numeric"
                           cachedName="LATITUDE_converted"
                           cachedPrecision="9"
                           cachedScale="6"
-                          externalMetadataColumnId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert Dim_Airports.Inputs[OLE DB Destination Input].ExternalColumns[LATITUDE]"
+                          externalMetadataColumnId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert AirportsNDS.Inputs[OLE DB Destination Input].ExternalColumns[LATITUDE]"
                           lineageId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Convert LATITUDE and LONGITUDE.Outputs[Derived Column Output].Columns[LATITUDE_converted]" />
                         <inputColumn
-                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert Dim_Airports.Inputs[OLE DB Destination Input].Columns[LONGITUDE_converted]"
+                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert AirportsNDS.Inputs[OLE DB Destination Input].Columns[LONGITUDE_converted]"
                           cachedDataType="numeric"
                           cachedName="LONGITUDE_converted"
                           cachedPrecision="9"
                           cachedScale="6"
-                          externalMetadataColumnId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert Dim_Airports.Inputs[OLE DB Destination Input].ExternalColumns[LONGITUDE]"
+                          externalMetadataColumnId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert AirportsNDS.Inputs[OLE DB Destination Input].ExternalColumns[LONGITUDE]"
                           lineageId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Convert LATITUDE and LONGITUDE.Outputs[Derived Column Output].Columns[LONGITUDE_converted]" />
                         <inputColumn
-                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert Dim_Airports.Inputs[OLE DB Destination Input].Columns[Update]"
+                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert AirportsNDS.Inputs[OLE DB Destination Input].Columns[Update]"
                           cachedDataType="dbTimeStamp"
                           cachedName="Update"
-                          externalMetadataColumnId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert Dim_Airports.Inputs[OLE DB Destination Input].ExternalColumns[UpdatedAt]"
+                          externalMetadataColumnId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert AirportsNDS.Inputs[OLE DB Destination Input].ExternalColumns[UpdatedAt]"
                           lineageId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Set UpdateAt.Outputs[Derived Column Output].Columns[Update]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
                         <externalMetadataColumn
-                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert Dim_Airports.Inputs[OLE DB Destination Input].ExternalColumns[Airport_SK]"
+                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert AirportsNDS.Inputs[OLE DB Destination Input].ExternalColumns[Airport_SK]"
                           dataType="i4"
                           name="Airport_SK" />
                         <externalMetadataColumn
-                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert Dim_Airports.Inputs[OLE DB Destination Input].ExternalColumns[IATA_CODE]"
+                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert AirportsNDS.Inputs[OLE DB Destination Input].ExternalColumns[IATA_CODE]"
                           dataType="wstr"
                           length="10"
                           name="IATA_CODE" />
                         <externalMetadataColumn
-                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert Dim_Airports.Inputs[OLE DB Destination Input].ExternalColumns[AIRPORT]"
+                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert AirportsNDS.Inputs[OLE DB Destination Input].ExternalColumns[AIRPORT]"
                           dataType="wstr"
                           length="255"
                           name="AIRPORT" />
                         <externalMetadataColumn
-                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert Dim_Airports.Inputs[OLE DB Destination Input].ExternalColumns[CITY]"
+                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert AirportsNDS.Inputs[OLE DB Destination Input].ExternalColumns[CITY]"
                           dataType="wstr"
                           length="255"
                           name="CITY" />
                         <externalMetadataColumn
-                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert Dim_Airports.Inputs[OLE DB Destination Input].ExternalColumns[STATE]"
+                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert AirportsNDS.Inputs[OLE DB Destination Input].ExternalColumns[STATE]"
                           dataType="wstr"
                           length="50"
                           name="STATE" />
                         <externalMetadataColumn
-                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert Dim_Airports.Inputs[OLE DB Destination Input].ExternalColumns[COUNTRY]"
+                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert AirportsNDS.Inputs[OLE DB Destination Input].ExternalColumns[COUNTRY]"
                           dataType="wstr"
                           length="50"
                           name="COUNTRY" />
                         <externalMetadataColumn
-                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert Dim_Airports.Inputs[OLE DB Destination Input].ExternalColumns[LATITUDE]"
+                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert AirportsNDS.Inputs[OLE DB Destination Input].ExternalColumns[LATITUDE]"
                           dataType="numeric"
                           name="LATITUDE"
                           precision="9"
                           scale="6" />
                         <externalMetadataColumn
-                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert Dim_Airports.Inputs[OLE DB Destination Input].ExternalColumns[LONGITUDE]"
+                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert AirportsNDS.Inputs[OLE DB Destination Input].ExternalColumns[LONGITUDE]"
                           dataType="numeric"
                           name="LONGITUDE"
                           precision="9"
                           scale="6" />
                         <externalMetadataColumn
-                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert Dim_Airports.Inputs[OLE DB Destination Input].ExternalColumns[UpdatedAt]"
+                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert AirportsNDS.Inputs[OLE DB Destination Input].ExternalColumns[UpdatedAt]"
                           dataType="dbTimeStamp"
                           name="UpdatedAt" />
                       </externalMetadataColumns>
@@ -1555,22 +1557,22 @@ WHERE Airline_IATA = ?</property>
                   </inputs>
                   <outputs>
                     <output
-                      refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert Dim_Airports.Outputs[OLE DB Destination Error Output]"
+                      refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert AirportsNDS.Outputs[OLE DB Destination Error Output]"
                       exclusionGroup="1"
                       isErrorOut="true"
                       name="OLE DB Destination Error Output"
-                      synchronousInputId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert Dim_Airports.Inputs[OLE DB Destination Input]">
+                      synchronousInputId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert AirportsNDS.Inputs[OLE DB Destination Input]">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert Dim_Airports.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert AirportsNDS.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                           dataType="i4"
-                          lineageId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert Dim_Airports.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          lineageId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert AirportsNDS.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                           name="ErrorCode"
                           specialFlags="1" />
                         <outputColumn
-                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert Dim_Airports.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert AirportsNDS.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                           dataType="i4"
-                          lineageId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert Dim_Airports.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          lineageId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert AirportsNDS.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                           name="ErrorColumn"
                           specialFlags="2" />
                       </outputColumns>
@@ -1579,11 +1581,11 @@ WHERE Airline_IATA = ?</property>
                   </outputs>
                 </component>
                 <component
-                  refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Lookup in Dim_Airports"
+                  refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Lookup in AirportsNDS"
                   componentClassID="Microsoft.Lookup"
                   contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
                   description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
-                  name="Lookup in Dim_Airports"
+                  name="Lookup in AirportsNDS"
                   usesDispositions="true"
                   version="6">
                   <properties>
@@ -1647,7 +1649,7 @@ where [refTable].[IATA_CODE] = ?</property>
                   </properties>
                   <connections>
                     <connection
-                      refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Lookup in Dim_Airports.Connections[OleDbConnection]"
+                      refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Lookup in AirportsNDS.Connections[OleDbConnection]"
                       connectionManagerID="Package.ConnectionManagers[DESKTOP-G9815ER.HTTTKD_NDS.BENU]"
                       connectionManagerRefId="Package.ConnectionManagers[DESKTOP-G9815ER.HTTTKD_NDS.BENU]"
                       description="Connection manager used to access lookup data."
@@ -1655,11 +1657,11 @@ where [refTable].[IATA_CODE] = ?</property>
                   </connections>
                   <inputs>
                     <input
-                      refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Lookup in Dim_Airports.Inputs[Lookup Input]"
+                      refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Lookup in AirportsNDS.Inputs[Lookup Input]"
                       name="Lookup Input">
                       <inputColumns>
                         <inputColumn
-                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Lookup in Dim_Airports.Inputs[Lookup Input].Columns[IATA_CODE]"
+                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Lookup in AirportsNDS.Inputs[Lookup Input].Columns[IATA_CODE]"
                           cachedDataType="wstr"
                           cachedLength="10"
                           cachedName="IATA_CODE"
@@ -1681,17 +1683,17 @@ where [refTable].[IATA_CODE] = ?</property>
                   </inputs>
                   <outputs>
                     <output
-                      refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Lookup in Dim_Airports.Outputs[Lookup Match Output]"
+                      refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Lookup in AirportsNDS.Outputs[Lookup Match Output]"
                       errorOrTruncationOperation="Lookup"
                       exclusionGroup="1"
                       name="Lookup Match Output"
-                      synchronousInputId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Lookup in Dim_Airports.Inputs[Lookup Input]">
+                      synchronousInputId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Lookup in AirportsNDS.Inputs[Lookup Input]">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Lookup in Dim_Airports.Outputs[Lookup Match Output].Columns[Airport_SK_Lookup]"
+                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Lookup in AirportsNDS.Outputs[Lookup Match Output].Columns[Airport_SK_Lookup]"
                           dataType="i4"
                           errorOrTruncationOperation="Copy Column"
-                          lineageId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Lookup in Dim_Airports.Outputs[Lookup Match Output].Columns[Airport_SK_Lookup]"
+                          lineageId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Lookup in AirportsNDS.Outputs[Lookup Match Output].Columns[Airport_SK_Lookup]"
                           name="Airport_SK_Lookup"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -1705,30 +1707,30 @@ where [refTable].[IATA_CODE] = ?</property>
                       <externalMetadataColumns />
                     </output>
                     <output
-                      refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Lookup in Dim_Airports.Outputs[Lookup No Match Output]"
+                      refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Lookup in AirportsNDS.Outputs[Lookup No Match Output]"
                       description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
                       exclusionGroup="1"
                       name="Lookup No Match Output"
-                      synchronousInputId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Lookup in Dim_Airports.Inputs[Lookup Input]">
+                      synchronousInputId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Lookup in AirportsNDS.Inputs[Lookup Input]">
                       <externalMetadataColumns />
                     </output>
                     <output
-                      refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Lookup in Dim_Airports.Outputs[Lookup Error Output]"
+                      refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Lookup in AirportsNDS.Outputs[Lookup Error Output]"
                       exclusionGroup="1"
                       isErrorOut="true"
                       name="Lookup Error Output"
-                      synchronousInputId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Lookup in Dim_Airports.Inputs[Lookup Input]">
+                      synchronousInputId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Lookup in AirportsNDS.Inputs[Lookup Input]">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Lookup in Dim_Airports.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Lookup in AirportsNDS.Outputs[Lookup Error Output].Columns[ErrorCode]"
                           dataType="i4"
-                          lineageId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Lookup in Dim_Airports.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                          lineageId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Lookup in AirportsNDS.Outputs[Lookup Error Output].Columns[ErrorCode]"
                           name="ErrorCode"
                           specialFlags="1" />
                         <outputColumn
-                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Lookup in Dim_Airports.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Lookup in AirportsNDS.Outputs[Lookup Error Output].Columns[ErrorColumn]"
                           dataType="i4"
-                          lineageId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Lookup in Dim_Airports.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                          lineageId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Lookup in AirportsNDS.Outputs[Lookup Error Output].Columns[ErrorColumn]"
                           name="ErrorColumn"
                           specialFlags="2" />
                       </outputColumns>
@@ -1810,11 +1812,11 @@ where [refTable].[IATA_CODE] = ?</property>
                   </outputs>
                 </component>
                 <component
-                  refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update Dim_Airports"
+                  refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update AirportsNDS"
                   componentClassID="Microsoft.OLEDBCommand"
                   contactInfo="OLE DB Command;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
                   description="Runs an SQL statement for each row in a data flow. For example, call a 'new employee setup' stored procedure for each row in the 'new employees' table. Note: running an SQL statement for each row of a large data flow may take a long time."
-                  name="Update Dim_Airports"
+                  name="Update AirportsNDS"
                   usesDispositions="true"
                   version="2">
                   <properties>
@@ -1854,7 +1856,7 @@ Where Airport_SK=?</property>
                   </properties>
                   <connections>
                     <connection
-                      refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update Dim_Airports.Connections[OleDbConnection]"
+                      refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update AirportsNDS.Connections[OleDbConnection]"
                       connectionManagerID="Package.ConnectionManagers[DESKTOP-G9815ER.HTTTKD_NDS.BENU]"
                       connectionManagerRefId="Package.ConnectionManagers[DESKTOP-G9815ER.HTTTKD_NDS.BENU]"
                       description="The OLE DB runtime connection used to access the database."
@@ -1862,74 +1864,74 @@ Where Airport_SK=?</property>
                   </connections>
                   <inputs>
                     <input
-                      refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update Dim_Airports.Inputs[OLE DB Command Input]"
+                      refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update AirportsNDS.Inputs[OLE DB Command Input]"
                       errorOrTruncationOperation="Command Execution"
                       errorRowDisposition="FailComponent"
                       hasSideEffects="true"
                       name="OLE DB Command Input">
                       <inputColumns>
                         <inputColumn
-                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update Dim_Airports.Inputs[OLE DB Command Input].Columns[IATA_CODE]"
+                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update AirportsNDS.Inputs[OLE DB Command Input].Columns[IATA_CODE]"
                           cachedDataType="wstr"
                           cachedLength="10"
                           cachedName="IATA_CODE"
-                          externalMetadataColumnId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update Dim_Airports.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                          externalMetadataColumnId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update AirportsNDS.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
                           lineageId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[IATA_CODE]" />
                         <inputColumn
-                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update Dim_Airports.Inputs[OLE DB Command Input].Columns[AIRPORT]"
+                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update AirportsNDS.Inputs[OLE DB Command Input].Columns[AIRPORT]"
                           cachedDataType="wstr"
                           cachedLength="255"
                           cachedName="AIRPORT"
-                          externalMetadataColumnId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update Dim_Airports.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                          externalMetadataColumnId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update AirportsNDS.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
                           lineageId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[AIRPORT]" />
                         <inputColumn
-                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update Dim_Airports.Inputs[OLE DB Command Input].Columns[CITY]"
+                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update AirportsNDS.Inputs[OLE DB Command Input].Columns[CITY]"
                           cachedDataType="wstr"
                           cachedLength="255"
                           cachedName="CITY"
-                          externalMetadataColumnId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update Dim_Airports.Inputs[OLE DB Command Input].ExternalColumns[Param_2]"
+                          externalMetadataColumnId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update AirportsNDS.Inputs[OLE DB Command Input].ExternalColumns[Param_2]"
                           lineageId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[CITY]" />
                         <inputColumn
-                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update Dim_Airports.Inputs[OLE DB Command Input].Columns[STATE]"
+                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update AirportsNDS.Inputs[OLE DB Command Input].Columns[STATE]"
                           cachedDataType="wstr"
                           cachedLength="50"
                           cachedName="STATE"
-                          externalMetadataColumnId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update Dim_Airports.Inputs[OLE DB Command Input].ExternalColumns[Param_3]"
+                          externalMetadataColumnId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update AirportsNDS.Inputs[OLE DB Command Input].ExternalColumns[Param_3]"
                           lineageId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[STATE]" />
                         <inputColumn
-                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update Dim_Airports.Inputs[OLE DB Command Input].Columns[COUNTRY]"
+                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update AirportsNDS.Inputs[OLE DB Command Input].Columns[COUNTRY]"
                           cachedDataType="wstr"
                           cachedLength="50"
                           cachedName="COUNTRY"
-                          externalMetadataColumnId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update Dim_Airports.Inputs[OLE DB Command Input].ExternalColumns[Param_4]"
+                          externalMetadataColumnId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update AirportsNDS.Inputs[OLE DB Command Input].ExternalColumns[Param_4]"
                           lineageId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[COUNTRY]" />
                         <inputColumn
-                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update Dim_Airports.Inputs[OLE DB Command Input].Columns[LATITUDE_converted]"
+                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update AirportsNDS.Inputs[OLE DB Command Input].Columns[LATITUDE_converted]"
                           cachedDataType="numeric"
                           cachedName="LATITUDE_converted"
                           cachedPrecision="9"
                           cachedScale="6"
-                          externalMetadataColumnId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update Dim_Airports.Inputs[OLE DB Command Input].ExternalColumns[Param_5]"
+                          externalMetadataColumnId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update AirportsNDS.Inputs[OLE DB Command Input].ExternalColumns[Param_5]"
                           lineageId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Convert LATITUDE and LONGITUDE.Outputs[Derived Column Output].Columns[LATITUDE_converted]" />
                         <inputColumn
-                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update Dim_Airports.Inputs[OLE DB Command Input].Columns[LONGITUDE_converted]"
+                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update AirportsNDS.Inputs[OLE DB Command Input].Columns[LONGITUDE_converted]"
                           cachedDataType="numeric"
                           cachedName="LONGITUDE_converted"
                           cachedPrecision="9"
                           cachedScale="6"
-                          externalMetadataColumnId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update Dim_Airports.Inputs[OLE DB Command Input].ExternalColumns[Param_6]"
+                          externalMetadataColumnId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update AirportsNDS.Inputs[OLE DB Command Input].ExternalColumns[Param_6]"
                           lineageId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Convert LATITUDE and LONGITUDE.Outputs[Derived Column Output].Columns[LONGITUDE_converted]" />
                         <inputColumn
-                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update Dim_Airports.Inputs[OLE DB Command Input].Columns[Airport_SK_Lookup]"
+                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update AirportsNDS.Inputs[OLE DB Command Input].Columns[Airport_SK_Lookup]"
                           cachedDataType="i4"
                           cachedName="Airport_SK_Lookup"
-                          externalMetadataColumnId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update Dim_Airports.Inputs[OLE DB Command Input].ExternalColumns[Param_7]"
-                          lineageId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Lookup in Dim_Airports.Outputs[Lookup Match Output].Columns[Airport_SK_Lookup]" />
+                          externalMetadataColumnId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update AirportsNDS.Inputs[OLE DB Command Input].ExternalColumns[Param_7]"
+                          lineageId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Lookup in AirportsNDS.Outputs[Lookup Match Output].Columns[Airport_SK_Lookup]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
                         <externalMetadataColumn
-                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update Dim_Airports.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update AirportsNDS.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
                           dataType="wstr"
                           length="10"
                           name="Param_0">
@@ -1941,7 +1943,7 @@ Where Airport_SK=?</property>
                           </properties>
                         </externalMetadataColumn>
                         <externalMetadataColumn
-                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update Dim_Airports.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update AirportsNDS.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
                           dataType="wstr"
                           length="255"
                           name="Param_1">
@@ -1953,7 +1955,7 @@ Where Airport_SK=?</property>
                           </properties>
                         </externalMetadataColumn>
                         <externalMetadataColumn
-                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update Dim_Airports.Inputs[OLE DB Command Input].ExternalColumns[Param_2]"
+                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update AirportsNDS.Inputs[OLE DB Command Input].ExternalColumns[Param_2]"
                           dataType="wstr"
                           length="255"
                           name="Param_2">
@@ -1965,7 +1967,7 @@ Where Airport_SK=?</property>
                           </properties>
                         </externalMetadataColumn>
                         <externalMetadataColumn
-                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update Dim_Airports.Inputs[OLE DB Command Input].ExternalColumns[Param_3]"
+                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update AirportsNDS.Inputs[OLE DB Command Input].ExternalColumns[Param_3]"
                           dataType="wstr"
                           length="50"
                           name="Param_3">
@@ -1977,7 +1979,7 @@ Where Airport_SK=?</property>
                           </properties>
                         </externalMetadataColumn>
                         <externalMetadataColumn
-                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update Dim_Airports.Inputs[OLE DB Command Input].ExternalColumns[Param_4]"
+                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update AirportsNDS.Inputs[OLE DB Command Input].ExternalColumns[Param_4]"
                           dataType="wstr"
                           length="50"
                           name="Param_4">
@@ -1989,7 +1991,7 @@ Where Airport_SK=?</property>
                           </properties>
                         </externalMetadataColumn>
                         <externalMetadataColumn
-                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update Dim_Airports.Inputs[OLE DB Command Input].ExternalColumns[Param_5]"
+                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update AirportsNDS.Inputs[OLE DB Command Input].ExternalColumns[Param_5]"
                           dataType="numeric"
                           name="Param_5"
                           precision="9"
@@ -2002,7 +2004,7 @@ Where Airport_SK=?</property>
                           </properties>
                         </externalMetadataColumn>
                         <externalMetadataColumn
-                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update Dim_Airports.Inputs[OLE DB Command Input].ExternalColumns[Param_6]"
+                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update AirportsNDS.Inputs[OLE DB Command Input].ExternalColumns[Param_6]"
                           dataType="numeric"
                           name="Param_6"
                           precision="9"
@@ -2015,7 +2017,7 @@ Where Airport_SK=?</property>
                           </properties>
                         </externalMetadataColumn>
                         <externalMetadataColumn
-                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update Dim_Airports.Inputs[OLE DB Command Input].ExternalColumns[Param_7]"
+                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update AirportsNDS.Inputs[OLE DB Command Input].ExternalColumns[Param_7]"
                           dataType="i4"
                           name="Param_7">
                           <properties>
@@ -2030,29 +2032,29 @@ Where Airport_SK=?</property>
                   </inputs>
                   <outputs>
                     <output
-                      refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update Dim_Airports.Outputs[OLE DB Command Output]"
+                      refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update AirportsNDS.Outputs[OLE DB Command Output]"
                       exclusionGroup="1"
                       name="OLE DB Command Output"
-                      synchronousInputId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update Dim_Airports.Inputs[OLE DB Command Input]">
+                      synchronousInputId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update AirportsNDS.Inputs[OLE DB Command Input]">
                       <externalMetadataColumns />
                     </output>
                     <output
-                      refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update Dim_Airports.Outputs[OLE DB Command Error Output]"
+                      refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update AirportsNDS.Outputs[OLE DB Command Error Output]"
                       exclusionGroup="1"
                       isErrorOut="true"
                       name="OLE DB Command Error Output"
-                      synchronousInputId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update Dim_Airports.Inputs[OLE DB Command Input]">
+                      synchronousInputId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update AirportsNDS.Inputs[OLE DB Command Input]">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update Dim_Airports.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update AirportsNDS.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
                           dataType="i4"
-                          lineageId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update Dim_Airports.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                          lineageId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update AirportsNDS.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
                           name="ErrorCode"
                           specialFlags="1" />
                         <outputColumn
-                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update Dim_Airports.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                          refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update AirportsNDS.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
                           dataType="i4"
-                          lineageId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update Dim_Airports.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                          lineageId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update AirportsNDS.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
                           name="ErrorColumn"
                           specialFlags="2" />
                       </outputColumns>
@@ -2064,24 +2066,24 @@ Where Airport_SK=?</property>
               <paths>
                 <path
                   refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS.Paths[Derived Column Output]"
-                  endId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Lookup in Dim_Airports.Inputs[Lookup Input]"
+                  endId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Lookup in AirportsNDS.Inputs[Lookup Input]"
                   name="Derived Column Output"
                   startId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Convert LATITUDE and LONGITUDE.Outputs[Derived Column Output]" />
                 <path
                   refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS.Paths[Derived Column Output1]"
-                  endId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert Dim_Airports.Inputs[OLE DB Destination Input]"
+                  endId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert AirportsNDS.Inputs[OLE DB Destination Input]"
                   name="Derived Column Output"
                   startId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Set UpdateAt.Outputs[Derived Column Output]" />
                 <path
                   refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS.Paths[Lookup Match Output]"
-                  endId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update Dim_Airports.Inputs[OLE DB Command Input]"
+                  endId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update AirportsNDS.Inputs[OLE DB Command Input]"
                   name="Lookup Match Output"
-                  startId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Lookup in Dim_Airports.Outputs[Lookup Match Output]" />
+                  startId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Lookup in AirportsNDS.Outputs[Lookup Match Output]" />
                 <path
                   refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS.Paths[Lookup No Match Output]"
                   endId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Set UpdateAt.Inputs[Derived Column Input]"
                   name="Lookup No Match Output"
-                  startId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Lookup in Dim_Airports.Outputs[Lookup No Match Output]" />
+                  startId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Lookup in AirportsNDS.Outputs[Lookup No Match Output]" />
                 <path
                   refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS.Paths[OLE DB Source Output]"
                   endId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Convert LATITUDE and LONGITUDE.Inputs[Derived Column Input]"
@@ -2147,6 +2149,7 @@ Where Airport_SK=?</property>
       DTS:refId="Package\Flights to NDS_Flights"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Sequence Container"
+      DTS:Disabled="True"
       DTS:DTSID="{04D4437E-BCDF-447C-954E-EBCAEB77C80B}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
@@ -5608,16 +5611,16 @@ WHERE t.rn = 1 -- CHỈ GIỮ LẠI 1 DÒNG DUY NHẤT</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="178.666666666667,42.6666666666667"
-          Id="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update Dim_Airports"
+          Size="173.333333333334,42.6666666666667"
+          Id="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update AirportsNDS"
           TopLeft="68.1249969545753,353.22806650934" />
         <NodeLayout
           Size="142.666666666667,42.6666666666667"
           Id="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Set UpdateAt"
           TopLeft="469.374979017303,361.789471205087" />
         <NodeLayout
-          Size="170.666666666667,42.6666666666667"
-          Id="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert Dim_Airports"
+          Size="168,42.6666666666667"
+          Id="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert AirportsNDS"
           TopLeft="458.124979520217,448.771926068313" />
         <NodeLayout
           Size="257.333333333334,42.6666666666667"
@@ -5628,8 +5631,8 @@ WHERE t.rn = 1 -- CHỈ GIỮ LẠI 1 DÒNG DUY NHẤT</property>
           Id="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports"
           TopLeft="255.624988572672,69.7894729179359" />
         <NodeLayout
-          Size="190.666666666667,42.6666666666667"
-          Id="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Lookup in Dim_Airports"
+          Size="185.333333333334,42.6666666666667"
+          Id="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Lookup in AirportsNDS"
           TopLeft="218.124990249053,265.473681295678" />
         <EdgeLayout
           Id="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS.Paths[OLE DB Source Output]"
@@ -5650,129 +5653,123 @@ WHERE t.rn = 1 -- CHỈ GIỮ LẠI 1 DÒNG DUY NHẤT</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS.Paths[Lookup No Match Output]"
-          TopLeft="343.902768026831,308.140347962344">
+          TopLeft="340.347212471275,308.140347962345">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="196.805544323806,53.6491232427424"
+              EndConnector="200.361099879361,53.6491232427423"
               Start="0,0"
-              End="196.805544323806,46.1491232427424">
+              End="200.361099879361,46.1491232427423">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,17.7275228666862" />
+                    End="0,17.735165479228" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,17.7275228666862"
-                    Point2="0,21.7275228666862"
-                    Point3="4,21.7275228666862" />
+                    Point1="0,17.735165479228"
+                    Point2="0,21.735165479228"
+                    Point3="4,21.735165479228" />
                   <mssgle:LineSegment
-                    End="192.805544323806,21.7275228666862" />
+                    End="196.361099879361,21.735165479228" />
                   <mssgle:CubicBezierSegment
-                    Point1="192.805544323806,21.7275228666862"
-                    Point2="196.805544323806,21.7275228666862"
-                    Point3="196.805544323806,25.7275228666862" />
+                    Point1="196.361099879361,21.735165479228"
+                    Point2="200.361099879361,21.735165479228"
+                    Point3="200.361099879361,25.735165479228" />
                   <mssgle:LineSegment
-                    End="196.805544323806,46.1491232427424" />
+                    End="200.361099879361,46.1491232427423" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="42.5963854431528,26.7275228666862,111.6127734375,11.609375"
+              BoundingBox="44.3741632209306,26.735165479228,111.6127734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS.Paths[Lookup Match Output]"
-          TopLeft="313.458323582386,308.140347962344">
+          TopLeft="281.236101360164,308.140347962345">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-155.999993294478,45.087718546996"
+              EndConnector="-126.444437738922,45.0877185469953"
               Start="0,0"
-              End="-155.999993294478,37.587718546996">
+              End="-126.444437738922,37.5877185469953">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,18.543859273498" />
+                    End="0,14.2666363300238" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,18.543859273498"
-                    Point2="0,22.543859273498"
-                    Point3="-4,22.543859273498" />
+                    Point1="0,14.2666363300238"
+                    Point2="0,18.2666363300238"
+                    Point3="-4,18.2666363300238" />
                   <mssgle:LineSegment
-                    End="-151.999993294478,22.543859273498" />
+                    End="-122.444437738922,18.2666363300238" />
                   <mssgle:CubicBezierSegment
-                    Point1="-151.999993294478,22.543859273498"
-                    Point2="-155.999993294478,22.543859273498"
-                    Point3="-155.999993294478,26.543859273498" />
+                    Point1="-122.444437738922,18.2666363300238"
+                    Point2="-126.444437738922,18.2666363300238"
+                    Point3="-126.444437738922,22.2666363300238" />
                   <mssgle:LineSegment
-                    End="-155.999993294478,37.587718546996" />
+                    End="-126.444437738922,37.5877185469953" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-126.191383365989,27.543859273498,96.3827734375,11.609375"
+              BoundingBox="-111.413605588211,23.2666363300238,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS.Paths[Derived Column Output1]"
-          TopLeft="542.083312602094,404.456137871753">
+          TopLeft="541.416645935427,404.456137871754">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,44.3157881965599"
+              EndConnector="0,44.3157881965593"
               Start="0,0"
-              End="0,36.8157881965599">
+              End="0,36.8157881965593">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,36.8157881965599" />
+                    End="0,36.8157881965593" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS.Paths[Derived Column Output]"
-          TopLeft="313.249991003424,216.456138442703">
+          TopLeft="311.916657670091,216.456138442704">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,49.0175428529745"
+              EndConnector="0,49.0175428529743"
               Start="0,0"
-              End="0,41.5175428529745">
+              End="0,41.5175428529743">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,41.5175428529745" />
+                    End="0,41.5175428529743" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

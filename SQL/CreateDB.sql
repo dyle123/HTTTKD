@@ -322,6 +322,7 @@ use HTTTKD_DDS
 go
 
 Select*From DimAirport
+Select*From DimAirline
 
 CREATE TABLE DimDate (
     Date_SK INT IDENTITY(1,1) PRIMARY KEY,
@@ -413,9 +414,10 @@ CREATE TABLE DimAirline (
     Airline_SK INT IDENTITY(1,1) PRIMARY KEY,
     Airline_IATA NVARCHAR(10),
     Airline_Name NVARCHAR(255),
+	Status BIT,
 	CreatedDate DATETIME DEFAULT GETDATE(),
     UpdatedDate DATETIME DEFAULT GETDATE()
-);	
+);
 
 
 CREATE TABLE DimAirport (

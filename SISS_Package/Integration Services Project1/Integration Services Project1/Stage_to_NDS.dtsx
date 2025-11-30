@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Stage_to_NDS"
   DTS:PackageType="5"
-  DTS:VersionBuild="44"
-  DTS:VersionGUID="{3D87733F-C3AD-4D37-BF0F-1975AFF1FE5C}">
+  DTS:VersionBuild="46"
+  DTS:VersionGUID="{FE932A08-F3E3-414D-AD39-670710FF8D6C}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA3yYHH1ZwXka+yJZmX7J+PQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADQKwOPhjWr/U2ZbweUgAVmodXkjFnX7/V5DgGUIBbKjAAAAAAOgAAAAAIAACAAAACwftu83pLtph9rh0Btb8VIRZ37lrTQRhl/C8wDDXv53hAAAABX2LirWX+edjKZ4tEGhfDxQAAAABR3xzsHKCP/mN0Yhg5P2KEr3Qdjvyrk6ww2Cy/N1B3vzbokSQFvYv87lAOn2ymVe7sIXTqplH42OwwmriHQ77A</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA3yYHH1ZwXka+yJZmX7J+PQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACk1t8E3KKvIxTPDOnARjDpiLDLIaIGELrIiSy7NjOfbwAAAAAOgAAAAAIAACAAAABsHquYf+asHBGfWA/WxnZsoBTPoHJzMdT9ZXcaGeuXOxAAAAAxCTKBJUox6IrMV6HpricfQAAAAIqDlOVosn/oaG4NS/yx4T1Px2X6y3bRvJ4FmI3t1BgQcn/zx8rQ5ayYamBlEqmSIP3K5s3mFEGuhaMhzy2TdYk</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA3yYHH1ZwXka+yJZmX7J+PQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABa+T8/Q/PLLYaz5Ds2XYeav1M9BSIYlql3s4nNfqdL6QAAAAAOgAAAAAIAACAAAAD54JtTtHmkomvD50XFAM0LathVSpSpw1ntDf3tdO3xlhAAAADPGja6/BBxSbtk+qNuAWoZQAAAAKmJvvFXBrUuBcWNHRnIneLz15YEraJ/Phx0bZxc+1G0MgC5MllBt+RGyAYroT55wwAkNBxI7DZlOXNcQzudhhI</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA3yYHH1ZwXka+yJZmX7J+PQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADBmJ2LOI25xx7SNaottCoH6pOi1kcdZPn0VBdi0HXtlgAAAAAOgAAAAAIAACAAAAD6C42ircqHtk3L56D6ocY8nTRr+6dGCEVszdeyBJ4TLhAAAADamVgGKm1eHHvEpfEXY/RbQAAAAKUwpa63KdEZ4rZ4aKV4iSw+uThE4yiWGkNasK4MicjVGL3yh5L/iWOaL910C13Pgzy0nk9bv/OXwpLCyqt28zQ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -63,7 +63,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA3yYHH1ZwXka+yJZmX7J+PQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAJ2oj+rQMFlru+ea6RwN7fKC9Y9WasA5zSEf+MfPp8ZAAAAAAOgAAAAAIAACAAAACCQO8+lwbvsW8BWkiJYHgjTS0OpxsPRG3D6sQgoaDo0hAAAACcSFvaOUIxFfYIXRacoWOzQAAAAGaxcwyPJ62ywFfs0ss8YLzFliE+Xua8959vBcdsOn8h2FEsqECM4Ck7zP733NDjqPfmTuKeMvPFEvoOY7lutk8</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA3yYHH1ZwXka+yJZmX7J+PQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABGl97EKbRe4oMZEJFVJwgKUQDyFOsqHd63ofNIrRsTtgAAAAAOgAAAAAIAACAAAACU+jCAGnGagbAUY9/a/oTuDM9TSq5FRJiqD56L8NzTIxAAAADmNF7F1DN7ZQBug2b+VTUxQAAAAFSq7VK7NB2INYtFcCgu717mlr/6+d5p0lpHHxUvU2PKP5AM01lBJFzHlQ8Do7bEamhV+8KbLPFMr1n4zvd8izI</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -5650,7 +5650,9 @@ WHERE t.rn = 1 -- CHỈ GIỮ LẠI 1 DÒNG DUY NHẤT</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -5744,7 +5746,9 @@ WHERE t.rn = 1 -- CHỈ GIỮ LẠI 1 DÒNG DUY NHẤT</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -5766,7 +5770,9 @@ WHERE t.rn = 1 -- CHỈ GIỮ LẠI 1 DÒNG DUY NHẤT</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -5817,6 +5823,30 @@ WHERE t.rn = 1 -- CHỈ GIỮ LẠI 1 DÒNG DUY NHẤT</property>
           Size="145.333333333334,42.6666666666667"
           Id="Package\Flights to NDS_Flights\Flights to FlightsNDS\Set Flight_BK"
           TopLeft="244.821418393404,86.9924802478473" />
+        <EdgeLayout
+          Id="Package\Flights to NDS_Flights\Flights to FlightsNDS.Paths[OLE DB Source Output]"
+          TopLeft="320.181535797091,45.054386015847">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,41.9380942320003"
+              Start="0,0"
+              End="0,34.4380942320003">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.4380942320003" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Flights to NDS_Flights\Flights to FlightsNDS.Paths[Lookup No Match Output]"
           TopLeft="466.299987023573,283.566664933993">
@@ -5980,7 +6010,9 @@ WHERE t.rn = 1 -- CHỈ GIỮ LẠI 1 DÒNG DUY NHẤT</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6002,7 +6034,9 @@ WHERE t.rn = 1 -- CHỈ GIỮ LẠI 1 DÒNG DUY NHẤT</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6024,29 +6058,9 @@ WHERE t.rn = 1 -- CHỈ GIỮ LẠI 1 DÒNG DUY NHẤT</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Flights to NDS_Flights\Flights to FlightsNDS.Paths[OLE DB Source Output]"
-          TopLeft="320.181535797091,45.054386015847">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,41.9380942320003"
-              Start="0,0"
-              End="0,34.4380942320003">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,34.4380942320003" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
