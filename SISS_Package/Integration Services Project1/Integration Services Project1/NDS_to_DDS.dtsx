@@ -11,8 +11,8 @@
   DTS:LocaleID="1066"
   DTS:ObjectName="NDS_to_DDS"
   DTS:PackageType="5"
-  DTS:VersionBuild="20"
-  DTS:VersionGUID="{B06FF4C4-443C-40BE-B5DA-605040B2C31C}">
+  DTS:VersionBuild="34"
+  DTS:VersionGUID="{2898B2DE-E715-4AC1-8AB4-17EF392CA51E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -71,6 +71,7 @@
       DTS:refId="Package\Airports to DimAirport"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
+      DTS:Disabled="True"
       DTS:DTSID="{08eed672-c768-4f37-a98c-fe36b3005488}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -1469,6 +1470,7 @@
       DTS:refId="Package\Load_Airlines_NDS_to_DDS"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
+      DTS:Disabled="True"
       DTS:DTSID="{a103ebac-242b-4a96-87c2-00d857e0c2d6}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -2531,6 +2533,381 @@
           version="1">
           <components>
             <component
+              refId="Package\Load_Flight_NDS_to_DDS\3 KPI"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="3 KPI"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Load_Flight_NDS_to_DDS\3 KPI.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\3 KPI.Inputs[Derived Column Input].Columns[DEPARTURE_DELAY]"
+                      cachedDataType="i4"
+                      cachedName="DEPARTURE_DELAY"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Flight NDS.Outputs[OLE DB Source Output].Columns[DEPARTURE_DELAY]" />
+                    <inputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\3 KPI.Inputs[Derived Column Input].Columns[ARRIVAL_DELAY]"
+                      cachedDataType="i4"
+                      cachedName="ARRIVAL_DELAY"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Flight NDS.Outputs[OLE DB Source Output].Columns[ARRIVAL_DELAY]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load_Flight_NDS_to_DDS\3 KPI.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Load_Flight_NDS_to_DDS\3 KPI.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\3 KPI.Outputs[Derived Column Output].Columns[Is_OnTime_Departure]"
+                      dataType="i1"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\3 KPI.Outputs[Derived Column Output].Columns[Is_OnTime_Departure]"
+                      name="Is_OnTime_Departure"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_I1)((#{Package\Load_Flight_NDS_to_DDS\Flight NDS.Outputs[OLE DB Source Output].Columns[DEPARTURE_DELAY]} &lt;= 5) ? 1 : 0)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_I1)((DEPARTURE_DELAY &lt;= 5) ? 1 : 0)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\3 KPI.Outputs[Derived Column Output].Columns[Is_OnTime_Arrival]"
+                      dataType="i1"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\3 KPI.Outputs[Derived Column Output].Columns[Is_OnTime_Arrival]"
+                      name="Is_OnTime_Arrival"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_I1)((#{Package\Load_Flight_NDS_to_DDS\Flight NDS.Outputs[OLE DB Source Output].Columns[ARRIVAL_DELAY]} &lt;= 5) ? 1 : 0)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_I1)((ARRIVAL_DELAY &lt;= 5) ? 1 : 0)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\3 KPI.Outputs[Derived Column Output].Columns[Is_Delay_15]"
+                      dataType="i1"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\3 KPI.Outputs[Derived Column Output].Columns[Is_Delay_15]"
+                      name="Is_Delay_15"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_I1)((#{Package\Load_Flight_NDS_to_DDS\Flight NDS.Outputs[OLE DB Source Output].Columns[DEPARTURE_DELAY]} &gt; 15 || #{Package\Load_Flight_NDS_to_DDS\Flight NDS.Outputs[OLE DB Source Output].Columns[ARRIVAL_DELAY]} &gt; 15) ? 1 : 0)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_I1)((DEPARTURE_DELAY &gt; 15 || ARRIVAL_DELAY &gt; 15) ? 1 : 0)</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load_Flight_NDS_to_DDS\3 KPI.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Load_Flight_NDS_to_DDS\3 KPI.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\3 KPI.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\3 KPI.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\3 KPI.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\3 KPI.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load_Flight_NDS_to_DDS\Conditional Split"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+              name="Conditional Split"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Load_Flight_NDS_to_DDS\Conditional Split.Inputs[Conditional Split Input]"
+                  description="Input to the Conditional Split Transformation"
+                  name="Conditional Split Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\Conditional Split.Inputs[Conditional Split Input].Columns[CANCELLED]"
+                      cachedDataType="bool"
+                      cachedName="CANCELLED"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Flight NDS.Outputs[OLE DB Source Output].Columns[CANCELLED]" />
+                    <inputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\Conditional Split.Inputs[Conditional Split Input].Columns[CANCELLATION_REASON]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CANCELLATION_REASON"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Flight NDS.Outputs[OLE DB Source Output].Columns[CANCELLATION_REASON]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load_Flight_NDS_to_DDS\Conditional Split.Outputs[Case 1]"
+                  description="Output 1 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Case 1"
+                  synchronousInputId="Package\Load_Flight_NDS_to_DDS\Conditional Split.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">#{Package\Load_Flight_NDS_to_DDS\Flight NDS.Outputs[OLE DB Source Output].Columns[CANCELLED]} ==  TRUE  &amp;&amp; ![ISNULL](#{Package\Load_Flight_NDS_to_DDS\Flight NDS.Outputs[OLE DB Source Output].Columns[CANCELLATION_REASON]})</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">CANCELLED ==  TRUE  &amp;&amp; !ISNULL(CANCELLATION_REASON)</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load_Flight_NDS_to_DDS\Conditional Split.Outputs[Conditional Split Default Output]"
+                  description="Default Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  name="Conditional Split Default Output"
+                  synchronousInputId="Package\Load_Flight_NDS_to_DDS\Conditional Split.Inputs[Conditional Split Input]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load_Flight_NDS_to_DDS\Conditional Split.Outputs[Conditional Split Error Output]"
+                  description="Error Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Conditional Split Error Output"
+                  synchronousInputId="Package\Load_Flight_NDS_to_DDS\Conditional Split.Inputs[Conditional Split Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load_Flight_NDS_to_DDS\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Load_Flight_NDS_to_DDS\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\Derived Column.Inputs[Derived Column Input].Columns[SCHEDULED_DEPARTURE]"
+                      cachedDataType="i4"
+                      cachedName="SCHEDULED_DEPARTURE"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Flight NDS.Outputs[OLE DB Source Output].Columns[SCHEDULED_DEPARTURE]" />
+                    <inputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\Derived Column.Inputs[Derived Column Input].Columns[SCHEDULED_ARRIVAL]"
+                      cachedDataType="i4"
+                      cachedName="SCHEDULED_ARRIVAL"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Flight NDS.Outputs[OLE DB Source Output].Columns[SCHEDULED_ARRIVAL]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load_Flight_NDS_to_DDS\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Load_Flight_NDS_to_DDS\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\Derived Column.Outputs[Derived Column Output].Columns[hour_schedule_departure]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Derived Column.Outputs[Derived Column Output].Columns[hour_schedule_departure]"
+                      name="hour_schedule_departure"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">#{Package\Load_Flight_NDS_to_DDS\Flight NDS.Outputs[OLE DB Source Output].Columns[SCHEDULED_DEPARTURE]} / 100</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">SCHEDULED_DEPARTURE / 100</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\Derived Column.Outputs[Derived Column Output].Columns[minute_schedule_departure]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Derived Column.Outputs[Derived Column Output].Columns[minute_schedule_departure]"
+                      name="minute_schedule_departure"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">#{Package\Load_Flight_NDS_to_DDS\Flight NDS.Outputs[OLE DB Source Output].Columns[SCHEDULED_DEPARTURE]} % 100</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">SCHEDULED_DEPARTURE % 100</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\Derived Column.Outputs[Derived Column Output].Columns[hour_schedule_arrival]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Derived Column.Outputs[Derived Column Output].Columns[hour_schedule_arrival]"
+                      name="hour_schedule_arrival"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">#{Package\Load_Flight_NDS_to_DDS\Flight NDS.Outputs[OLE DB Source Output].Columns[SCHEDULED_ARRIVAL]} / 100</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">SCHEDULED_ARRIVAL / 100</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\Derived Column.Outputs[Derived Column Output].Columns[minute_schedule_arrival]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Derived Column.Outputs[Derived Column Output].Columns[minute_schedule_arrival]"
+                      name="minute_schedule_arrival"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">#{Package\Load_Flight_NDS_to_DDS\Flight NDS.Outputs[OLE DB Source Output].Columns[SCHEDULED_ARRIVAL]} % 100</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">SCHEDULED_ARRIVAL % 100</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load_Flight_NDS_to_DDS\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Load_Flight_NDS_to_DDS\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
               refId="Package\Load_Flight_NDS_to_DDS\Flight NDS"
               componentClassID="Microsoft.OLEDBSource"
               contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
@@ -3384,11 +3761,11 @@ where [refTable].[Reason_Code] = ?</property>
               </outputs>
             </component>
             <component
-              refId="Package\Load_Flight_NDS_to_DDS\Lookup Cancellation 1"
+              refId="Package\Load_Flight_NDS_to_DDS\Lookup Dep Time"
               componentClassID="Microsoft.Lookup"
               contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
               description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
-              name="Lookup Cancellation 1"
+              name="Lookup Dep Time"
               usesDispositions="true"
               version="6">
               <properties>
@@ -3397,14 +3774,14 @@ where [refTable].[Reason_Code] = ?</property>
                   description="Specifies the SQL statement that generates the lookup table."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[DimCancellationReason]</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[DimTime]</property>
                 <property
                   dataType="System.String"
                   description="Specifies a SQL statement that uses parameters to generate the lookup table."
                   expressionType="Notify"
                   name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DimCancellationReason]) [refTable]
-where [refTable].[Reason_Code] = ?</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DimTime]) [refTable]
+where [refTable].[Hour] = ? and [refTable].[Minute] = ?</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the type of connection used to access the reference dataset."
@@ -3435,12 +3812,12 @@ where [refTable].[Reason_Code] = ?</property>
                 <property
                   dataType="System.String"
                   description="Indicates whether to reference metadata in an XML format."
-                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="Reason_SK" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Reason_Code" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Description" dataType="DT_WSTR" length="255" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CreatedDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UpdatedDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="Time_SK" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Hour" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Minute" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Period" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CreatedDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UpdatedDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
                 <property
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Load_Flight_NDS_to_DDS\Flight NDS.Outputs[OLE DB Source Output].Columns[CANCELLATION_REASON]};</property>
+                  name="ParameterMap">#{Package\Load_Flight_NDS_to_DDS\Derived Column.Outputs[Derived Column Output].Columns[hour_schedule_arrival]};#{Package\Load_Flight_NDS_to_DDS\Derived Column.Outputs[Derived Column Output].Columns[minute_schedule_arrival]};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -3452,7 +3829,7 @@ where [refTable].[Reason_Code] = ?</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Load_Flight_NDS_to_DDS\Lookup Cancellation 1.Connections[OleDbConnection]"
+                  refId="Package\Load_Flight_NDS_to_DDS\Lookup Dep Time.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[DYLE\MSSQLSERVER3.HTTTKD_DDS]"
                   connectionManagerRefId="Package.ConnectionManagers[DYLE\MSSQLSERVER3.HTTTKD_DDS]"
                   description="Connection manager used to access lookup data."
@@ -3460,20 +3837,35 @@ where [refTable].[Reason_Code] = ?</property>
               </connections>
               <inputs>
                 <input
-                  refId="Package\Load_Flight_NDS_to_DDS\Lookup Cancellation 1.Inputs[Lookup Input]"
+                  refId="Package\Load_Flight_NDS_to_DDS\Lookup Dep Time.Inputs[Lookup Input]"
                   name="Lookup Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Load_Flight_NDS_to_DDS\Lookup Cancellation 1.Inputs[Lookup Input].Columns[CANCELLATION_REASON]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="CANCELLATION_REASON"
-                      lineageId="Package\Load_Flight_NDS_to_DDS\Flight NDS.Outputs[OLE DB Source Output].Columns[CANCELLATION_REASON]">
+                      refId="Package\Load_Flight_NDS_to_DDS\Lookup Dep Time.Inputs[Lookup Input].Columns[hour_schedule_arrival]"
+                      cachedDataType="i4"
+                      cachedName="hour_schedule_arrival"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Derived Column.Outputs[Derived Column Output].Columns[hour_schedule_arrival]">
                       <properties>
                         <property
                           dataType="System.String"
                           description="Specifies the column in the reference table that a column joins."
-                          name="JoinToReferenceColumn">Reason_Code</property>
+                          name="JoinToReferenceColumn">Hour</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\Lookup Dep Time.Inputs[Lookup Input].Columns[minute_schedule_arrival]"
+                      cachedDataType="i4"
+                      cachedName="minute_schedule_arrival"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Derived Column.Outputs[Derived Column Output].Columns[minute_schedule_arrival]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">Minute</property>
                         <property
                           dataType="System.Null"
                           description="Specifies the column in the reference table from which a column is copied."
@@ -3486,55 +3878,55 @@ where [refTable].[Reason_Code] = ?</property>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Load_Flight_NDS_to_DDS\Lookup Cancellation 1.Outputs[Lookup Match Output]"
+                  refId="Package\Load_Flight_NDS_to_DDS\Lookup Dep Time.Outputs[Lookup Match Output]"
                   errorOrTruncationOperation="Lookup"
                   errorRowDisposition="FailComponent"
                   exclusionGroup="1"
                   name="Lookup Match Output"
-                  synchronousInputId="Package\Load_Flight_NDS_to_DDS\Lookup Cancellation 1.Inputs[Lookup Input]">
+                  synchronousInputId="Package\Load_Flight_NDS_to_DDS\Lookup Dep Time.Inputs[Lookup Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Load_Flight_NDS_to_DDS\Lookup Cancellation 1.Outputs[Lookup Match Output].Columns[Reason_SK_Lookup]"
+                      refId="Package\Load_Flight_NDS_to_DDS\Lookup Dep Time.Outputs[Lookup Match Output].Columns[Time_SK_Schedule_Arr]"
                       dataType="i4"
                       errorOrTruncationOperation="Copy Column"
-                      lineageId="Package\Load_Flight_NDS_to_DDS\Lookup Cancellation 1.Outputs[Lookup Match Output].Columns[Reason_SK_Lookup]"
-                      name="Reason_SK_Lookup"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Lookup Dep Time.Outputs[Lookup Match Output].Columns[Time_SK_Schedule_Arr]"
+                      name="Time_SK_Schedule_Arr"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           dataType="System.String"
                           description="Specifies the column in the reference table from which a column is copied."
-                          name="CopyFromReferenceColumn">Reason_SK</property>
+                          name="CopyFromReferenceColumn">Time_SK</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Load_Flight_NDS_to_DDS\Lookup Cancellation 1.Outputs[Lookup No Match Output]"
+                  refId="Package\Load_Flight_NDS_to_DDS\Lookup Dep Time.Outputs[Lookup No Match Output]"
                   description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
                   exclusionGroup="1"
                   name="Lookup No Match Output"
-                  synchronousInputId="Package\Load_Flight_NDS_to_DDS\Lookup Cancellation 1.Inputs[Lookup Input]">
+                  synchronousInputId="Package\Load_Flight_NDS_to_DDS\Lookup Dep Time.Inputs[Lookup Input]">
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Load_Flight_NDS_to_DDS\Lookup Cancellation 1.Outputs[Lookup Error Output]"
+                  refId="Package\Load_Flight_NDS_to_DDS\Lookup Dep Time.Outputs[Lookup Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Lookup Error Output"
-                  synchronousInputId="Package\Load_Flight_NDS_to_DDS\Lookup Cancellation 1.Inputs[Lookup Input]">
+                  synchronousInputId="Package\Load_Flight_NDS_to_DDS\Lookup Dep Time.Inputs[Lookup Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Load_Flight_NDS_to_DDS\Lookup Cancellation 1.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      refId="Package\Load_Flight_NDS_to_DDS\Lookup Dep Time.Outputs[Lookup Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Load_Flight_NDS_to_DDS\Lookup Cancellation 1.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Lookup Dep Time.Outputs[Lookup Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Load_Flight_NDS_to_DDS\Lookup Cancellation 1.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      refId="Package\Load_Flight_NDS_to_DDS\Lookup Dep Time.Outputs[Lookup Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Load_Flight_NDS_to_DDS\Lookup Cancellation 1.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Lookup Dep Time.Outputs[Lookup Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -4174,8 +4566,580 @@ where [refTable].[Airport_SK] = ?</property>
                 </output>
               </outputs>
             </component>
+            <component
+              refId="Package\Load_Flight_NDS_to_DDS\Lookup Schedule Dep Time"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup Schedule Dep Time"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[DimTime]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DimTime]) [refTable]
+where [refTable].[Hour] = ? and [refTable].[Minute] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="Time_SK" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Hour" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Minute" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Period" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CreatedDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UpdatedDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\Load_Flight_NDS_to_DDS\Derived Column.Outputs[Derived Column Output].Columns[hour_schedule_departure]};#{Package\Load_Flight_NDS_to_DDS\Derived Column.Outputs[Derived Column Output].Columns[minute_schedule_departure]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1258</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load_Flight_NDS_to_DDS\Lookup Schedule Dep Time.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DYLE\MSSQLSERVER3.HTTTKD_DDS]"
+                  connectionManagerRefId="Package.ConnectionManagers[DYLE\MSSQLSERVER3.HTTTKD_DDS]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load_Flight_NDS_to_DDS\Lookup Schedule Dep Time.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\Lookup Schedule Dep Time.Inputs[Lookup Input].Columns[hour_schedule_departure]"
+                      cachedDataType="i4"
+                      cachedName="hour_schedule_departure"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Derived Column.Outputs[Derived Column Output].Columns[hour_schedule_departure]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">Hour</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\Lookup Schedule Dep Time.Inputs[Lookup Input].Columns[minute_schedule_departure]"
+                      cachedDataType="i4"
+                      cachedName="minute_schedule_departure"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Derived Column.Outputs[Derived Column Output].Columns[minute_schedule_departure]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">Minute</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load_Flight_NDS_to_DDS\Lookup Schedule Dep Time.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Load_Flight_NDS_to_DDS\Lookup Schedule Dep Time.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\Lookup Schedule Dep Time.Outputs[Lookup Match Output].Columns[Time_SK_Schedule_Dep]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Lookup Schedule Dep Time.Outputs[Lookup Match Output].Columns[Time_SK_Schedule_Dep]"
+                      name="Time_SK_Schedule_Dep"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">Time_SK</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load_Flight_NDS_to_DDS\Lookup Schedule Dep Time.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Load_Flight_NDS_to_DDS\Lookup Schedule Dep Time.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load_Flight_NDS_to_DDS\Lookup Schedule Dep Time.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Load_Flight_NDS_to_DDS\Lookup Schedule Dep Time.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\Lookup Schedule Dep Time.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Lookup Schedule Dep Time.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\Lookup Schedule Dep Time.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Lookup Schedule Dep Time.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[FactFlight]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1258</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DYLE\MSSQLSERVER3.HTTTKD_DDS]"
+                  connectionManagerRefId="Package.ConnectionManagers[DYLE\MSSQLSERVER3.HTTTKD_DDS]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Airline_SK]"
+                      cachedDataType="i4"
+                      cachedName="Airline_SK"
+                      externalMetadataColumnId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Airline_SK]"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Flight NDS.Outputs[OLE DB Source Output].Columns[Airline_SK]" />
+                    <inputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Origin_Airport_SK]"
+                      cachedDataType="i4"
+                      cachedName="Origin_Airport_SK"
+                      externalMetadataColumnId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Origin_Airport_SK]"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Flight NDS.Outputs[OLE DB Source Output].Columns[Origin_Airport_SK]" />
+                    <inputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Dest_Airport_SK]"
+                      cachedDataType="i4"
+                      cachedName="Dest_Airport_SK"
+                      externalMetadataColumnId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Dest_Airport_SK]"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Flight NDS.Outputs[OLE DB Source Output].Columns[Dest_Airport_SK]" />
+                    <inputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FLIGHT_NUMBER]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="FLIGHT_NUMBER"
+                      externalMetadataColumnId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Flight_Number]"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Flight NDS.Outputs[OLE DB Source Output].Columns[FLIGHT_NUMBER]" />
+                    <inputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DEPARTURE_DELAY]"
+                      cachedDataType="i4"
+                      cachedName="DEPARTURE_DELAY"
+                      externalMetadataColumnId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Departure_Delay]"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Flight NDS.Outputs[OLE DB Source Output].Columns[DEPARTURE_DELAY]" />
+                    <inputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ARRIVAL_DELAY]"
+                      cachedDataType="i4"
+                      cachedName="ARRIVAL_DELAY"
+                      externalMetadataColumnId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Arrival_Delay]"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Flight NDS.Outputs[OLE DB Source Output].Columns[ARRIVAL_DELAY]" />
+                    <inputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TAXI_OUT]"
+                      cachedDataType="i4"
+                      cachedName="TAXI_OUT"
+                      externalMetadataColumnId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Taxi_Out]"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Flight NDS.Outputs[OLE DB Source Output].Columns[TAXI_OUT]" />
+                    <inputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SCHEDULED_TIME]"
+                      cachedDataType="i4"
+                      cachedName="SCHEDULED_TIME"
+                      externalMetadataColumnId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Scheduled_Time]"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Flight NDS.Outputs[OLE DB Source Output].Columns[SCHEDULED_TIME]" />
+                    <inputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ELAPSED_TIME]"
+                      cachedDataType="i4"
+                      cachedName="ELAPSED_TIME"
+                      externalMetadataColumnId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Elapsed_Time]"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Flight NDS.Outputs[OLE DB Source Output].Columns[ELAPSED_TIME]" />
+                    <inputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[AIR_TIME]"
+                      cachedDataType="i4"
+                      cachedName="AIR_TIME"
+                      externalMetadataColumnId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Air_Time]"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Flight NDS.Outputs[OLE DB Source Output].Columns[AIR_TIME]" />
+                    <inputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DISTANCE]"
+                      cachedDataType="i4"
+                      cachedName="DISTANCE"
+                      externalMetadataColumnId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Distance]"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Flight NDS.Outputs[OLE DB Source Output].Columns[DISTANCE]" />
+                    <inputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TAXI_IN]"
+                      cachedDataType="i4"
+                      cachedName="TAXI_IN"
+                      externalMetadataColumnId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Taxi_In]"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Flight NDS.Outputs[OLE DB Source Output].Columns[TAXI_IN]" />
+                    <inputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DIVERTED]"
+                      cachedDataType="bool"
+                      cachedName="DIVERTED"
+                      externalMetadataColumnId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Diverted]"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Flight NDS.Outputs[OLE DB Source Output].Columns[DIVERTED]" />
+                    <inputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CANCELLED]"
+                      cachedDataType="bool"
+                      cachedName="CANCELLED"
+                      externalMetadataColumnId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Cancelled]"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Flight NDS.Outputs[OLE DB Source Output].Columns[CANCELLED]" />
+                    <inputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[AIR_SYSTEM_DELAY]"
+                      cachedDataType="i4"
+                      cachedName="AIR_SYSTEM_DELAY"
+                      externalMetadataColumnId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Air_System_Delay]"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Flight NDS.Outputs[OLE DB Source Output].Columns[AIR_SYSTEM_DELAY]" />
+                    <inputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SECURITY_DELAY]"
+                      cachedDataType="i4"
+                      cachedName="SECURITY_DELAY"
+                      externalMetadataColumnId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Security_Delay]"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Flight NDS.Outputs[OLE DB Source Output].Columns[SECURITY_DELAY]" />
+                    <inputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[AIRLINE_DELAY]"
+                      cachedDataType="i4"
+                      cachedName="AIRLINE_DELAY"
+                      externalMetadataColumnId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Airline_Delay]"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Flight NDS.Outputs[OLE DB Source Output].Columns[AIRLINE_DELAY]" />
+                    <inputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LATE_AIRCRAFT_DELAY]"
+                      cachedDataType="i4"
+                      cachedName="LATE_AIRCRAFT_DELAY"
+                      externalMetadataColumnId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Late_Aircraft_Delay]"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Flight NDS.Outputs[OLE DB Source Output].Columns[LATE_AIRCRAFT_DELAY]" />
+                    <inputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[WEATHER_DELAY]"
+                      cachedDataType="i4"
+                      cachedName="WEATHER_DELAY"
+                      externalMetadataColumnId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Weather_Delay]"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Flight NDS.Outputs[OLE DB Source Output].Columns[WEATHER_DELAY]" />
+                    <inputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CreatedDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="CreatedDate"
+                      externalMetadataColumnId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CreatedDate]"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Flight NDS.Outputs[OLE DB Source Output].Columns[CreatedDate]" />
+                    <inputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Is_OnTime_Departure]"
+                      cachedDataType="i1"
+                      cachedName="Is_OnTime_Departure"
+                      externalMetadataColumnId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Is_OnTime_Departure]"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\3 KPI.Outputs[Derived Column Output].Columns[Is_OnTime_Departure]" />
+                    <inputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Is_OnTime_Arrival]"
+                      cachedDataType="i1"
+                      cachedName="Is_OnTime_Arrival"
+                      externalMetadataColumnId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Is_OnTime_Arrival]"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\3 KPI.Outputs[Derived Column Output].Columns[Is_OnTime_Arrival]" />
+                    <inputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Is_Delay_15]"
+                      cachedDataType="i1"
+                      cachedName="Is_Delay_15"
+                      externalMetadataColumnId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Is_Delay_15]"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\3 KPI.Outputs[Derived Column Output].Columns[Is_Delay_15]" />
+                    <inputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Date_SK_Lookup]"
+                      cachedDataType="i4"
+                      cachedName="Date_SK_Lookup"
+                      externalMetadataColumnId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Date_SK]"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Lookup DimDate.Outputs[Lookup Match Output].Columns[Date_SK_Lookup]" />
+                    <inputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[hour_schedule_departure]"
+                      cachedDataType="i4"
+                      cachedName="hour_schedule_departure"
+                      externalMetadataColumnId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Scheduled_Departure_Time_SK]"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Derived Column.Outputs[Derived Column Output].Columns[hour_schedule_departure]" />
+                    <inputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[hour_schedule_arrival]"
+                      cachedDataType="i4"
+                      cachedName="hour_schedule_arrival"
+                      externalMetadataColumnId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Scheduled_Arrival_Time_SK]"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Derived Column.Outputs[Derived Column Output].Columns[hour_schedule_arrival]" />
+                    <inputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Reason_SK_Lookup]"
+                      cachedDataType="i4"
+                      cachedName="Reason_SK_Lookup"
+                      externalMetadataColumnId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Cancellation_Reason_SK]"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\Lookup Cancellation.Outputs[Lookup Match Output].Columns[Reason_SK_Lookup]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Flight_SK]"
+                      dataType="i4"
+                      name="Flight_SK" />
+                    <externalMetadataColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Date_SK]"
+                      dataType="i4"
+                      name="Date_SK" />
+                    <externalMetadataColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Airline_SK]"
+                      dataType="i4"
+                      name="Airline_SK" />
+                    <externalMetadataColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Origin_Airport_SK]"
+                      dataType="i4"
+                      name="Origin_Airport_SK" />
+                    <externalMetadataColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Dest_Airport_SK]"
+                      dataType="i4"
+                      name="Dest_Airport_SK" />
+                    <externalMetadataColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Scheduled_Departure_Time_SK]"
+                      dataType="i4"
+                      name="Scheduled_Departure_Time_SK" />
+                    <externalMetadataColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Scheduled_Arrival_Time_SK]"
+                      dataType="i4"
+                      name="Scheduled_Arrival_Time_SK" />
+                    <externalMetadataColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Cancellation_Reason_SK]"
+                      dataType="i4"
+                      name="Cancellation_Reason_SK" />
+                    <externalMetadataColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Flight_Number]"
+                      dataType="wstr"
+                      length="50"
+                      name="Flight_Number" />
+                    <externalMetadataColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Cancelled]"
+                      dataType="bool"
+                      name="Cancelled" />
+                    <externalMetadataColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Diverted]"
+                      dataType="bool"
+                      name="Diverted" />
+                    <externalMetadataColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Departure_Delay]"
+                      dataType="i4"
+                      name="Departure_Delay" />
+                    <externalMetadataColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Arrival_Delay]"
+                      dataType="i4"
+                      name="Arrival_Delay" />
+                    <externalMetadataColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Air_System_Delay]"
+                      dataType="i4"
+                      name="Air_System_Delay" />
+                    <externalMetadataColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Security_Delay]"
+                      dataType="i4"
+                      name="Security_Delay" />
+                    <externalMetadataColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Airline_Delay]"
+                      dataType="i4"
+                      name="Airline_Delay" />
+                    <externalMetadataColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Late_Aircraft_Delay]"
+                      dataType="i4"
+                      name="Late_Aircraft_Delay" />
+                    <externalMetadataColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Weather_Delay]"
+                      dataType="i4"
+                      name="Weather_Delay" />
+                    <externalMetadataColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Distance]"
+                      dataType="i4"
+                      name="Distance" />
+                    <externalMetadataColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Taxi_Out]"
+                      dataType="i4"
+                      name="Taxi_Out" />
+                    <externalMetadataColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Taxi_In]"
+                      dataType="i4"
+                      name="Taxi_In" />
+                    <externalMetadataColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Air_Time]"
+                      dataType="i4"
+                      name="Air_Time" />
+                    <externalMetadataColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Scheduled_Time]"
+                      dataType="i4"
+                      name="Scheduled_Time" />
+                    <externalMetadataColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Elapsed_Time]"
+                      dataType="i4"
+                      name="Elapsed_Time" />
+                    <externalMetadataColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Is_OnTime_Departure]"
+                      dataType="bool"
+                      name="Is_OnTime_Departure" />
+                    <externalMetadataColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Is_OnTime_Arrival]"
+                      dataType="bool"
+                      name="Is_OnTime_Arrival" />
+                    <externalMetadataColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Is_Delay_15]"
+                      dataType="bool"
+                      name="Is_Delay_15" />
+                    <externalMetadataColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CreatedDate]"
+                      dataType="dbTimeStamp"
+                      name="CreatedDate" />
+                    <externalMetadataColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UpdatedDate]"
+                      dataType="dbTimeStamp"
+                      name="UpdatedDate" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
           </components>
           <paths>
+            <path
+              refId="Package\Load_Flight_NDS_to_DDS.Paths[Conditional Split Default Output]"
+              endId="Package\Load_Flight_NDS_to_DDS\Lookup Cancellation.Inputs[Lookup Input]"
+              name="Conditional Split Default Output"
+              startId="Package\Load_Flight_NDS_to_DDS\Conditional Split.Outputs[Conditional Split Default Output]" />
+            <path
+              refId="Package\Load_Flight_NDS_to_DDS.Paths[Derived Column Output]"
+              endId="Package\Load_Flight_NDS_to_DDS\Lookup Schedule Dep Time.Inputs[Lookup Input]"
+              name="Derived Column Output"
+              startId="Package\Load_Flight_NDS_to_DDS\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Load_Flight_NDS_to_DDS.Paths[Derived Column Output1]"
+              endId="Package\Load_Flight_NDS_to_DDS\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Derived Column Output"
+              startId="Package\Load_Flight_NDS_to_DDS\3 KPI.Outputs[Derived Column Output]" />
             <path
               refId="Package\Load_Flight_NDS_to_DDS.Paths[Lookup Match Output]"
               endId="Package\Load_Flight_NDS_to_DDS\Lookup DimAirline.Inputs[Lookup Input]"
@@ -4193,14 +5157,24 @@ where [refTable].[Airport_SK] = ?</property>
               startId="Package\Load_Flight_NDS_to_DDS\Lookup Original Airport.Outputs[Lookup Match Output]" />
             <path
               refId="Package\Load_Flight_NDS_to_DDS.Paths[Lookup Match Output3]"
-              endId="Package\Load_Flight_NDS_to_DDS\Lookup Cancellation.Inputs[Lookup Input]"
-              name="Lookup Match Output"
-              startId="Package\Load_Flight_NDS_to_DDS\Lookup Destination Airport.Outputs[Lookup Match Output]" />
-            <path
-              refId="Package\Load_Flight_NDS_to_DDS.Paths[Lookup Match Output4]"
-              endId="Package\Load_Flight_NDS_to_DDS\Lookup Cancellation 1.Inputs[Lookup Input]"
+              endId="Package\Load_Flight_NDS_to_DDS\Derived Column.Inputs[Derived Column Input]"
               name="Lookup Match Output"
               startId="Package\Load_Flight_NDS_to_DDS\Lookup Cancellation.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Load_Flight_NDS_to_DDS.Paths[Lookup Match Output4]"
+              endId="Package\Load_Flight_NDS_to_DDS\Lookup Dep Time.Inputs[Lookup Input]"
+              name="Lookup Match Output"
+              startId="Package\Load_Flight_NDS_to_DDS\Lookup Schedule Dep Time.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Load_Flight_NDS_to_DDS.Paths[Lookup Match Output5]"
+              endId="Package\Load_Flight_NDS_to_DDS\3 KPI.Inputs[Derived Column Input]"
+              name="Lookup Match Output"
+              startId="Package\Load_Flight_NDS_to_DDS\Lookup Dep Time.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Load_Flight_NDS_to_DDS.Paths[Lookup Match Output6]"
+              endId="Package\Load_Flight_NDS_to_DDS\Conditional Split.Inputs[Conditional Split Input]"
+              name="Lookup Match Output"
+              startId="Package\Load_Flight_NDS_to_DDS\Lookup Destination Airport.Outputs[Lookup Match Output]" />
             <path
               refId="Package\Load_Flight_NDS_to_DDS.Paths[OLE DB Source Output]"
               endId="Package\Load_Flight_NDS_to_DDS\Lookup DimDate.Inputs[Lookup Input]"
@@ -4214,6 +5188,7 @@ where [refTable].[Airport_SK] = ?</property>
       DTS:refId="Package\Set CET to Metadata DimAirlines"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
       DTS:DTSID="{8cb6bf39-3cc3-416f-8720-59daa19ad231}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -4246,6 +5221,7 @@ where [refTable].[Airport_SK] = ?</property>
       DTS:refId="Package\Set CET, SourceName, PackageName  to Metadata DimAirport"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
       DTS:DTSID="{312d2b49-c097-4359-93db-a27dd30ab947}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -4262,6 +5238,7 @@ where [refTable].[Airport_SK] = ?</property>
       DTS:refId="Package\Update LSET Airlines to Metadata"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
       DTS:DTSID="{5b1f2443-c6c2-4100-a807-50a8781eab20}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -4278,6 +5255,7 @@ where [refTable].[Airport_SK] = ?</property>
       DTS:refId="Package\Update LSET DimAirport to Metadata 1"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
       DTS:DTSID="{c6b9b17a-505f-4981-93e8-e791e9fafee8}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -5150,18 +6128,18 @@ where [refTable].[Airport_SK] = ?</property>
     design-time-name="Package\Load_Flight_NDS_to_DDS">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="128,41.6"
           Id="Package\Load_Flight_NDS_to_DDS\Flight NDS"
-          TopLeft="75.9999988675116,57.9999991357327" />
+          TopLeft="86.9999987035989,34.9999994784593" />
         <NodeLayout
           Size="156.8,41.6"
           Id="Package\Load_Flight_NDS_to_DDS\Lookup DimDate"
-          TopLeft="65.9999990165232,139.999997913837" />
+          TopLeft="76.9999988526104,116.999998256564" />
         <EdgeLayout
           Id="Package\Load_Flight_NDS_to_DDS.Paths[OLE DB Source Output]"
-          TopLeft="142.199998942017,99.5999991357327">
+          TopLeft="153.199998778105,76.5999994784593">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -5184,10 +6162,10 @@ where [refTable].[Airport_SK] = ?</property>
         <NodeLayout
           Size="163.2,41.6"
           Id="Package\Load_Flight_NDS_to_DDS\Lookup DimAirline"
-          TopLeft="344.999994859099,141.999997884035" />
+          TopLeft="355.999994695187,118.999998226762" />
         <EdgeLayout
           Id="Package\Load_Flight_NDS_to_DDS.Paths[Lookup Match Output]"
-          TopLeft="222.799999016523,161.799997898936">
+          TopLeft="233.79999885261,138.799998241663">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -5212,10 +6190,10 @@ where [refTable].[Airport_SK] = ?</property>
         <NodeLayout
           Size="187.2,41.6"
           Id="Package\Load_Flight_NDS_to_DDS\Lookup Original Airport"
-          TopLeft="616.999990805984,145.99999782443" />
+          TopLeft="627.999990642071,122.999998167157" />
         <EdgeLayout
           Id="Package\Load_Flight_NDS_to_DDS.Paths[Lookup Match Output1]"
-          TopLeft="508.199994859099,164.799997854233">
+          TopLeft="519.199994695187,141.799998196959">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -5240,85 +6218,231 @@ where [refTable].[Airport_SK] = ?</property>
         <NodeLayout
           Size="204,41.6"
           Id="Package\Load_Flight_NDS_to_DDS\Lookup Destination Airport"
-          TopLeft="611.999990880489,231.599998062849" />
+          TopLeft="701.999989539385,208.599998405576" />
         <EdgeLayout
           Id="Package\Load_Flight_NDS_to_DDS.Paths[Lookup Match Output2]"
-          TopLeft="712.299990843237,187.59999782443">
+          TopLeft="721.599990642071,164.599998167157">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,44.0000002384186"
+              EndConnector="82.3999988973138,44.0000002384185"
               Start="0,0"
-              End="0,36.5000002384186">
+              End="82.3999988973138,36.5000002384185">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,36.5000002384186" />
+                    End="0,18.0000001192092" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,18.0000001192092"
+                    Point2="0,22.0000001192092"
+                    Point3="4,22.0000001192092" />
+                  <mssgle:LineSegment
+                    End="78.3999988973138,22.0000001192092" />
+                  <mssgle:CubicBezierSegment
+                    Point1="78.3999988973138,22.0000001192092"
+                    Point2="82.3999988973138,22.0000001192092"
+                    Point3="82.3999988973138,26.0000001192092" />
+                  <mssgle:LineSegment
+                    End="82.3999988973138,36.5000002384185" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,12.4453126192093,96.3827734375,11.609375"
+              BoundingBox="-6.99138727009309,27.0000001192092,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
           Size="172.8,41.6"
           Id="Package\Load_Flight_NDS_to_DDS\Lookup Cancellation"
-          TopLeft="371.999994456768,228.999996587634" />
+          TopLeft="85.9999987185002,208.999996885657" />
+        <NodeLayout
+          Size="152.8,41.6"
+          Id="Package\Load_Flight_NDS_to_DDS\Derived Column"
+          TopLeft="91.9999986290932,301.999995499849" />
         <EdgeLayout
           Id="Package\Load_Flight_NDS_to_DDS.Paths[Lookup Match Output3]"
-          TopLeft="611.999990880489,251.099997325242">
+          TopLeft="170.399998673797,250.599996885657">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-67.1999964237211,0"
+              EndConnector="0,51.399998614192"
               Start="0,0"
-              End="-59.6999964237211,0">
+              End="0,43.899998614192">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-59.6999964237211,0" />
+                    End="0,43.899998614192" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-78.0413849306106,5,96.3827734375,11.609375"
+              BoundingBox="-48.19138671875,16.145311807096,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
-          Size="181.6,41.6"
-          Id="Package\Load_Flight_NDS_to_DDS\Lookup Cancellation 1"
-          TopLeft="82.9999987632035,226.199999657273" />
+          Size="206.4,41.6"
+          Id="Package\Load_Flight_NDS_to_DDS\Lookup Schedule Dep Time"
+          TopLeft="292.99999563396,307.999995410442" />
         <EdgeLayout
-          Id="Package\Load_Flight_NDS_to_DDS.Paths[Lookup Match Output4]"
-          TopLeft="371.999994456768,248.399998122454">
+          Id="Package\Load_Flight_NDS_to_DDS.Paths[Derived Column Output]"
+          TopLeft="244.799998629093,325.799995455146">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-107.399995693565,0"
+              EndConnector="48.1999970048666,0"
               Start="0,0"
-              End="-99.8999956935647,0">
+              End="40.6999970048666,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-99.8999956935647,0" />
+                    End="40.6999970048666,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="160.8,41.6"
+          Id="Package\Load_Flight_NDS_to_DDS\Lookup Dep Time"
+          TopLeft="578.999991372228,314.599996826052" />
+        <EdgeLayout
+          Id="Package\Load_Flight_NDS_to_DDS.Paths[Lookup Match Output4]"
+          TopLeft="499.39999563396,332.099996118247">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="79.5999957382678,0"
+              Start="0,0"
+              End="72.0999957382678,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="72.0999957382678,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-98.1413845655323,5,96.3827734375,11.609375"
+              BoundingBox="-12.1413888496161,5,96.3827734375,11.609375"
               RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="104,41.6"
+          Id="Package\Load_Flight_NDS_to_DDS\3 KPI"
+          TopLeft="815.999987840652,310.999995365739" />
+        <EdgeLayout
+          Id="Package\Load_Flight_NDS_to_DDS.Paths[Lookup Match Output5]"
+          TopLeft="739.799991372228,333.599996095896">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="76.1999964684248,0"
+              Start="0,0"
+              End="68.6999964684248,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="68.6999964684248,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-13.8413884845376,5,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Load_Flight_NDS_to_DDS\OLE DB Destination"
+          TopLeft="780.999988362193,405.999993950129" />
+        <EdgeLayout
+          Id="Package\Load_Flight_NDS_to_DDS.Paths[Derived Column Output1]"
+          TopLeft="867.099988101423,352.599995365739">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,53.3999985843898"
+              Start="0,0"
+              End="0,45.8999985843898">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,45.8999985843898" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="154.4,41.6"
+          Id="Package\Load_Flight_NDS_to_DDS\Conditional Split"
+          TopLeft="413.999993830919,207.999996900558" />
+        <EdgeLayout
+          Id="Package\Load_Flight_NDS_to_DDS.Paths[Lookup Match Output6]"
+          TopLeft="701.999989539385,229.099997653067">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-133.599995708465,0"
+              Start="0,0"
+              End="-126.099995708465,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-126.099995708465,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-111.241384572983,5,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load_Flight_NDS_to_DDS.Paths[Conditional Split Default Output]"
+          TopLeft="413.999993830919,229.299996893108">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-155.199995112419,0"
+              Start="0,0"
+              End="-147.699995112419,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-147.699995112419,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -5436,6 +6560,65 @@ where [refTable].[Airport_SK] = ?</property>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load_Flight_NDS_to_DDS\Lookup Schedule Dep Time">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DimTime]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load_Flight_NDS_to_DDS\Lookup Dep Time">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DimTime]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load_Flight_NDS_to_DDS\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
