@@ -11,8 +11,8 @@
   DTS:LocaleID="1066"
   DTS:ObjectName="Stage_to_NDS"
   DTS:PackageType="5"
-  DTS:VersionBuild="46"
-  DTS:VersionGUID="{7A279B99-530C-4FD9-8632-F379526429C1}">
+  DTS:VersionBuild="47"
+  DTS:VersionGUID="{5E2FF446-245A-4E15-803D-690481779CA1}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -4863,7 +4863,7 @@ WHERE t.rn = 1</property>
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{25DCEEFC-628E-4317-80D7-C5F6D531C1F7}"
-          SQLTask:SqlStatementSource="DECLARE @pkgKey INT;&#xA;IF NOT EXISTS (&#xA;    SELECT 1 FROM HTTTKD_ETL_Metadata.dbo.packageTable&#xA;    WHERE package_name = 'StageAirport_to_NDS'&#xA;)&#xA;BEGIN&#xA;    INSERT INTO HTTTKD_ETL_Metadata.dbo.packageTable&#xA;        (package_name, description, schedule)&#xA;    VALUES&#xA;        ('StageAirports_to_NDS',&#xA;         N'ETL process from StageAirports to NDS',&#xA;         N'Run manually for now');&#xA;END;&#xA;&#xA;SELECT @pkgKey = package_key&#xA;FROM HTTTKD_ETL_Metadata.dbo.packageTable&#xA;WHERE package_name = 'StageAirports_to_NDS';&#xA;&#xA;IF NOT EXISTS (&#xA;    SELECT 1 FROM HTTTKD_ETL_Metadata.dbo.data_flowTable&#xA;    WHERE flow_name = 'AirportsNDS'&#xA;)&#xA;BEGIN&#xA;    INSERT INTO HTTTKD_ETL_Metadata.dbo.data_flowTable&#xA;        (flow_name, description, target, transformation, package_key, status_key, LSET, CET)&#xA;    VALUES&#xA;        ('AirportsNDS',&#xA;         N'Extract Stage Airports data to AirportsNDS',&#xA;         N'AirportsNDS',&#xA;         N'Full Load',&#xA;         @pkgKey,&#xA;         3,              -- &quot;In Progress&quot;&#xA;         '1900-01-01',&#xA;         GETDATE());&#xA;END&#xA;ELSE&#xA;BEGIN&#xA;    UPDATE HTTTKD_ETL_Metadata.dbo.data_flowTable&#xA;    SET CET = GETDATE(),&#xA;        status_key = 3&#xA;    WHERE flow_name = 'AirportsNDS';&#xA;END;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="DECLARE @pkgKey INT;&#xA;IF NOT EXISTS (&#xA;    SELECT 1 FROM HTTTKD_ETL_Metadata.dbo.packageTable&#xA;    WHERE package_name = 'Source_to_Stage'&#xA;)&#xA;BEGIN&#xA;    INSERT INTO HTTTKD_ETL_Metadata.dbo.packageTable&#xA;        (package_name, description, schedule)&#xA;    VALUES&#xA;        ('Source_to_Stage',&#xA;         N'ETL process from CSV source to Stage',&#xA;         N'Run manually for now');&#xA;END;&#xA;&#xA;SELECT @pkgKey = package_key&#xA;FROM HTTTKD_ETL_Metadata.dbo.packageTable&#xA;WHERE package_name = 'Source_to_Stage';&#xA;&#xA;IF NOT EXISTS (&#xA;    SELECT 1 FROM HTTTKD_ETL_Metadata.dbo.data_flowTable&#xA;    WHERE flow_name = 'Airports'&#xA;)&#xA;BEGIN&#xA;    INSERT INTO HTTTKD_ETL_Metadata.dbo.data_flowTable&#xA;        (flow_name, description, target, transformation, package_key, status_key, LSET, CET)&#xA;    VALUES&#xA;        ('Airports',&#xA;         N'Extract Airports data from source to stage',&#xA;         N'STG_Airports',&#xA;         N'Full Load',&#xA;         @pkgKey,&#xA;         3,              -- &quot;In Progress&quot;&#xA;         '1900-01-01',&#xA;         GETDATE());&#xA;END&#xA;ELSE&#xA;BEGIN&#xA;    UPDATE HTTTKD_ETL_Metadata.dbo.data_flowTable&#xA;    SET CET = GETDATE(),&#xA;        status_key = 3&#xA;    WHERE flow_name = 'Airports';&#xA;END;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
