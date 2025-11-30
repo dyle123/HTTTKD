@@ -11,8 +11,8 @@
   DTS:LocaleID="1066"
   DTS:ObjectName="Stage_to_NDS"
   DTS:PackageType="5"
-  DTS:VersionBuild="47"
-  DTS:VersionGUID="{5E2FF446-245A-4E15-803D-690481779CA1}">
+  DTS:VersionBuild="48"
+  DTS:VersionGUID="{9325D340-F3B5-4C34-9DE8-0F48965E38C5}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -4184,7 +4184,7 @@ FROM (
         ) AS rn
     FROM dbo.Flights
 ) t
-WHERE t.rn = 1</property>
+WHERE t.rn = 1 -- CHỈ GIỮ LẠI 1 DÒNG DUY NHẤT</property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
