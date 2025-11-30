@@ -11,9 +11,6 @@ go
 ------------------------------------
 USE HTTTKD_ETL_Metadata
 GO
-select* from packageTable
-select* from data_flowTable
-select* from sourceTable
 
 CREATE TABLE packageTable 
 (
@@ -63,6 +60,7 @@ CREATE TABLE data_flowTable (
 --DQ_METADATA
 ------------------------------------
 USE HTTTKD_DQ_Metadata
+go
 
 CREATE TABLE rule_type (--phân loại rule
     rule_type_id CHAR(1) PRIMARY KEY,
@@ -154,12 +152,6 @@ INSERT INTO recipient_type VALUES
 ------------------------------------
 USE HTTTKD_STAGE
 GO
-select* from Airlines
-select* from Airports
-Select*from Flights
-select top 5* from Flights
-select count(*) from Flights
-
 
 CREATE TABLE Airlines(
   IATA_CODE NVARCHAR(10),
@@ -220,16 +212,9 @@ GO
 ------------------------------------
 --NDS
 ------------------------------------
-
 use HTTTKD_NDS
 go
-Select*from AirlinesNDS
-Select*from AirportsNDS
-Select*from NDS_Flights
 
-delete from AirlinesNDS
-delete from AirportsNDS
-delete from NDS_Flights
 
 CREATE TABLE AirportsNDS (
     Airport_SK INT PRIMARY KEY IDENTITY(1,1), 
@@ -315,14 +300,23 @@ ALTER COLUMN [DEPARTURE_DELAY] INT NULL;
 CREATE UNIQUE INDEX UX_NDS_Flights_BK ON NDS_Flights(Flight_BK);
 GO
 
+
 ------------------------------------
 --DDS
 ------------------------------------
 use HTTTKD_DDS
 go
+Select*from DimDate
+Select*from DimTime
+Select*from DimCancellationReason
+Select *from DimAirline
+Select*from DimAirport
+Select*from FactFlight
 
-Select*From DimAirport
-Select*From DimAirline
+
+delete from DimAirline
+delete from DimAirport
+delete from FactFlight
 
 CREATE TABLE DimDate (
     Date_SK INT IDENTITY(1,1) PRIMARY KEY,
@@ -406,12 +400,12 @@ INSERT INTO DimCancellationReason (Reason_Code, Description, CreatedDate) VALUES
 ('C', 'National Air System', getdate()),
 ('D', 'Security', getdate());
 
---------------------------==========================================
---------------------------==========================================
+INSERT INTO DimCancellationReason (Reason_Code, Description, CreatedDate) VALUES ('', NULL, NULL)
+
 
 
 CREATE TABLE DimAirline (
-    Airline_SK INT IDENTITY(1,1) PRIMARY KEY,
+    Airline_SK INT PRIMARY KEY,
     Airline_IATA NVARCHAR(10),
     Airline_Name NVARCHAR(255),
 	Status BIT,
@@ -421,7 +415,7 @@ CREATE TABLE DimAirline (
 
 
 CREATE TABLE DimAirport (
-    Airport_SK INT IDENTITY(1,1) PRIMARY KEY,
+    Airport_SK INT PRIMARY KEY,
     IATA_CODE NVARCHAR(10),
     AIRPORT NVARCHAR(255),
     CITY NVARCHAR(255),
@@ -431,6 +425,8 @@ CREATE TABLE DimAirport (
 	CreatedDate DATETIME DEFAULT GETDATE(),
     UpdatedDate DATETIME DEFAULT GETDATE()
 );
+
+
 
 CREATE TABLE FactFlight (
     Flight_SK INT IDENTITY(1,1) PRIMARY KEY,
@@ -483,3 +479,5 @@ CREATE TABLE FactFlight (
     FOREIGN KEY (Scheduled_Arrival_Time_SK) REFERENCES DimTime(Time_SK),
     FOREIGN KEY (Cancellation_Reason_SK) REFERENCES DimCancellationReason(Reason_SK)
 );
+
+

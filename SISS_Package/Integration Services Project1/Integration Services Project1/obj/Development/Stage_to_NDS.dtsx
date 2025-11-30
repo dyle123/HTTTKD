@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Stage_to_NDS"
   DTS:PackageType="5"
-  DTS:VersionBuild="45"
-  DTS:VersionGUID="{1C5E556E-FD22-41CF-BD5C-0C2386027B5A}">
+  DTS:VersionBuild="54"
+  DTS:VersionGUID="{8245D744-F7E8-4579-A9D3-F754DC83F305}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA3yYHH1ZwXka+yJZmX7J+PQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADSTOKy7CXY5WY4N+BSaF9uxEehlJ6WpN4234/0Cg6nkwAAAAAOgAAAAAIAACAAAADepkzCgD+3OMuoRP9xE7+SgNMHIebuZd/gp7Du3aYbPhAAAACIKzHtem0iIMo4PGDRyeuDQAAAAKigvR18Q5R+N4H5bJfgBtV835141gUPryEEX7B0xX8VAHchA4CD8Dvm369QNCYgHEZfBNHSbXTxA5yB3oldoak</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA3yYHH1ZwXka+yJZmX7J+PQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACTk4U0KyO1t8RuU9kmwg/ujOlyTLVBeD68s1Ztq9CxtwAAAAAOgAAAAAIAACAAAACHVAKRxvnCySc8Q1eypIknFcMzXLTTCfm17691DA+t2xAAAAACCPugjHXQY4pqzKC7Sd8VQAAAAPRop4bCH5d4Z+tMEpX8MypSu0k2G9wTXDYXPVhBNWxm3p7OBRCTEzUqgZe6KTllAT5LNp6H90QWIg8qb1szAPM</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA3yYHH1ZwXka+yJZmX7J+PQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABsC5N5R7Qcy5u7PXOhI5ddh/VAOKCAoX4LijuHoUT29QAAAAAOgAAAAAIAACAAAACL1Yy/aW3MURRzI8XRvthGHpexrlDW2i/QRCH/37OxtRAAAACLnoZGYGW4Qm9CNjZ41hC5QAAAAFmioXa0hL55H4zWYx+iA4SgqgkOxGg0lm2PUPhxREjDikQIb55k84QSWvWMR8JUJwEEEIceMc4y0B4AlIfDK/4</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA3yYHH1ZwXka+yJZmX7J+PQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACtchfafkmmm37FgiLYMpN5ivLZixYmXO6C+AWDq0JtjAAAAAAOgAAAAAIAACAAAABNSkZ86f7fFR+9w9VEyWK0lv4GxZ2qVhTdhVyaqXwNGRAAAADSnTmMaJTtVcsWflbeUfitQAAAAPZteZuGlEJoM9vBoMBYg7GsNfpnKwVl18zyhtSnCghnmVghc/NZJ7l/Ab8q9QRvNLuUJ1YVniOx/GnjAt1j+4w</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -63,7 +63,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA3yYHH1ZwXka+yJZmX7J+PQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADEC+pvSrilUwMc/zdBd4Q7fnznixntVu4PsPCko5akKgAAAAAOgAAAAAIAACAAAADPrwG7F4OtA39FpCL1TlkQeTgcIDQy9ZQ82XS5fvi65xAAAABPp0mgvBzr3Ly1ZE/06zbKQAAAAP5nE1cclde8ThhXBA8N+ioFLXUsQgIjYAyrF38UDqiAeXRGiqhH6p7JgwBt1G1390bShwq64U6AURl6kO47jxM</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA3yYHH1ZwXka+yJZmX7J+PQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAX13ZTBFyoqWbQcoGxNRwPdbJZfVKqhK39FF8p54ddNwAAAAAOgAAAAAIAACAAAAAZ3RxAs6rdiXyIVqOGff9iJoex9D+Z2Ht17+rFfafwdRAAAADHMbuDtXUtX84CxyT9QBRfQAAAAKOCIEzua9xrdbM7o/OZ09lmqGJY8or/eNoF9rRvfycny3w42OpQ0cOmuKkoGx8D1SrPhOALfm+HMKROzmXtrfQ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -74,7 +74,6 @@
       DTS:refId="Package\Airlines to AirlinesNDS"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Sequence Container"
-      DTS:Disabled="True"
       DTS:DTSID="{3358721A-2843-4F50-896F-9BFAB5CA99CB}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
@@ -1006,7 +1005,6 @@ WHERE Airline_IATA = ?</property>
       DTS:refId="Package\Airports to AirportsNDS"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Sequence Container"
-      DTS:Disabled="True"
       DTS:DTSID="{B91B4973-4165-4050-9D8C-F799C6D5CEF8}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
@@ -2106,7 +2104,7 @@ Where Airport_SK=?</property>
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{3A988F0B-BE1A-493E-8BF2-60DB08ABC4D1}"
-              SQLTask:SqlStatementSource="DECLARE @pkgKey INT;&#xA;IF NOT EXISTS (&#xA;    SELECT 1 FROM HTTTKD_ETL_Metadata.dbo.packageTable&#xA;    WHERE package_name = 'StageAirport_to_NDS'&#xA;)&#xA;BEGIN&#xA;    INSERT INTO HTTTKD_ETL_Metadata.dbo.packageTable&#xA;        (package_name, description, schedule)&#xA;    VALUES&#xA;        ('StageAirports_to_NDS',&#xA;         N'ETL process from StageAirports to NDS',&#xA;         N'Run manually for now');&#xA;END;&#xA;&#xA;SELECT @pkgKey = package_key&#xA;FROM HTTTKD_ETL_Metadata.dbo.packageTable&#xA;WHERE package_name = 'StageAirports_to_NDS';&#xA;&#xA;IF NOT EXISTS (&#xA;    SELECT 1 FROM HTTTKD_ETL_Metadata.dbo.data_flowTable&#xA;    WHERE flow_name = 'AirportsNDS'&#xA;)&#xA;BEGIN&#xA;    INSERT INTO HTTTKD_ETL_Metadata.dbo.data_flowTable&#xA;        (flow_name, description, target, transformation, package_key, status_key, LSET, CET)&#xA;    VALUES&#xA;        ('AirportsNDS',&#xA;         N'Extract Stage Airports data to AirportsNDS',&#xA;         N'AirportsNDS',&#xA;         N'Full Load',&#xA;         @pkgKey,&#xA;         3,              -- &quot;In Progress&quot;&#xA;         '1900-01-01',&#xA;         GETDATE());&#xA;END&#xA;ELSE&#xA;BEGIN&#xA;    UPDATE HTTTKD_ETL_Metadata.dbo.data_flowTable&#xA;    SET CET = GETDATE(),&#xA;        status_key = 3&#xA;    WHERE flow_name = 'AirportsNDS';&#xA;END;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+              SQLTask:SqlStatementSource="DECLARE @pkgKey INT;&#xA;IF NOT EXISTS (&#xA;    SELECT 1 FROM HTTTKD_ETL_Metadata.dbo.packageTable&#xA;    WHERE package_name = 'StageAirports_to_NDS'&#xA;)&#xA;BEGIN&#xA;    INSERT INTO HTTTKD_ETL_Metadata.dbo.packageTable&#xA;        (package_name, description, schedule)&#xA;    VALUES&#xA;        ('StageAirports_to_NDS',&#xA;         N'ETL process from StageAirports to NDS',&#xA;         N'Run manually for now');&#xA;END;&#xA;&#xA;SELECT @pkgKey = package_key&#xA;FROM HTTTKD_ETL_Metadata.dbo.packageTable&#xA;WHERE package_name = 'StageAirports_to_NDS';&#xA;&#xA;IF NOT EXISTS (&#xA;    SELECT 1 FROM HTTTKD_ETL_Metadata.dbo.data_flowTable&#xA;    WHERE flow_name = 'AirportsNDS'&#xA;)&#xA;BEGIN&#xA;    INSERT INTO HTTTKD_ETL_Metadata.dbo.data_flowTable&#xA;        (flow_name, description, target, transformation, package_key, status_key, LSET, CET)&#xA;    VALUES&#xA;        ('AirportsNDS',&#xA;         N'Extract Stage Airports data to AirportsNDS',&#xA;         N'AirportsNDS',&#xA;         N'Full Load',&#xA;         @pkgKey,&#xA;         3,              -- &quot;In Progress&quot;&#xA;         '1900-01-01',&#xA;         GETDATE());&#xA;END&#xA;ELSE&#xA;BEGIN&#xA;    UPDATE HTTTKD_ETL_Metadata.dbo.data_flowTable&#xA;    SET CET = GETDATE(),&#xA;        status_key = 3&#xA;    WHERE flow_name = 'AirportsNDS';&#xA;END;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
@@ -2149,7 +2147,6 @@ Where Airport_SK=?</property>
       DTS:refId="Package\Flights to NDS_Flights"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Sequence Container"
-      DTS:Disabled="True"
       DTS:DTSID="{04D4437E-BCDF-447C-954E-EBCAEB77C80B}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
@@ -5239,7 +5236,7 @@ WHERE t.rn = 1 -- CHỈ GIỮ LẠI 1 DÒNG DUY NHẤT</property>
           Id="Package\Flights to NDS_Flights\Execute SQL Task"
           TopLeft="70.624999376014,206.375437865091" />
         <NodeLayout
-          Size="176,41.3333333333334"
+          Size="177.333333333334,42.6666666666667"
           Id="Package\Flights to NDS_Flights\Flights to FlightsNDS"
           TopLeft="62.291666423488,125.36491204102" />
         <NodeLayout
@@ -5248,18 +5245,18 @@ WHERE t.rn = 1 -- CHỈ GIỮ LẠI 1 DÒNG DUY NHẤT</property>
           TopLeft="43.1250007543712,41.5263159923111" />
         <EdgeLayout
           Id="Package\Flights to NDS_Flights.PrecedenceConstraints[Constraint 4]"
-          TopLeft="147.541666922263,82.8596493256444">
+          TopLeft="147.875000255596,82.8596493256444">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,42.5052627153757"
+              EndConnector="0,42.5052627153756"
               Start="0,0"
-              End="0,35.0052627153757">
+              End="0,35.0052627153756">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,35.0052627153757" />
+                    End="0,35.0052627153756" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5270,18 +5267,18 @@ WHERE t.rn = 1 -- CHỈ GIỮ LẠI 1 DÒNG DUY NHẤT</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Flights to NDS_Flights.PrecedenceConstraints[Constraint 5]"
-          TopLeft="151.624999566418,166.698245374353">
+          TopLeft="151.958332899751,168.031578707687">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,39.677192490738"
+              EndConnector="0,38.3438591574043"
               Start="0,0"
-              End="0,32.177192490738">
+              End="0,30.8438591574043">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,32.177192490738" />
+                    End="0,30.8438591574043" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5294,7 +5291,7 @@ WHERE t.rn = 1 -- CHỈ GIỮ LẠI 1 DÒNG DUY NHẤT</property>
           HeaderHeight="43"
           IsExpanded="True"
           PanelSize="268.666666666667,374"
-          Size="268.666666666667,416.666666666667"
+          Size="268.666666666667,417.333333333334"
           Id="Package\Flights to NDS_Flights"
           TopLeft="543.791648198541,553.859645757209" />
         <EdgeLayout
@@ -5653,7 +5650,9 @@ WHERE t.rn = 1 -- CHỈ GIỮ LẠI 1 DÒNG DUY NHẤT</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -5747,7 +5746,9 @@ WHERE t.rn = 1 -- CHỈ GIỮ LẠI 1 DÒNG DUY NHẤT</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -5769,7 +5770,9 @@ WHERE t.rn = 1 -- CHỈ GIỮ LẠI 1 DÒNG DUY NHẤT</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -5820,6 +5823,28 @@ WHERE t.rn = 1 -- CHỈ GIỮ LẠI 1 DÒNG DUY NHẤT</property>
           Size="145.333333333334,42.6666666666667"
           Id="Package\Flights to NDS_Flights\Flights to FlightsNDS\Set Flight_BK"
           TopLeft="244.821418393404,86.9924802478473" />
+        <EdgeLayout
+          Id="Package\Flights to NDS_Flights\Flights to FlightsNDS.Paths[OLE DB Source Output]"
+          TopLeft="320.181535797091,45.054386015847">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,41.9380942320003"
+              Start="0,0"
+              End="0,34.4380942320003">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.4380942320003" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Flights to NDS_Flights\Flights to FlightsNDS.Paths[Lookup No Match Output]"
           TopLeft="466.299987023573,283.566664933993">
@@ -6022,28 +6047,6 @@ WHERE t.rn = 1 -- CHỈ GIỮ LẠI 1 DÒNG DUY NHẤT</property>
                   Capacity="5">
                   <mssgle:LineSegment
                     End="83.9999864771967,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Flights to NDS_Flights\Flights to FlightsNDS.Paths[OLE DB Source Output]"
-          TopLeft="320.181535797091,45.054386015847">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,41.9380942320003"
-              Start="0,0"
-              End="0,34.4380942320003">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,34.4380942320003" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

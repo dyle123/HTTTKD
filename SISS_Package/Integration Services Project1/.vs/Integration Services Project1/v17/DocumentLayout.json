@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "F:\\HTTTKD\\SISS_Package\\Integration Services Project1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8DC78854-6C78-43D6-B796-D6AA502BB729}|Integration Services Project1\\Integration Services Project1.dtproj|F:\\HTTTKD\\SISS_Package\\Integration Services Project1\\Integration Services Project1\\Stage_to_NDS.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
-      "RelativeMoniker": "D:0:0:{8DC78854-6C78-43D6-B796-D6AA502BB729}|Integration Services Project1\\Integration Services Project1.dtproj|solutionrelative:Integration Services Project1\\Stage_to_NDS.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8DC78854-6C78-43D6-B796-D6AA502BB729}|Integration Services Project1\\Integration Services Project1.dtproj|F:\\HTTTKD\\SISS_Package\\Integration Services Project1\\Integration Services Project1\\NDS_to_DDS.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
       "RelativeMoniker": "D:0:0:{8DC78854-6C78-43D6-B796-D6AA502BB729}|Integration Services Project1\\Integration Services Project1.dtproj|solutionrelative:Integration Services Project1\\NDS_to_DDS.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8DC78854-6C78-43D6-B796-D6AA502BB729}|Integration Services Project1\\Integration Services Project1.dtproj|F:\\HTTTKD\\SISS_Package\\Integration Services Project1\\Integration Services Project1\\Source_to_Stage.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
       "RelativeMoniker": "D:0:0:{8DC78854-6C78-43D6-B796-D6AA502BB729}|Integration Services Project1\\Integration Services Project1.dtproj|solutionrelative:Integration Services Project1\\Source_to_Stage.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DC78854-6C78-43D6-B796-D6AA502BB729}|Integration Services Project1\\Integration Services Project1.dtproj|F:\\HTTTKD\\SISS_Package\\Integration Services Project1\\Integration Services Project1\\Stage_to_NDS.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "RelativeMoniker": "D:0:0:{8DC78854-6C78-43D6-B796-D6AA502BB729}|Integration Services Project1\\Integration Services Project1.dtproj|solutionrelative:Integration Services Project1\\Stage_to_NDS.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,7 +30,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "NDS_to_DDS.dtsx [Design]",
               "DocumentMoniker": "F:\\HTTTKD\\SISS_Package\\Integration Services Project1\\Integration Services Project1\\NDS_to_DDS.dtsx",
               "RelativeDocumentMoniker": "Integration Services Project1\\NDS_to_DDS.dtsx",
@@ -42,7 +42,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Stage_to_NDS.dtsx [Design]",
               "DocumentMoniker": "F:\\HTTTKD\\SISS_Package\\Integration Services Project1\\Integration Services Project1\\Stage_to_NDS.dtsx",
               "RelativeDocumentMoniker": "Integration Services Project1\\Stage_to_NDS.dtsx",
@@ -54,7 +54,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Source_to_Stage.dtsx [Design]",
               "DocumentMoniker": "F:\\HTTTKD\\SISS_Package\\Integration Services Project1\\Integration Services Project1\\Source_to_Stage.dtsx",
               "RelativeDocumentMoniker": "Integration Services Project1\\Source_to_Stage.dtsx",
