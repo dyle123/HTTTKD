@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Stage_to_NDS"
   DTS:PackageType="5"
-  DTS:VersionBuild="70"
-  DTS:VersionGUID="{53F48317-31F8-445F-BFC9-73CEA08FAEE3}">
+  DTS:VersionBuild="73"
+  DTS:VersionGUID="{6BFF6EA0-9E64-4DE8-B6BF-83FE6A848CC7}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAi8Igl1yswkWBDe1+LYIL0QAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACxhVqqzpYyOSVvN6fY0BgMvho22pdi6JJ+DGqs071M1wAAAAAOgAAAAAIAACAAAACei0IAD8VWDrIaABLlgh3poN7X1Go9rBmSsKuDbbaj9xAAAADfvcGz9AoCp9Ho0raizIRlQAAAAKGjEoNk5h1k+oJVgV2efJz+A9zTmgL2a0p2XnCdVKQBCAjJe3Xr8SMMyqnj186whGr5+Wr3v55BHiVgKyAB7yA</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAi8Igl1yswkWBDe1+LYIL0QAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACfuf5CkH4g+FKaIvbRRpwzuCoL6Duf7qrcYAZe8MDWigAAAAAOgAAAAAIAACAAAACJJDgK0lTKP9ata29jzlVc8f0ieA+mWBWYoIJB7ikLHRAAAAD7YF3lO5+6q+QE+v3o2GIoQAAAAOLp+QhOb/Y5i361t4NFO1DUf7DkpSfOBL97pKW8608j91K93mQUGSRuApre0ULY240YmduzOemMWKUodGzVXSY</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAi8Igl1yswkWBDe1+LYIL0QAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADmD5ruZxt6i15Z0s9jk1nwszhGtHtcRP/gUfKh82+flwAAAAAOgAAAAAIAACAAAACs3XPcZXpKem8bM7FR2uP+Gvhz8tdeE+O2MJS00RuPPhAAAAC0FJB75E0cqzNLt6UBMMs3QAAAAF3JkUPl98flz5zNp/VJ3n4XpbVwVPA43nwDpa7uPlk9UTwIblIuvLcithJ0F0IDJF9Zps8G9WJ8wKv53nbEB0o</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAi8Igl1yswkWBDe1+LYIL0QAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAVuPC8AoybrNUiFdh32RomCZdyxPJsiJxXglk/444BxAAAAAAOgAAAAAIAACAAAADY6esikW5H6T4CGw+5hhrCodOpjYkePOIAeo72tTJs2BAAAADy71ALfiYx5HSqLZGjaqAHQAAAAIB/6/2zM3NAbMCfw7jVpHpu8fRRrKED+Q7SdytFFOXxQlR9XbSk+rVfElCQk4QAOQHXNda6QpJHc6pS9TpSC2Q</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -63,7 +63,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAi8Igl1yswkWBDe1+LYIL0QAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABuiw0AnX4X5AmDpx4kp7nha70nYKtaW7/6UIIU5BFtigAAAAAOgAAAAAIAACAAAADy1ocYMyROTNskGvfRGOYCBacNvEmXvux385+fRU2mKxAAAACfgw6imFCXP5tsTRVnyVGwQAAAAAhynxDul78UYTovbM+6iJ/xJ7rJIvE8EcpxYjN+5n033GWpaBqLoiFzTK0/5VhOdhHkFRVQhHX2oJiEg1wl/1I</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAi8Igl1yswkWBDe1+LYIL0QAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAtyKnvk7lkFwoUR2Ivt+Lok4Jw/KjG9atNHxOvendOWQAAAAAOgAAAAAIAACAAAAC8sMytcF5ljuSVXf9/KDRkYf5mf+iygkj53VXc+5qs2RAAAADzLwSTe6m6FsyFrYwGsOnGQAAAAMJc4vbkt3jbZMCDSW9+W63X6Lb3oK1LF+nCpfAoP+tOu53N/J4ACUD0u36dHqOhepK4Uw9uq18hRTIL4tWtpcE</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -80,7 +80,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAi8Igl1yswkWBDe1+LYIL0QAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABW+brC8eizOe6yBIR4rvRmfxZmI97y+feS4YWYq2700AAAAAAOgAAAAAIAACAAAAAccb4hjFUtgKZRrJ34J5aMnAtShhqEuNQ+yGbiADAf0hAAAABrmOr7YVsKjRSdjLfqQU2JQAAAAFHakAvgmAJpz1+dH+upnNsIBTpcPUms3ThqBtjoQBrGJ371Ca+mICgVgvJHZ0osSb9fwPdW22NXtx7Bemp5L+8</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAi8Igl1yswkWBDe1+LYIL0QAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAtURh000xhxZ9zkBuEWXd/KI0Bd7OoUgPkp3Asc2AglAAAAAAOgAAAAAIAACAAAACmLzqStn2ejVzJBrFMMprCH9EFnvOAn3zonT3eP/vE0hAAAAD0EzvjhacQZDv/8wnD3sArQAAAAKcRwNtNax34rGn7ZTq9X0bXzRDJW/bTbIcPC5OZImjZ+3zLfdTe4xsiqNuETUgPac1t9AuvF5u1erui8OLq1go</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -554,7 +554,7 @@
                           dataType="wstr"
                           errorOrTruncationOperation="Computation"
                           errorRowDisposition="FailComponent"
-                          length="281"
+                          length="288"
                           lineageId="Package\Airlines to AirlinesNDS\DFT_Load_Airlines_Stage_to_NDS\Derived Column for DQ_Error_Records.Outputs[Derived Column Output].Columns[record_data]"
                           name="record_data"
                           truncationRowDisposition="FailComponent">
@@ -563,13 +563,13 @@
                               containsID="true"
                               dataType="System.String"
                               description="Derived Column Expression"
-                              name="Expression">"IATA:" + ([ISNULL](#{Package\Airlines to AirlinesNDS\DFT_Load_Airlines_Stage_to_NDS\OLE DB Source.Outputs[OLE DB Source Output].Columns[IATA_CODE]}) ? "NULL" : #{Package\Airlines to AirlinesNDS\DFT_Load_Airlines_Stage_to_NDS\OLE DB Source.Outputs[OLE DB Source Output].Columns[IATA_CODE]}) + " | " + "AIRLINE:" + ([ISNULL](#{Package\Airlines to AirlinesNDS\DFT_Load_Airlines_Stage_to_NDS\OLE DB Source.Outputs[OLE DB Source Output].Columns[AIRLINE]}) ? "NULL" : #{Package\Airlines to AirlinesNDS\DFT_Load_Airlines_Stage_to_NDS\OLE DB Source.Outputs[OLE DB Source Output].Columns[AIRLINE]})</property>
+                              name="Expression">"IATA_CODE: " + ([ISNULL](#{Package\Airlines to AirlinesNDS\DFT_Load_Airlines_Stage_to_NDS\OLE DB Source.Outputs[OLE DB Source Output].Columns[IATA_CODE]}) ? "NULL" : #{Package\Airlines to AirlinesNDS\DFT_Load_Airlines_Stage_to_NDS\OLE DB Source.Outputs[OLE DB Source Output].Columns[IATA_CODE]}) + " | " + "AIRLINE: " + ([ISNULL](#{Package\Airlines to AirlinesNDS\DFT_Load_Airlines_Stage_to_NDS\OLE DB Source.Outputs[OLE DB Source Output].Columns[AIRLINE]}) ? "NULL" : #{Package\Airlines to AirlinesNDS\DFT_Load_Airlines_Stage_to_NDS\OLE DB Source.Outputs[OLE DB Source Output].Columns[AIRLINE]})</property>
                             <property
                               containsID="true"
                               dataType="System.String"
                               description="Derived Column Friendly Expression"
                               expressionType="Notify"
-                              name="FriendlyExpression">"IATA:" + (ISNULL(IATA_CODE) ? "NULL" : IATA_CODE) + " | " + "AIRLINE:" + (ISNULL(AIRLINE) ? "NULL" : AIRLINE)</property>
+                              name="FriendlyExpression">"IATA_CODE: " + (ISNULL(IATA_CODE) ? "NULL" : IATA_CODE) + " | " + "AIRLINE: " + (ISNULL(AIRLINE) ? "NULL" : AIRLINE)</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
@@ -727,7 +727,7 @@
                         <inputColumn
                           refId="Package\Airlines to AirlinesNDS\DFT_Load_Airlines_Stage_to_NDS\DQ_Error_Records.Inputs[OLE DB Destination Input].Columns[record_data]"
                           cachedDataType="wstr"
-                          cachedLength="281"
+                          cachedLength="288"
                           cachedName="record_data"
                           externalMetadataColumnId="Package\Airlines to AirlinesNDS\DFT_Load_Airlines_Stage_to_NDS\DQ_Error_Records.Inputs[OLE DB Destination Input].ExternalColumns[record_data]"
                           lineageId="Package\Airlines to AirlinesNDS\DFT_Load_Airlines_Stage_to_NDS\Derived Column for DQ_Error_Records.Outputs[Derived Column Output].Columns[record_data]" />
@@ -2075,7 +2075,7 @@ WHERE Airline_IATA = ?</property>
                           dataType="wstr"
                           errorOrTruncationOperation="Computation"
                           errorRowDisposition="FailComponent"
-                          length="63"
+                          length="71"
                           lineageId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Derived Column for DQ_Error_Records.Outputs[Derived Column Output].Columns[error_description]"
                           name="error_description"
                           truncationRowDisposition="FailComponent">
@@ -2084,13 +2084,13 @@ WHERE Airline_IATA = ?</property>
                               containsID="true"
                               dataType="System.String"
                               description="Derived Column Expression"
-                              name="Expression">([ISNULL](#{Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[IATA_CODE]}) ? "IATA_CODE " : "") + ([ISNULL](#{Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[AIRPORT]}) ? "AIRPORT " : "") + ([ISNULL](#{Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[CITY]}) ? "CITY " : "") + ([ISNULL](#{Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[STATE]}) ? "STATE " : "") + ([ISNULL](#{Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[COUNTRY]}) ? "COUNTRY " : "") + ([ISNULL](#{Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[LATITUDE]}) ? "LATITUDE " : "") + ([ISNULL](#{Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[LONGITUDE]}) ? "LONGITUDE " : "") + "is NULL"</property>
+                              name="Expression">([ISNULL](#{Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[IATA_CODE]}) ? "IATA_CODE,  " : "") + ([ISNULL](#{Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[AIRPORT]}) ? "AIRPORT, " : "") + ([ISNULL](#{Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[CITY]}) ? "CITY, " : "") + ([ISNULL](#{Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[STATE]}) ? "STATE, " : "") + ([ISNULL](#{Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[COUNTRY]}) ? "COUNTRY, " : "") + ([ISNULL](#{Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[LATITUDE]}) ? "LATITUDE, " : "") + ([ISNULL](#{Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[LONGITUDE]}) ? "LONGITUDE, " : "") + "is NULL"</property>
                             <property
                               containsID="true"
                               dataType="System.String"
                               description="Derived Column Friendly Expression"
                               expressionType="Notify"
-                              name="FriendlyExpression">(ISNULL(IATA_CODE) ? "IATA_CODE " : "") + (ISNULL(AIRPORT) ? "AIRPORT " : "") + (ISNULL(CITY) ? "CITY " : "") + (ISNULL(STATE) ? "STATE " : "") + (ISNULL(COUNTRY) ? "COUNTRY " : "") + (ISNULL(LATITUDE) ? "LATITUDE " : "") + (ISNULL(LONGITUDE) ? "LONGITUDE " : "") + "is NULL"</property>
+                              name="FriendlyExpression">(ISNULL(IATA_CODE) ? "IATA_CODE,  " : "") + (ISNULL(AIRPORT) ? "AIRPORT, " : "") + (ISNULL(CITY) ? "CITY, " : "") + (ISNULL(STATE) ? "STATE, " : "") + (ISNULL(COUNTRY) ? "COUNTRY, " : "") + (ISNULL(LATITUDE) ? "LATITUDE, " : "") + (ISNULL(LONGITUDE) ? "LONGITUDE, " : "") + "is NULL"</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
@@ -2191,7 +2191,7 @@ WHERE Airline_IATA = ?</property>
                           dataType="wstr"
                           errorOrTruncationOperation="Computation"
                           errorRowDisposition="FailComponent"
-                          length="699"
+                          length="711"
                           lineageId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Derived Column for DQ_Error_Records.Outputs[Derived Column Output].Columns[record_data]"
                           name="record_data"
                           truncationRowDisposition="FailComponent">
@@ -2200,13 +2200,13 @@ WHERE Airline_IATA = ?</property>
                               containsID="true"
                               dataType="System.String"
                               description="Derived Column Expression"
-                              name="Expression">"IATA:" + ([ISNULL](#{Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[IATA_CODE]}) ? "NULL" : #{Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[IATA_CODE]}) + " | AIRPORT:" + ([ISNULL](#{Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[AIRPORT]}) ? "NULL" : #{Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[AIRPORT]}) + " | CITY:" + ([ISNULL](#{Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[CITY]}) ? "NULL" : #{Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[CITY]}) + " | STATE:" + ([ISNULL](#{Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[STATE]}) ? "NULL" : #{Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[STATE]}) + " | COUNTRY:" + ([ISNULL](#{Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[COUNTRY]}) ? "NULL" : #{Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[COUNTRY]}) + " | LAT:" + ([ISNULL](#{Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[LATITUDE]}) ? "NULL" : #{Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[LATITUDE]}) + " | LONG:" + ([ISNULL](#{Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[LONGITUDE]}) ? "NULL" : #{Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[LONGITUDE]})</property>
+                              name="Expression">"IATA CODE: " + ([ISNULL](#{Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[IATA_CODE]}) ? "NULL" : #{Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[IATA_CODE]}) + " | AIRPORT: " + ([ISNULL](#{Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[AIRPORT]}) ? "NULL" : #{Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[AIRPORT]}) + " | CITY: " + ([ISNULL](#{Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[CITY]}) ? "NULL" : #{Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[CITY]}) + " | STATE: " + ([ISNULL](#{Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[STATE]}) ? "NULL" : #{Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[STATE]}) + " | COUNTRY: " + ([ISNULL](#{Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[COUNTRY]}) ? "NULL" : #{Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[COUNTRY]}) + " | LAT: " + ([ISNULL](#{Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[LATITUDE]}) ? "NULL" : #{Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[LATITUDE]}) + " | LONG: " + ([ISNULL](#{Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[LONGITUDE]}) ? "NULL" : #{Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports.Outputs[OLE DB Source Output].Columns[LONGITUDE]})</property>
                             <property
                               containsID="true"
                               dataType="System.String"
                               description="Derived Column Friendly Expression"
                               expressionType="Notify"
-                              name="FriendlyExpression">"IATA:" + (ISNULL(IATA_CODE) ? "NULL" : IATA_CODE) + " | AIRPORT:" + (ISNULL(AIRPORT) ? "NULL" : AIRPORT) + " | CITY:" + (ISNULL(CITY) ? "NULL" : CITY) + " | STATE:" + (ISNULL(STATE) ? "NULL" : STATE) + " | COUNTRY:" + (ISNULL(COUNTRY) ? "NULL" : COUNTRY) + " | LAT:" + (ISNULL(LATITUDE) ? "NULL" : LATITUDE) + " | LONG:" + (ISNULL(LONGITUDE) ? "NULL" : LONGITUDE)</property>
+                              name="FriendlyExpression">"IATA CODE: " + (ISNULL(IATA_CODE) ? "NULL" : IATA_CODE) + " | AIRPORT: " + (ISNULL(AIRPORT) ? "NULL" : AIRPORT) + " | CITY: " + (ISNULL(CITY) ? "NULL" : CITY) + " | STATE: " + (ISNULL(STATE) ? "NULL" : STATE) + " | COUNTRY: " + (ISNULL(COUNTRY) ? "NULL" : COUNTRY) + " | LAT: " + (ISNULL(LATITUDE) ? "NULL" : LATITUDE) + " | LONG: " + (ISNULL(LONGITUDE) ? "NULL" : LONGITUDE)</property>
                           </properties>
                         </outputColumn>
                       </outputColumns>
@@ -2312,7 +2312,7 @@ WHERE Airline_IATA = ?</property>
                         <inputColumn
                           refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\DQ_Error_Records.Inputs[OLE DB Destination Input].Columns[error_description]"
                           cachedDataType="wstr"
-                          cachedLength="63"
+                          cachedLength="71"
                           cachedName="error_description"
                           externalMetadataColumnId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\DQ_Error_Records.Inputs[OLE DB Destination Input].ExternalColumns[error_description]"
                           lineageId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Derived Column for DQ_Error_Records.Outputs[Derived Column Output].Columns[error_description]" />
@@ -2348,7 +2348,7 @@ WHERE Airline_IATA = ?</property>
                         <inputColumn
                           refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\DQ_Error_Records.Inputs[OLE DB Destination Input].Columns[record_data]"
                           cachedDataType="wstr"
-                          cachedLength="699"
+                          cachedLength="711"
                           cachedName="record_data"
                           externalMetadataColumnId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\DQ_Error_Records.Inputs[OLE DB Destination Input].ExternalColumns[record_data]"
                           lineageId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Derived Column for DQ_Error_Records.Outputs[Derived Column Output].Columns[record_data]" />
@@ -9291,7 +9291,7 @@ WHERE t.rn = 1 -- CHỈ GIỮ LẠI 1 DÒNG DUY NHẤT</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-69.7203331973405,24.0414141106905,68.262109375,11.0625"
+              BoundingBox="-69.7203331973406,24.0414141106905,68.262109375,11.0625"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -9366,21 +9366,25 @@ WHERE t.rn = 1 -- CHỈ GIỮ LẠI 1 DÒNG DUY NHẤT</property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="142.666666666667,42.6666666666667"
-          Id="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Set UpdateAt"
-          TopLeft="798.374969212339,349.789471681924" />
+          Size="185.333333333334,42.6666666666667"
+          Id="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Lookup in AirportsNDS"
+          TopLeft="547.124980444089,253.473681772515" />
         <NodeLayout
           Size="166.666666666667,42.6666666666667"
           Id="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\DQ_Error_Records"
           TopLeft="135.454541417685,235.151510003841" />
         <NodeLayout
-          Size="185.333333333334,42.6666666666667"
-          Id="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Lookup in AirportsNDS"
-          TopLeft="547.124980444089,253.473681772515" />
-        <NodeLayout
           Size="168,42.6666666666667"
           Id="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Insert AirportsNDS"
           TopLeft="787.124969715253,436.77192654515" />
+        <NodeLayout
+          Size="173.333333333334,42.6666666666667"
+          Id="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update AirportsNDS"
+          TopLeft="397.124987149611,341.228066986177" />
+        <NodeLayout
+          Size="142.666666666667,42.6666666666667"
+          Id="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Set UpdateAt"
+          TopLeft="798.374969212339,349.789471681924" />
         <NodeLayout
           Size="156,42.6666666666667"
           Id="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Conditional Split"
@@ -9394,71 +9398,9 @@ WHERE t.rn = 1 -- CHỈ GIỮ LẠI 1 DÒNG DUY NHẤT</property>
           Id="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Airports"
           TopLeft="572.806797301736,19.6076563508617" />
         <NodeLayout
-          Size="173.333333333334,42.6666666666667"
-          Id="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Update AirportsNDS"
-          TopLeft="397.124987149611,341.228066986177" />
-        <NodeLayout
           Size="194,42.6666666666667"
           Id="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS\Derived Column for DQ_Error_Records"
           TopLeft="132.727268771692,142.424238468662" />
-        <EdgeLayout
-          Id="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS.Paths[Valid Data]"
-          TopLeft="631.636347136714,129.030300998327">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="10.4053014827845,32.7591712545476"
-              Start="0,0"
-              End="10.4053014827845,25.2591712545476">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,12.3795856272738" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,12.3795856272738"
-                    Point2="0,16.3795856272738"
-                    Point3="4,16.3795856272738" />
-                  <mssgle:LineSegment
-                    End="6.40530148278447,16.3795856272738" />
-                  <mssgle:CubicBezierSegment
-                    Point1="6.40530148278447,16.3795856272738"
-                    Point2="10.4053014827845,16.3795856272738"
-                    Point3="10.4053014827845,20.3795856272738" />
-                  <mssgle:LineSegment
-                    End="10.4053014827845,25.2591712545476" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-18.0438922273578,21.3795856272738,46.4930859375,9.7490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS.Paths[OLE DB Source Output]"
-          TopLeft="631.221572219225,62.2743230175283">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,24.0893113141316"
-              Start="0,0"
-              End="0,16.5893113141316">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.5893113141316" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS.Paths[Lookup No Match Output]"
           TopLeft="669.347202666311,296.140348439182">
@@ -9643,6 +9585,64 @@ WHERE t.rn = 1 -- CHỈ GIỮ LẠI 1 DÒNG DUY NHẤT</property>
             <mssgm:EdgeLabel
               BoundingBox="-146.595593870011,-17.609375,66.282109375,11.609375"
               RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS.Paths[Valid Data]"
+          TopLeft="631.636347136714,129.030300998327">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="10.4053014827845,32.7591712545476"
+              Start="0,0"
+              End="10.4053014827845,25.2591712545476">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,12.3795856272738" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,12.3795856272738"
+                    Point2="0,16.3795856272738"
+                    Point3="4,16.3795856272738" />
+                  <mssgle:LineSegment
+                    End="6.40530148278447,16.3795856272738" />
+                  <mssgle:CubicBezierSegment
+                    Point1="6.40530148278447,16.3795856272738"
+                    Point2="10.4053014827845,16.3795856272738"
+                    Point3="10.4053014827845,20.3795856272738" />
+                  <mssgle:LineSegment
+                    End="10.4053014827845,25.2591712545476" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-18.0438922273578,21.3795856272738,46.4930859375,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS.Paths[OLE DB Source Output]"
+          TopLeft="631.221572219225,62.2743230175283">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,24.0893113141316"
+              Start="0,0"
+              End="0,16.5893113141316">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.5893113141316" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10206,6 +10206,78 @@ WHERE t.rn = 1 -- CHỈ GIỮ LẠI 1 DÒNG DUY NHẤT</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
+    design-time-name="Package\Flights to NDS_Flights\Flights to FlightsNDS\NDS Flights">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Flights to NDS_Flights\Flights to FlightsNDS\Lookup Destination_Airport">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[AirportsNDS]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Flights to NDS_Flights\Flights to FlightsNDS\Lookup FlightBK from NDSFlight">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[NDS_Flights]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Flights to NDS_Flights\Flights to FlightsNDS\DQ_Error_Records">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\Flights to NDS_Flights\Flights to FlightsNDS\Lookup Origin_Airport">
     <Properties>
       <Property>
@@ -10252,79 +10324,7 @@ WHERE t.rn = 1 -- CHỈ GIỮ LẠI 1 DÒNG DUY NHẤT</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Flights to NDS_Flights\Flights to FlightsNDS\Lookup FlightBK from NDSFlight">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[NDS_Flights]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Flights to NDS_Flights\Flights to FlightsNDS\NDS Flights">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Flights to NDS_Flights\Flights to FlightsNDS\Lookup Destination_Airport">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[AirportsNDS]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Flights to NDS_Flights\Flights to FlightsNDS\Stage Flights">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Flights to NDS_Flights\Flights to FlightsNDS\DQ_Error_Records">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

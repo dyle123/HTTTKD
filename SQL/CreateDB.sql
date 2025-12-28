@@ -141,6 +141,7 @@ CREATE TABLE DQ_Error_Records (
 );
 
 select*from DQ_Error_Records
+Truncate table DQ_Error_Records
 
 
 
