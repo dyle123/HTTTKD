@@ -112,27 +112,6 @@ INSERT INTO rule_action VALUES
 ('F', 'Fix');
 
 
-
-CREATE TABLE DQ_Rules (--Bảng trung tâm lưu toàn bộ rule, liên kết đến các bảng nhỏ phía trên.
-    rule_key INT PRIMARY KEY IDENTITY(1,1),
-    rule_name NVARCHAR(255),
-    description NVARCHAR(1000),
-    rule_type_id CHAR(1),
-    rule_cat_id CHAR(1),
-    risk_level INT,
-    status CHAR(1),
-    action CHAR(1),
-    create_timestamp DATETIME,
-    update_timestamp DATETIME,
-    FOREIGN KEY (rule_type_id) REFERENCES rule_type(rule_type_id),
-    FOREIGN KEY (rule_cat_id) REFERENCES rule_category(rule_cat_id),
-    FOREIGN KEY (risk_level) REFERENCES rule_risk_level(level),
-    FOREIGN KEY (status) REFERENCES rule_status(status),
-    FOREIGN KEY (action) REFERENCES rule_action(action)
-);
-
-
-
 CREATE TABLE recipient_type (
     type CHAR(1) PRIMARY KEY,
     description NVARCHAR(50)
@@ -142,8 +121,26 @@ INSERT INTO recipient_type VALUES
 ('I', 'Individual'),
 ('G', 'Group');
 
+CREATE TABLE DQ_Error_Records (
+    error_id INT PRIMARY KEY IDENTITY(1,1),
+    table_name NVARCHAR(50),      -- 'Airlines'
+    
+    -- Các cột kết hợp với Metadata
+    rule_type_id CHAR(1),         -- Link tới rule_type ('E' hoặc 'W')
+    rule_cat_id CHAR(1),          -- Link tới rule_category ('I', 'C', 'D')
+    risk_level INT,               -- Link tới rule_risk_level (1-5)
+    
+    error_description NVARCHAR(255), 
+    record_data NVARCHAR(MAX),    
+    created_at DATETIME DEFAULT GETDATE(),
 
+    -- Thiết lập khóa ngoại để đảm bảo tính nhất quán
+    FOREIGN KEY (rule_type_id) REFERENCES rule_type(rule_type_id),
+    FOREIGN KEY (rule_cat_id) REFERENCES rule_category(rule_cat_id),
+    FOREIGN KEY (risk_level) REFERENCES rule_risk_level(level)
+);
 
+select*from DQ_Error_Records
 
 
 
@@ -152,6 +149,23 @@ INSERT INTO recipient_type VALUES
 ------------------------------------
 USE HTTTKD_STAGE
 GO
+
+--- Dữ liệu lỗi test DQ_Error_Records
+INSERT INTO Airlines (IATA_CODE, AIRLINE) VALUES 
+(NULL, N'Vietnam Airlines'), -- Lỗi: IATA_CODE is NULL
+(N'VJ', NULL),               -- Lỗi: AIRLINE is NULL
+(NULL, NULL)               -- Lỗi: Both are NULL
+
+INSERT INTO Airports (IATA_CODE, AIRPORT, CITY, STATE, COUNTRY) VALUES 
+(NULL, N'Tan Son Nhat', NULL, N'HCM', N'VN') -- Lỗi: IATA và CITY bị NULL
+
+INSERT INTO Flights ([DATE], [AIRLINE], [FLIGHT_NUMBER], [ORIGIN_AIRPORT], [DESTINATION_AIRPORT]) VALUES 
+('2023-10-01', 'XYZ', 'VN123', 'SGN', 'HAN'), -- Lỗi: Airline 'XYZ' không tồn tại (Lookup No Match)
+('2023-10-01', 'VN', 'VN456', 'ABC', 'HAN'),  -- Lỗi: Origin 'ABC' không tồn tại (Lookup No Match)
+('2023-10-01', 'VN', 'VN789', 'SGN', 'DEF');  -- Lỗi: Dest 'DEF' không tồn tại (Lookup No Match)
+
+
+
 
 CREATE TABLE Airlines(
   IATA_CODE NVARCHAR(10),
@@ -215,6 +229,22 @@ GO
 use HTTTKD_NDS
 go
 
+-- Bước 1: Xóa dữ liệu ở bảng con (Flights)
+DELETE FROM NDS_Flights;
+-- Reset ID về 0 (để bản ghi mới tiếp theo bắt đầu từ 1)
+DBCC CHECKIDENT ('NDS_Flights', RESEED, 0);
+
+-- Bước 2: Xóa dữ liệu ở bảng Airlines
+DELETE FROM AirlinesNDS;
+DBCC CHECKIDENT ('AirlinesNDS', RESEED, 0);
+
+-- Bước 3: Xóa dữ liệu ở bảng Airports
+DELETE FROM AirportsNDS;
+DBCC CHECKIDENT ('AirportsNDS', RESEED, 0);
+
+Select*from NDS_Flights
+Select*from AirlinesNDS
+Select*from AirportsNDS
 
 CREATE TABLE AirportsNDS (
     Airport_SK INT PRIMARY KEY IDENTITY(1,1), 
@@ -304,8 +334,19 @@ GO
 ------------------------------------
 --DDS
 ------------------------------------
-use HTTTKD_DDS
+
+Create database HTTTKD_DDS
+
+Use HTTTKD_DDS
 go
+
+USE master;
+ALTER DATABASE HTTTKD_DDS
+SET SINGLE_USER
+WITH ROLLBACK IMMEDIATE;
+
+DROP DATABASE HTTTKD_DDS;
+
 Select*from DimDate
 Select*from DimTime
 Select*from DimCancellationReason
@@ -313,10 +354,13 @@ Select *from DimAirline
 Select*from DimAirport
 Select*from FactFlight
 
+SELECT * FROM DimAirport WHERE Airport_SK = 2
+
 
 delete from DimAirline
 delete from DimAirport
 delete from FactFlight
+
 
 CREATE TABLE DimDate (
     Date_SK INT IDENTITY(1,1) PRIMARY KEY,
@@ -405,7 +449,7 @@ INSERT INTO DimCancellationReason (Reason_Code, Description, CreatedDate) VALUES
 
 
 CREATE TABLE DimAirline (
-    Airline_SK INT PRIMARY KEY,
+    Airline_SK INT IDENTITY(1,1) PRIMARY KEY,
     Airline_IATA NVARCHAR(10),
     Airline_Name NVARCHAR(255),
 	Status BIT,
@@ -415,7 +459,7 @@ CREATE TABLE DimAirline (
 
 
 CREATE TABLE DimAirport (
-    Airport_SK INT PRIMARY KEY,
+    Airport_SK INT IDENTITY(1,1) PRIMARY KEY,
     IATA_CODE NVARCHAR(10),
     AIRPORT NVARCHAR(255),
     CITY NVARCHAR(255),
@@ -480,4 +524,90 @@ CREATE TABLE FactFlight (
     FOREIGN KEY (Cancellation_Reason_SK) REFERENCES DimCancellationReason(Reason_SK)
 );
 
+select top 5 *from FactFlight
+
+SELECT 
+    d.Year, 
+    d.Quarter, 
+    d.MonthName,
+    COUNT(*) AS Total_Flights,
+    SUM(CAST(f.Is_Delay_15 AS INT)) AS Delayed_Flights_Count,
+    (SUM(CAST(f.Is_Delay_15 AS INT)) * 100.0 / COUNT(*)) AS Delay_Percentage
+FROM 
+    FactFlight f
+JOIN 
+    DimDate d ON f.Date_SK = d.Date_SK
+GROUP BY 
+    d.Year, 
+    d.Quarter, 
+    d.Month, -- Thêm Month vào group để sắp xếp thứ tự tháng chính xác
+    d.MonthName
+ORDER BY 
+    d.Year, 
+    d.Quarter, 
+    d.Month;
+
+
+SELECT 
+    d.Year,
+    d.Quarter,
+    d.Month,
+    -- Tổng số chuyến bay
+    COUNT(f.Flight_SK) AS Total_Flights,
+    -- Số chuyến bị hủy (Sum cột BIT Cancelled)
+    SUM(CAST(f.Cancelled AS INT)) AS Cancelled_Flights,
+    -- Tính tỷ lệ phần trăm (nhân 100.0 để tránh phép chia số nguyên)
+    (SUM(CAST(f.Cancelled AS INT)) * 100.0) / COUNT(f.Flight_SK) AS Cancellation_Rate
+FROM 
+    FactFlight f
+JOIN 
+    DimDate d ON f.Date_SK = d.Date_SK
+GROUP BY 
+    d.Year, 
+    d.Quarter, 
+    d.Month
+ORDER BY 
+    d.Year,
+	d.Quarter,
+    d.Month;
+
+
+SELECT 
+    d.Year, 
+    d.Quarter, 
+    d.MonthName,
+    -- 1. Tổng số chuyến bay trong hệ thống theo từng tháng
+    COUNT(f.Flight_SK) AS Total_Flights,
+
+    -- 2. Số chuyến bay thực tế đã thực hiện (không bị hủy)
+    SUM(CASE WHEN f.Cancelled = 0 THEN 1 ELSE 0 END) AS Actual_Flights,
+
+    -- 3. Tỷ lệ OTP Khởi hành (chỉ tính trên những chuyến đã bay)
+    (SUM(CAST(f.Is_OnTime_Departure AS INT)) * 100.0) / 
+        NULLIF(SUM(CASE WHEN f.Cancelled = 0 THEN 1 ELSE 0 END), 0) AS OTP_Departure_Rate
+FROM 
+    FactFlight f
+JOIN 
+    DimDate d ON f.Date_SK = d.Date_SK
+GROUP BY 
+    d.Year, 
+    d.Quarter, 
+    d.Month, -- Thêm Month vào Group By để sắp xếp thứ tự tháng chính xác
+    d.MonthName
+ORDER BY 
+    d.Year,
+	d.Quarter,
+    d.Month;
+
+
+SELECT COUNT(*) 
+FROM FactFlight 
+WHERE Is_OnTime_Departure = 1 
+  AND Cancelled = 0;
+
+Select*from DimCancellationReason
+Select*from FactFlight
+Select*from DimTime
+
+Select*from DimAirport
 

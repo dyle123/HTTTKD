@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="NDS_to_DDS"
   DTS:PackageType="5"
-  DTS:VersionBuild="51"
-  DTS:VersionGUID="{C22E7253-994A-4E27-8378-392DDAE33194}">
+  DTS:VersionBuild="55"
+  DTS:VersionGUID="{A03562A3-A11B-44F4-9FD5-7875F52B5206}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA3yYHH1ZwXka+yJZmX7J+PQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAASN9TwBdfgdXvvwz287AMBgx0VWoKZ32jRh2fRbUJGMAAAAAAOgAAAAAIAACAAAABwqogg5WLjtChxm7vH6Cl42kQKnDQ+mXhoNMncG4/8+xAAAACdSUiXFMDEZ82PSzpwdbN5QAAAAN1u++BCOQUa73t/pVB9S5J7ztA5655PXZrHaEAa+D1h07KOSrvIr2uzXhMz0vjhu12ppIIiVohNBaFALsvR/Uw</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAi8Igl1yswkWBDe1+LYIL0QAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABSuv8ONsH8gWq6Qvw0wfhRpuiJjgcDx52CiwUAaMypvAAAAAAOgAAAAAIAACAAAABXiR1NWXMfZ8U+cXasr/uahAVR3J1UfVMHxh0dblP9jhAAAADv46aEGLWmmUeeaysNfhw1QAAAAFNhVt7Gp/v1MGPIdml12gvj0YLwpGPj4zLq8UrIipycCxaiaT6ySNWQgDMf4rVwUjZ/W5ipIfLisPF6FvwR2m8</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA3yYHH1ZwXka+yJZmX7J+PQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADffb/eV6KL8BqGy6mtn4EIUZfGJUzYp16zFP3wXbFjjwAAAAAOgAAAAAIAACAAAACFRj7o2MNTK2tEydfHPjyQXD/emwoeRXW3dKD42vxwLxAAAADrf648+2aRD/cdXqUtTLEPQAAAAFoAb+3YJbcR/Kn3POfWVDU9srd2NWygvCknCaQc4LJNKDcEg6RUnCqt3N8eX7UyFhrXv3V0OdexZzD7XV0kdlo</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAi8Igl1yswkWBDe1+LYIL0QAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADZ7o6iI8b1V5MI/nc9O6mzBjtYTbehMY0RPMcmpm5mcwAAAAAOgAAAAAIAACAAAADrcRYLA3Ibpg70DCyiszx4w4MSU33CGgEhCtBFEKn+7xAAAAC+RTkV3oBp8A4aou3uyOjeQAAAAFs1m05hTvqfTU4EJ298AE83dcTAKOKz8gsmtGZRV96Hzt1xfwvCDPZG+dkPxhrN0asDQ3y0/ZHT5ATUbXLJqrw</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -63,7 +63,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA3yYHH1ZwXka+yJZmX7J+PQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACyrszFGpU71rOF4XtO94kA1VeVWvWhX0nF8s7cY5f/zQAAAAAOgAAAAAIAACAAAADvrqjOHw1L+e6ky5bi9iPB+XyF/o4cIz7DFDLq3x7cTRAAAADyrdRnfgSgNLgMSf10pnRXQAAAAN8zOyF2Brae00VFhuW3CgnsIwnRtVc+on1cEfBa4fIK9u8pMfgXGPQB8u8gJEMVskBzmU2Iz1xstXInqrUaoJQ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAi8Igl1yswkWBDe1+LYIL0QAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABwSMGH2fjgoLUya+pq8YLiwcxRQqUiSnDijBPNoStC0QAAAAAOgAAAAAIAACAAAAAWhlPDINnOr4OgNt+T7hPZMxJNPUO2U8noEBVz5eBgDxAAAAAj85+Q7MLW28SMY/4P0kypQAAAABKW2ltKyI6i4Dz3Mm5OrgQ94oURXY7AwTC96d0ju86cmmtB2/FyiREJKQ+HotbuB4KARcnmFZ9eQVKsrCMlkKM</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -548,12 +548,6 @@
                           cachedName="Status"
                           externalMetadataColumnId="Package\AirlinesNDS to DimAirline\Load_Airlines_NDS_to_DDS\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[Status]"
                           lineageId="Package\AirlinesNDS to DimAirline\Load_Airlines_NDS_to_DDS\Derived Column 1.Outputs[Derived Column Output].Columns[Status]" />
-                        <inputColumn
-                          refId="Package\AirlinesNDS to DimAirline\Load_Airlines_NDS_to_DDS\Insert Destination.Inputs[OLE DB Destination Input].Columns[Airline_SK]"
-                          cachedDataType="i4"
-                          cachedName="Airline_SK"
-                          externalMetadataColumnId="Package\AirlinesNDS to DimAirline\Load_Airlines_NDS_to_DDS\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[Airline_SK]"
-                          lineageId="Package\AirlinesNDS to DimAirline\Load_Airlines_NDS_to_DDS\Union All.Outputs[Union All Output 1].Columns[Airline_SK]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -1636,12 +1630,6 @@
                           cachedName="Updated"
                           externalMetadataColumnId="Package\AirportsNDS to DimAirport\Airports to DimAirport\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[UpdatedDate]"
                           lineageId="Package\AirportsNDS to DimAirport\Airports to DimAirport\Status, UpdatedDate, CreatedDate.Outputs[Derived Column Output].Columns[Updated]" />
-                        <inputColumn
-                          refId="Package\AirportsNDS to DimAirport\Airports to DimAirport\Insert Destination.Inputs[OLE DB Destination Input].Columns[Airport_SK]"
-                          cachedDataType="i4"
-                          cachedName="Airport_SK"
-                          externalMetadataColumnId="Package\AirportsNDS to DimAirport\Airports to DimAirport\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[Airport_SK]"
-                          lineageId="Package\AirportsNDS to DimAirport\Airports to DimAirport\Union All.Outputs[Union All Output 1].Columns[Airport_SK]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -9064,7 +9052,7 @@ WHERE Flight_SK=?
           HeaderHeight="43"
           IsExpanded="True"
           PanelSize="437.333333333334,366.666666666667"
-          Size="437.333333333334,410"
+          Size="437.333333333334,410.666666666667"
           Id="Package\AirportsNDS to DimAirport"
           TopLeft="702.053544386956,187.351189535289" />
         <NodeLayout
@@ -9072,7 +9060,7 @@ WHERE Flight_SK=?
           Id="Package\NDS_Flights to FactFlight\Load DimTime"
           TopLeft="97.9629740146574,137.759257060132" />
         <NodeLayout
-          Size="200,41.3333333333334"
+          Size="201.333333333334,42.6666666666667"
           Id="Package\NDS_Flights to FactFlight\Load_Flight_NDS_to_DDS"
           TopLeft="73.0130405875207,230.142230161494" />
         <NodeLayout
@@ -9085,30 +9073,30 @@ WHERE Flight_SK=?
           TopLeft="68.7558975832642,318.141665070454" />
         <EdgeLayout
           Id="Package\NDS_Flights to FactFlight.PrecedenceConstraints[Constraint]"
-          TopLeft="173.013040587521,271.475563494827">
+          TopLeft="173.679707254187,272.808896828161">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="24.4095236624101,46.6661015756269"
+              EndConnector="23.7428569957435,45.3327682422933"
               Start="0,0"
-              End="24.4095236624101,39.1661015756269">
+              End="23.7428569957435,37.8327682422933">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,19.3330507878134" />
+                    End="0,18.6663841211466" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,19.3330507878134"
-                    Point2="0,23.3330507878134"
-                    Point3="4,23.3330507878134" />
+                    Point1="0,18.6663841211466"
+                    Point2="0,22.6663841211466"
+                    Point3="4,22.6663841211466" />
                   <mssgle:LineSegment
-                    End="20.4095236624101,23.3330507878134" />
+                    End="19.7428569957435,22.6663841211466" />
                   <mssgle:CubicBezierSegment
-                    Point1="20.4095236624101,23.3330507878134"
-                    Point2="24.4095236624101,23.3330507878134"
-                    Point3="24.4095236624101,27.3330507878134" />
+                    Point1="19.7428569957435,22.6663841211466"
+                    Point2="23.7428569957435,22.6663841211466"
+                    Point3="23.7428569957435,26.6663841211466" />
                   <mssgle:LineSegment
-                    End="24.4095236624101,39.1661015756269" />
+                    End="23.7428569957435,37.8327682422933" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9141,18 +9129,18 @@ WHERE Flight_SK=?
         </EdgeLayout>
         <EdgeLayout
           Id="Package\NDS_Flights to FactFlight.PrecedenceConstraints[Constraint 4]"
-          TopLeft="172.488007301089,180.425923726799">
+          TopLeft="172.821340634422,180.425923726799">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,49.716306434695"
+              EndConnector="0,49.7163064346954"
               Start="0,0"
-              End="0,42.216306434695">
+              End="0,42.2163064346954">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,42.216306434695" />
+                    End="0,42.2163064346954" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9445,67 +9433,56 @@ WHERE Flight_SK=?
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\AirlinesNDS to DimAirline\Load_Airlines_NDS_to_DDS\Insert Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\AirportsNDS to DimAirport\Airports to DimAirport">
     <LayoutInfo>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="121.333333333334,42.6666666666667"
-          Id="Package\AirportsNDS to DimAirport\Airports to DimAirport\Union All"
-          TopLeft="172.166666666667,416.166666666667" />
-        <NodeLayout
-          Size="242.666666666667,42.6666666666667"
-          Id="Package\AirportsNDS to DimAirport\Airports to DimAirport\Status, UpdatedDate, CreatedDate"
-          TopLeft="107.083335289111,514.9333335193" />
+          Size="166.666666666667,42.6666666666667"
+          Id="Package\AirportsNDS to DimAirport\Airports to DimAirport\Update DimAirport"
+          TopLeft="5.50000000000004,313.5" />
         <NodeLayout
           Size="176,42.6666666666667"
           Id="Package\AirportsNDS to DimAirport\Airports to DimAirport\OLE DB Command 1"
           TopLeft="293.833333333333,210.833333333333" />
         <NodeLayout
-          Size="146.666666666667,42.6666666666667"
-          Id="Package\AirportsNDS to DimAirport\Airports to DimAirport\Set Status is 0"
-          TopLeft="17.5,210.833333333333" />
-        <NodeLayout
           Size="164,42.6666666666667"
           Id="Package\AirportsNDS to DimAirport\Airports to DimAirport\Insert Destination"
           TopLeft="150.833333333333,621.5" />
         <NodeLayout
-          Size="166.666666666667,42.6666666666667"
-          Id="Package\AirportsNDS to DimAirport\Airports to DimAirport\Update DimAirport"
-          TopLeft="5.50000000000004,313.5" />
+          Size="242.666666666667,42.6666666666667"
+          Id="Package\AirportsNDS to DimAirport\Airports to DimAirport\Status, UpdatedDate, CreatedDate"
+          TopLeft="107.083335289111,514.9333335193" />
+        <NodeLayout
+          Size="146.666666666667,42.6666666666667"
+          Id="Package\AirportsNDS to DimAirport\Airports to DimAirport\Set Status is 0"
+          TopLeft="17.5,210.833333333333" />
+        <NodeLayout
+          Size="209.333333333334,42.6666666666667"
+          Id="Package\AirportsNDS to DimAirport\Airports to DimAirport\Slowly Changing Dimension"
+          TopLeft="128.166666666667,108.166666666666" />
         <NodeLayout
           Size="136,42.6666666666667"
           Id="Package\AirportsNDS to DimAirport\Airports to DimAirport\AirportsNDS"
           TopLeft="164.833333333333,5.49999999999993" />
         <NodeLayout
-          Size="209.333333333334,42.6666666666667"
-          Id="Package\AirportsNDS to DimAirport\Airports to DimAirport\Slowly Changing Dimension"
-          TopLeft="128.166666666667,108.166666666666" />
-        <EdgeLayout
-          Id="Package\AirportsNDS to DimAirport\Airports to DimAirport.Paths[Derived Column Output1]"
-          TopLeft="230.625000977889,557.600000185967">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,63.8999998140334"
-              Start="0,0"
-              End="0,56.3999998140334">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,56.3999998140334" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          Size="121.333333333334,42.6666666666667"
+          Id="Package\AirportsNDS to DimAirport\Airports to DimAirport\Union All"
+          TopLeft="172.166666666667,416.166666666667" />
         <EdgeLayout
           Id="Package\AirportsNDS to DimAirport\Airports to DimAirport.Paths[Derived Column Output]"
           TopLeft="89.8333333333334,253.5">
@@ -9525,9 +9502,7 @@ WHERE Flight_SK=?
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9585,9 +9560,7 @@ WHERE Flight_SK=?
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9609,9 +9582,7 @@ WHERE Flight_SK=?
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9645,9 +9616,7 @@ WHERE Flight_SK=?
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9722,9 +9691,44 @@ WHERE Flight_SK=?
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\AirportsNDS to DimAirport\Airports to DimAirport.Paths[Derived Column Output1]"
+          TopLeft="230.625000977889,557.600000185967">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,63.8999998140334"
+              Start="0,0"
+              End="0,56.3999998140334">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,56.3999998140334" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\AirportsNDS to DimAirport\Airports to DimAirport\Insert Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\NDS_Flights to FactFlight\Load DimTime">
     <LayoutInfo>
@@ -9789,7 +9793,9 @@ WHERE Flight_SK=?
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9811,7 +9817,9 @@ WHERE Flight_SK=?
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9905,7 +9913,9 @@ WHERE Flight_SK=?
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9927,7 +9937,9 @@ WHERE Flight_SK=?
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9949,7 +9961,9 @@ WHERE Flight_SK=?
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9971,7 +9985,9 @@ WHERE Flight_SK=?
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10025,7 +10041,7 @@ WHERE Flight_SK=?
         <NodeLayout
           Size="136,42.6666666666667"
           Id="Package\NDS_Flights to FactFlight\Load_Flight_NDS_to_DDS\NDS_Flights"
-          TopLeft="33.71874882048,44.4999992191792" />
+          TopLeft="25.1473205044999,45.2142849121775" />
         <NodeLayout
           Size="104,41.3333333333334"
           Id="Package\NDS_Flights to FactFlight\Load_Flight_NDS_to_DDS\3 KPI"
@@ -10036,30 +10052,18 @@ WHERE Flight_SK=?
           TopLeft="11.7187494761311,128.312495312095" />
         <EdgeLayout
           Id="Package\NDS_Flights to FactFlight\Load_Flight_NDS_to_DDS.Paths[OLE DB Source Output]"
-          TopLeft="101.71874882048,87.1666658858459">
+          TopLeft="91.7663683236488,87.8809515788442">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-11.3333326776823,41.1458294262491"
+              EndConnector="0,40.4315437332508"
               Start="0,0"
-              End="-11.3333326776823,33.6458294262491">
+              End="0,32.9315437332508">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,16.5729147131246" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.5729147131246"
-                    Point2="0,20.5729147131246"
-                    Point3="-4,20.5729147131246" />
-                  <mssgle:LineSegment
-                    End="-7.33333267768226,20.5729147131246" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-7.33333267768226,20.5729147131246"
-                    Point2="-11.3333326776823,20.5729147131246"
-                    Point3="-11.3333326776823,24.5729147131246" />
-                  <mssgle:LineSegment
-                    End="-11.3333326776823,33.6458294262491" />
+                    End="0,32.9315437332508" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10160,7 +10164,7 @@ WHERE Flight_SK=?
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="2.53256984996026,5,96.3827734375,11.609375"
+              BoundingBox="2.5325698499605,5,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -10196,7 +10200,7 @@ WHERE Flight_SK=?
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-7.02472060342622,27.1333334525428,96.3827734375,11.609375"
+              BoundingBox="-7.0247206034262,27.1333334525428,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -10292,7 +10296,7 @@ WHERE Flight_SK=?
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="5.39194449861831,5,96.3827734375,11.609375"
+              BoundingBox="5.3919444986185,5,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
