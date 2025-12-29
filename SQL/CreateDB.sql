@@ -151,6 +151,10 @@ Truncate table DQ_Error_Records
 USE HTTTKD_STAGE
 GO
 
+Select*from Airlines
+Select*from Airports
+Select*from Flights
+
 --- Dữ liệu lỗi test DQ_Error_Records
 INSERT INTO Airlines (IATA_CODE, AIRLINE) VALUES 
 (NULL, N'Vietnam Airlines'), -- Lỗi: IATA_CODE is NULL
@@ -525,7 +529,18 @@ CREATE TABLE FactFlight (
     FOREIGN KEY (Cancellation_Reason_SK) REFERENCES DimCancellationReason(Reason_SK)
 );
 
-select top 5 *from FactFlight
+SELECT 
+    AVG(CASE WHEN Departure_Delay > 0 THEN Departure_Delay ELSE NULL END) AS Avg_Departure_Delay,
+    AVG(CASE WHEN Arrival_Delay > 0 THEN Arrival_Delay ELSE NULL END) AS Avg_Arrival_Delay,
+    AVG(CASE WHEN Air_System_Delay > 0 THEN Air_System_Delay ELSE NULL END) AS Avg_Air_System_Delay,
+    AVG(CASE WHEN Security_Delay > 0 THEN Security_Delay ELSE NULL END) AS Avg_Security_Delay,
+    AVG(CASE WHEN Airline_Delay > 0 THEN Airline_Delay ELSE NULL END) AS Avg_Airline_Delay,
+    AVG(CASE WHEN Late_Aircraft_Delay > 0 THEN Late_Aircraft_Delay ELSE NULL END) AS Avg_Late_Aircraft_Delay,
+    AVG(CASE WHEN Weather_Delay > 0 THEN Weather_Delay ELSE NULL END) AS Avg_Weather_Delay
+FROM FactFlight;
+
+
+
 
 SELECT 
     d.Year, 
