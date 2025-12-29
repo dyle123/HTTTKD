@@ -12,6 +12,8 @@ go
 USE HTTTKD_ETL_Metadata
 GO
 
+select*from sysssislog
+
 CREATE TABLE packageTable 
 (
     package_key INT PRIMARY KEY IDENTITY(1,1),

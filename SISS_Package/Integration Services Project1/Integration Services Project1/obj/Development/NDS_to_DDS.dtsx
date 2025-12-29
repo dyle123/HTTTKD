@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="NDS_to_DDS"
   DTS:PackageType="5"
-  DTS:VersionBuild="55"
-  DTS:VersionGUID="{A03562A3-A11B-44F4-9FD5-7875F52B5206}">
+  DTS:VersionBuild="56"
+  DTS:VersionGUID="{91E3A7BD-D262-4FA8-94F3-6D32195CAE6B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAi8Igl1yswkWBDe1+LYIL0QAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABj3XtMtsd5SiGyhq4UVVWtUv0tDEa40bPVBAcF6Q2M6gAAAAAOgAAAAAIAACAAAAAwqSEDSRIDdOenAgocprdOOPCGjr5lOCZXNPS8E3FLYBAAAAC/XR/FFH13KzM7n+MsJ/jzQAAAAAXB00GhGnw0PX4CNVd4CG0a5z/XT5crRcfWP7QO46oWzIIIgj/Q7wwfWtXNHbfpdD9RkPlXmxJM45NlZFrlfG0</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAi8Igl1yswkWBDe1+LYIL0QAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABsdCOeG57g6sJbggNOvUqspwwF7GEOCDdY+eqxhqN/dAAAAAAOgAAAAAIAACAAAACfCCKO1+nsq430wjRBkezDI4h5H+uOB9t4ETQNqBNUiBAAAAABQ6G50TorGIte0TZwMPeEQAAAAO0oQPOE2ItZwTZf3gLHAqDap2u78tDzdpxIQXpMwA3ZNeBKd5bF1iz9+nphWhGpp94xkQ+u6hYF6eVAWhaHCDQ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAi8Igl1yswkWBDe1+LYIL0QAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACAxi6SuLp+O6rbUgZ7YfO6BrS1ui19uF472h1isbsLUwAAAAAOgAAAAAIAACAAAAAj531qXwRAWgL2ZZhMrYfGeHZGu1O4jy0vPBBBbwrHkxAAAABJSRjQdxtNAYRPHGwClVCVQAAAACnmpRltAE2nCKtGXitlRtlE7Q7OEu16n67oAAyye/yWo2p0E5wE6yfMMZ0qhqfPuBSnMoMn43aVhsiVfsUZDao</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAi8Igl1yswkWBDe1+LYIL0QAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACIOyR/ImF759QpBdznp4X11h7vzcCcURrYinP7IEXWVQAAAAAOgAAAAAIAACAAAAB/cxDM82eBzteQ9hEui0/wiSwNVsh9nMuX13cCOGumPhAAAADFe8eDtOWODqHM7GIkijfUQAAAAHLIyi9bSxwswxOAxuMugp4aQurVBEH+sUGrZYYu7+lCgnyBxAqhM06eAWo+ep/yjpLe7ImWhjS5hKFbntdZMlM</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -63,12 +63,107 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAi8Igl1yswkWBDe1+LYIL0QAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABdUuohj4HFTIZ8WggZh9VO2Bqm9HLu//2Na8pei0K83QAAAAAOgAAAAAIAACAAAADtkTA88M189HSYxNs450ayNMtZH0K7Ve9o62++kw8HGhAAAAAxzkXahY0Xrb+b8wELs06JQAAAAAWqp5kf1UWM0JaNyk458TNhS+DCIR2gD8k+iPQJPjAoZjMvvKNZd/6mXFW9rbJ6v3sMdsyu8L1GNebp347o5AI</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAi8Igl1yswkWBDe1+LYIL0QAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAD6UAOKKGVK00Tf6TEAP6kAskZ3MrJo4X/U01IfSv/gjwAAAAAOgAAAAAIAACAAAABGqUvyLti6ijWh4XcviiC4ko2Cxhg1fVwl4A+nRRSo3BAAAAAa7+LGgvJmfYkfN8h53eJQQAAAAEqto8u7znkaNULeIR4mwV+2P4OVUfUecnRkk9hoz2z3ve3ODuvOj1wGGFae2/IPW2aQQ7DowXj1eSt4NNYTX/4</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
+  <DTS:LogProviders>
+    <DTS:LogProvider
+      DTS:ConfigString="DESKTOP-G9815ER.HTTTKD_ETL_Metadata.BENU"
+      DTS:CreationName="Microsoft.LogProviderSQLServer"
+      DTS:Description="Writes log entries for events to a SQL Server database"
+      DTS:DTSID="{CA8DA801-9C9B-46AD-8B91-770C8D1DA1D1}"
+      DTS:ObjectName="SSIS log provider for SQL Server">
+      <DTS:ObjectData>
+        <InnerObject />
+      </DTS:ObjectData>
+    </DTS:LogProvider>
+  </DTS:LogProviders>
   <DTS:Variables />
+  <DTS:LoggingOptions
+    DTS:FilterKind="0"
+    DTS:LoggingMode="1">
+    <DTS:Property
+      DTS:DataType="8"
+      DTS:Name="EventFilter">4,7,OnError,13,OnPostExecute,12,OnPreExecute,12,OnTaskFailed</DTS:Property>
+    <DTS:Property
+      DTS:EventName="OnError"
+      DTS:Name="ColumnFilter">
+      <DTS:Property
+        DTS:Name="Computer">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="Operator">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceName">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="ExecutionID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="MessageText">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="DataBytes">-1</DTS:Property>
+    </DTS:Property>
+    <DTS:Property
+      DTS:EventName="OnPostExecute"
+      DTS:Name="ColumnFilter">
+      <DTS:Property
+        DTS:Name="Computer">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="Operator">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceName">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="ExecutionID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="MessageText">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="DataBytes">-1</DTS:Property>
+    </DTS:Property>
+    <DTS:Property
+      DTS:EventName="OnPreExecute"
+      DTS:Name="ColumnFilter">
+      <DTS:Property
+        DTS:Name="Computer">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="Operator">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceName">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="ExecutionID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="MessageText">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="DataBytes">-1</DTS:Property>
+    </DTS:Property>
+    <DTS:Property
+      DTS:EventName="OnTaskFailed"
+      DTS:Name="ColumnFilter">
+      <DTS:Property
+        DTS:Name="Computer">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="Operator">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceName">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="ExecutionID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="MessageText">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="DataBytes">-1</DTS:Property>
+    </DTS:Property>
+    <DTS:SelectedLogProviders>
+      <DTS:SelectedLogProvider
+        DTS:InstanceID="{CA8DA801-9C9B-46AD-8B91-770C8D1DA1D1}" />
+    </DTS:SelectedLogProviders>
+  </DTS:LoggingOptions>
   <DTS:Executables>
     <DTS:Executable
       DTS:refId="Package\AirlinesNDS to DimAirline"
@@ -79,6 +174,8 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="AirlinesNDS to DimAirline">
       <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
       <DTS:Executables>
         <DTS:Executable
           DTS:refId="Package\AirlinesNDS to DimAirline\Load_Airlines_NDS_to_DDS"
@@ -90,6 +187,8 @@
           DTS:ObjectName="Load_Airlines_NDS_to_DDS"
           DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
           <DTS:Variables />
+          <DTS:LoggingOptions
+            DTS:FilterKind="0" />
           <DTS:ObjectData>
             <pipeline
               version="1">
@@ -1162,6 +1261,8 @@
           DTS:ObjectName="Set CET to Metadata Airlines"
           DTS:ThreadHint="0">
           <DTS:Variables />
+          <DTS:LoggingOptions
+            DTS:FilterKind="0" />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{C022C483-2B4A-4987-9FEC-AF2E81321695}"
@@ -1178,6 +1279,8 @@
           DTS:ObjectName="Update LSET Airlines to Metadata"
           DTS:ThreadHint="0">
           <DTS:Variables />
+          <DTS:LoggingOptions
+            DTS:FilterKind="0" />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{C022C483-2B4A-4987-9FEC-AF2E81321695}"
@@ -1213,6 +1316,8 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="AirportsNDS to DimAirport">
       <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
       <DTS:Executables>
         <DTS:Executable
           DTS:refId="Package\AirportsNDS to DimAirport\Airports to DimAirport"
@@ -1224,6 +1329,8 @@
           DTS:ObjectName="Airports to DimAirport"
           DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
           <DTS:Variables />
+          <DTS:LoggingOptions
+            DTS:FilterKind="0" />
           <DTS:ObjectData>
             <pipeline
               version="1">
@@ -2746,6 +2853,8 @@ WHERE [IATA_CODE] = ? AND [Status] = '1'</property>
           DTS:ObjectName="Set CET, SourceName, PackageName  to Metadata DimAirport"
           DTS:ThreadHint="0">
           <DTS:Variables />
+          <DTS:LoggingOptions
+            DTS:FilterKind="0" />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{C022C483-2B4A-4987-9FEC-AF2E81321695}"
@@ -2762,6 +2871,8 @@ WHERE [IATA_CODE] = ? AND [Status] = '1'</property>
           DTS:ObjectName="Update LSET DimAirport to Metadata 1"
           DTS:ThreadHint="0">
           <DTS:Variables />
+          <DTS:LoggingOptions
+            DTS:FilterKind="0" />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{C022C483-2B4A-4987-9FEC-AF2E81321695}"
@@ -2797,6 +2908,8 @@ WHERE [IATA_CODE] = ? AND [Status] = '1'</property>
       DTS:LocaleID="-1"
       DTS:ObjectName="NDS_Flights to FactFlight">
       <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
       <DTS:Executables>
         <DTS:Executable
           DTS:refId="Package\NDS_Flights to FactFlight\Load DimTime"
@@ -2808,6 +2921,8 @@ WHERE [IATA_CODE] = ? AND [Status] = '1'</property>
           DTS:ObjectName="Load DimTime"
           DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
           <DTS:Variables />
+          <DTS:LoggingOptions
+            DTS:FilterKind="0" />
           <DTS:ObjectData>
             <pipeline
               version="1">
@@ -5446,6 +5561,8 @@ where [refTable].[Hour] = ? and [refTable].[Minute] = ?</property>
           DTS:ObjectName="Load_Flight_NDS_to_DDS"
           DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
           <DTS:Variables />
+          <DTS:LoggingOptions
+            DTS:FilterKind="0" />
           <DTS:ObjectData>
             <pipeline
               version="1">
@@ -8848,6 +8965,8 @@ WHERE Flight_SK=?
           DTS:ObjectName="Set CET to Metadata FactFlight"
           DTS:ThreadHint="0">
           <DTS:Variables />
+          <DTS:LoggingOptions
+            DTS:FilterKind="0" />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{C022C483-2B4A-4987-9FEC-AF2E81321695}"
@@ -8864,6 +8983,8 @@ WHERE Flight_SK=?
           DTS:ObjectName="Update LSET FactFlight to Metadata 1"
           DTS:ThreadHint="0">
           <DTS:Variables />
+          <DTS:LoggingOptions
+            DTS:FilterKind="0" />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{C022C483-2B4A-4987-9FEC-AF2E81321695}"
@@ -9051,7 +9172,7 @@ WHERE Flight_SK=?
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="437.333333333334,366.666666666667"
+          PanelSize="437.333333333334,368"
           Size="437.333333333334,410.666666666667"
           Id="Package\AirportsNDS to DimAirport"
           TopLeft="702.053544386956,187.351189535289" />

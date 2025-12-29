@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Stage_to_NDS"
   DTS:PackageType="5"
-  DTS:VersionBuild="87"
-  DTS:VersionGUID="{CE66BCC0-CCD5-40BF-A7A2-85EFA70322AF}">
+  DTS:VersionBuild="88"
+  DTS:VersionGUID="{18A01622-9D32-4CF5-9CB5-1B37FFD2B72E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAi8Igl1yswkWBDe1+LYIL0QAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB82V6QsgCillSSkQLlLYK3IOakNGuZBU2VM23buKqLwwAAAAAOgAAAAAIAACAAAAD16Ko/hiPxPVVhcoNaDSZZKBpwvaDVMrLBiNu4BkuCjBAAAACddU1ZmZWeHroH9iKHkVcgQAAAAHuFKglWxo2KWOZeB8pFiMpwQvLTCOTTO3/u79kC/dV5A67+dIvbCUd7gKiY00JWC3GbDRZMcT9e0nwIZRxI1TU</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAi8Igl1yswkWBDe1+LYIL0QAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAmccNIz6yDZ4s7uyU1zQUSUSZIZhRxLXXhGJdYL3HHGAAAAAAOgAAAAAIAACAAAABd4BIdSX4hunlsOpWn0rYIO0WeVN6srM4PkLNS+OymvRAAAAChlfkINB/jCW3W+1ra5CG9QAAAAC+OW/p7L5Gkz1XGpqfncK7gnkqAZIQ78NsD7V3lzTxgNye4JOPLqeWRhFzFqeVavHBoAslN6QCeiEqpOH+HozU</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAi8Igl1yswkWBDe1+LYIL0QAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABhwNKqIEE1uTfQYv4UE7T4ndV1mSrlZkljRoFCm8jlXQAAAAAOgAAAAAIAACAAAAA6eDL/oaQDgPC5oJyllONpa2+riSCgoc61/ss4ijAQWxAAAACH7O63NPL4861tykzbcNDnQAAAACiL5zlCfuCtNn/JCWXC38SVRP71grdlVMa8HA6EfzCZnojcTaPUUGJbRq8Zb/6jepFYz/JALYQ2Dfw4KEq8C5U</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAi8Igl1yswkWBDe1+LYIL0QAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABw0Ks7/0QqVocKvGsqNIfwcjEh5VUP/AzGWOOicO/E7wAAAAAOgAAAAAIAACAAAAC9cDxNMI9vIwbvCgRB1Vut2Er9NHflxHI5Yc0X35LxrBAAAADuilzogZ8WeygsT+HyOJ7gQAAAADti5bYZYo/dTdDXNTVrd/SWwZof9J/jkW7EpKbTfiLfwk8qVjbr/Y9dJF5hxalNUEGOjSfxx4o2rLZt+AoNFy8</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -63,7 +63,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAi8Igl1yswkWBDe1+LYIL0QAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADZi5g5bQo55XMreDW46CHqB4HDbc/V9zXdII6Rk0feaAAAAAAOgAAAAAIAACAAAACFo14P6FwI3ENkfoufzClBxPSUYRlJiEwdxhdU0N9QjRAAAAC3yh+WGbvh8x2wCxpJgL0rQAAAACxuPpZinhvk39ySZNz390De+FwUwmcJrv1NFtVYW17YKlIEBGn5CG0CzS2h6dznXipm66Hi0M71uIe9snn75HY</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAi8Igl1yswkWBDe1+LYIL0QAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB2SpAHeV/yQFrZbkTbI/Jqe1ZMwZHeJvW9SCbYTS8RsAAAAAAOgAAAAAIAACAAAAD0a0uMaESNN5U0RooNXwAMP8n2UiouW6c2ZSKyUcknehAAAACpeTKPhjhPKcoZJ/4CZfRYQAAAAPGw3aAch3I4S4DB0PJfNDMNd0yTym3TuGsIAJDw09tE36VZeA63At6MQDyBZ/89YvRSilq4kyavvLihuVrePd8</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -80,12 +80,107 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAi8Igl1yswkWBDe1+LYIL0QAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAWt11yW9xo2WQ4YGCkqsF/2kXWfsvIw/PY3FYUyXB84gAAAAAOgAAAAAIAACAAAACX9xLDMai9c2JuXZG51Y65PwB98hhkU3r8n1pDPwcesRAAAACXPLIU2cwy9ElE/hWTCUAmQAAAAKQpgAIFXkOS5LwaiiN0lq0lQhcXaC7J8Ft4TpzRMXndFsRrN61sOOs5XFVHDS0qlpHJy/LnDA+sZ1ZgFlXTRRk</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAi8Igl1yswkWBDe1+LYIL0QAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADiesHl4IumYI1n1X1IApUN+1CMjmCduv2cs649jmOOMgAAAAAOgAAAAAIAACAAAADN4qJ5m1SiRe4DXdvMidkFy7pHL40X0doLQ/UV5uJWHxAAAAAs59uYxoc1ulflmx1sT2VxQAAAAM3uHiP6w6Po59Ian+4tGJc7zs/MsedwyJ3nF8d0HgsCNQV09rdcnSCZMkTjt3yWrgKy8UJHLPz+IL6Tly/p+yQ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
+  <DTS:LogProviders>
+    <DTS:LogProvider
+      DTS:ConfigString="DESKTOP-G9815ER.HTTTKD_ETL_Metadata.BENU"
+      DTS:CreationName="Microsoft.LogProviderSQLServer"
+      DTS:Description="Writes log entries for events to a SQL Server database"
+      DTS:DTSID="{9A05E85C-1CF9-4BF1-B49C-EE78086FA4C9}"
+      DTS:ObjectName="SSIS log provider for SQL Server">
+      <DTS:ObjectData>
+        <InnerObject />
+      </DTS:ObjectData>
+    </DTS:LogProvider>
+  </DTS:LogProviders>
   <DTS:Variables />
+  <DTS:LoggingOptions
+    DTS:FilterKind="0"
+    DTS:LoggingMode="1">
+    <DTS:Property
+      DTS:DataType="8"
+      DTS:Name="EventFilter">4,7,OnError,13,OnPostExecute,12,OnPreExecute,12,OnTaskFailed</DTS:Property>
+    <DTS:Property
+      DTS:EventName="OnError"
+      DTS:Name="ColumnFilter">
+      <DTS:Property
+        DTS:Name="Computer">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="Operator">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceName">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="ExecutionID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="MessageText">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="DataBytes">-1</DTS:Property>
+    </DTS:Property>
+    <DTS:Property
+      DTS:EventName="OnPostExecute"
+      DTS:Name="ColumnFilter">
+      <DTS:Property
+        DTS:Name="Computer">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="Operator">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceName">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="ExecutionID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="MessageText">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="DataBytes">-1</DTS:Property>
+    </DTS:Property>
+    <DTS:Property
+      DTS:EventName="OnPreExecute"
+      DTS:Name="ColumnFilter">
+      <DTS:Property
+        DTS:Name="Computer">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="Operator">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceName">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="ExecutionID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="MessageText">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="DataBytes">-1</DTS:Property>
+    </DTS:Property>
+    <DTS:Property
+      DTS:EventName="OnTaskFailed"
+      DTS:Name="ColumnFilter">
+      <DTS:Property
+        DTS:Name="Computer">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="Operator">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceName">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="ExecutionID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="MessageText">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="DataBytes">-1</DTS:Property>
+    </DTS:Property>
+    <DTS:SelectedLogProviders>
+      <DTS:SelectedLogProvider
+        DTS:InstanceID="{9A05E85C-1CF9-4BF1-B49C-EE78086FA4C9}" />
+    </DTS:SelectedLogProviders>
+  </DTS:LoggingOptions>
   <DTS:Executables>
     <DTS:Executable
       DTS:refId="Package\Airlines to AirlinesNDS"
@@ -96,6 +191,8 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Airlines to AirlinesNDS">
       <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
       <DTS:Executables>
         <DTS:Executable
           DTS:refId="Package\Airlines to AirlinesNDS\DFT_Load_Airlines_Stage_to_NDS"
@@ -107,6 +204,8 @@
           DTS:ObjectName="DFT_Load_Airlines_Stage_to_NDS"
           DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
           <DTS:Variables />
+          <DTS:LoggingOptions
+            DTS:FilterKind="0" />
           <DTS:ObjectData>
             <pipeline
               version="1">
@@ -2476,6 +2575,8 @@ WHERE Airline_IATA = ?</property>
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
           DTS:ThreadHint="0">
           <DTS:Variables />
+          <DTS:LoggingOptions
+            DTS:FilterKind="0" />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{3A988F0B-BE1A-493E-8BF2-60DB08ABC4D1}"
@@ -2492,6 +2593,8 @@ WHERE Airline_IATA = ?</property>
           DTS:ObjectName="Set CET to Metadata Airlines"
           DTS:ThreadHint="0">
           <DTS:Variables />
+          <DTS:LoggingOptions
+            DTS:FilterKind="0" />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{3A988F0B-BE1A-493E-8BF2-60DB08ABC4D1}"
@@ -2508,6 +2611,8 @@ WHERE Airline_IATA = ?</property>
           DTS:ObjectName="Update LSET Airlines to Metadata"
           DTS:ThreadHint="0">
           <DTS:Variables />
+          <DTS:LoggingOptions
+            DTS:FilterKind="0" />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{3A988F0B-BE1A-493E-8BF2-60DB08ABC4D1}"
@@ -2551,6 +2656,8 @@ WHERE Airline_IATA = ?</property>
       DTS:LocaleID="-1"
       DTS:ObjectName="Airports to AirportsNDS">
       <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
       <DTS:Executables>
         <DTS:Executable
           DTS:refId="Package\Airports to AirportsNDS\AIRPORTS to AirportsNDS"
@@ -2562,6 +2669,8 @@ WHERE Airline_IATA = ?</property>
           DTS:ObjectName="AIRPORTS to AirportsNDS"
           DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
           <DTS:Variables />
+          <DTS:LoggingOptions
+            DTS:FilterKind="0" />
           <DTS:ObjectData>
             <pipeline
               version="1">
@@ -5499,6 +5608,8 @@ Where Airport_SK=?</property>
           DTS:ObjectName="Set CET to AirlportsNDS"
           DTS:ThreadHint="0">
           <DTS:Variables />
+          <DTS:LoggingOptions
+            DTS:FilterKind="0" />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{3A988F0B-BE1A-493E-8BF2-60DB08ABC4D1}"
@@ -5515,6 +5626,8 @@ Where Airport_SK=?</property>
           DTS:ObjectName="Update LSET AirportsNDS to Metadata"
           DTS:ThreadHint="0">
           <DTS:Variables />
+          <DTS:LoggingOptions
+            DTS:FilterKind="0" />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{3A988F0B-BE1A-493E-8BF2-60DB08ABC4D1}"
@@ -5550,6 +5663,8 @@ Where Airport_SK=?</property>
       DTS:LocaleID="-1"
       DTS:ObjectName="Flights to NDS_Flights">
       <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
       <DTS:Executables>
         <DTS:Executable
           DTS:refId="Package\Flights to NDS_Flights\Execute SQL Task"
@@ -5562,6 +5677,8 @@ Where Airport_SK=?</property>
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
           DTS:ThreadHint="0">
           <DTS:Variables />
+          <DTS:LoggingOptions
+            DTS:FilterKind="0" />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{3A988F0B-BE1A-493E-8BF2-60DB08ABC4D1}"
@@ -5578,6 +5695,8 @@ Where Airport_SK=?</property>
           DTS:ObjectName="Flights to FlightsNDS"
           DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
           <DTS:Variables />
+          <DTS:LoggingOptions
+            DTS:FilterKind="0" />
           <DTS:ObjectData>
             <pipeline
               version="1">
@@ -13044,24 +13163,24 @@ WHERE t.rn = 1 -- CHỈ GIỮ LẠI 1 DÒNG DUY NHẤT</property>
                   startId="Package\Flights to NDS_Flights\Flights to FlightsNDS\Failed to update.Outputs[Derived Column Output]" />
                 <path
                   refId="Package\Flights to NDS_Flights\Flights to FlightsNDS.Paths[Lookup Match Output3]"
-                  endId="Package\Flights to NDS_Flights\Flights to FlightsNDS\Lookup Destination_Airport.Inputs[Lookup Input]"
+                  endId="Package\Flights to NDS_Flights\Flights to FlightsNDS\Lookup FlightBK from NDSFlight.Inputs[Lookup Input]"
                   name="Lookup Match Output"
-                  startId="Package\Flights to NDS_Flights\Flights to FlightsNDS\Lookup Origin_Airport.Outputs[Lookup Match Output]" />
+                  startId="Package\Flights to NDS_Flights\Flights to FlightsNDS\Lookup Destination_Airport.Outputs[Lookup Match Output]" />
                 <path
                   refId="Package\Flights to NDS_Flights\Flights to FlightsNDS.Paths[Lookup Match Output2]"
-                  endId="Package\Flights to NDS_Flights\Flights to FlightsNDS\Data Conversion 1.Inputs[Data Conversion Input]"
-                  name="Lookup Match Output"
-                  startId="Package\Flights to NDS_Flights\Flights to FlightsNDS\Lookup FlightBK from NDSFlight.Outputs[Lookup Match Output]" />
-                <path
-                  refId="Package\Flights to NDS_Flights\Flights to FlightsNDS.Paths[Lookup Match Output]"
                   endId="Package\Flights to NDS_Flights\Flights to FlightsNDS\Lookup Origin_Airport.Inputs[Lookup Input]"
                   name="Lookup Match Output"
                   startId="Package\Flights to NDS_Flights\Flights to FlightsNDS\Lookup AirlineNDS.Outputs[Lookup Match Output]" />
                 <path
-                  refId="Package\Flights to NDS_Flights\Flights to FlightsNDS.Paths[Lookup Match Output1]"
-                  endId="Package\Flights to NDS_Flights\Flights to FlightsNDS\Lookup FlightBK from NDSFlight.Inputs[Lookup Input]"
+                  refId="Package\Flights to NDS_Flights\Flights to FlightsNDS.Paths[Lookup Match Output]"
+                  endId="Package\Flights to NDS_Flights\Flights to FlightsNDS\Lookup Destination_Airport.Inputs[Lookup Input]"
                   name="Lookup Match Output"
-                  startId="Package\Flights to NDS_Flights\Flights to FlightsNDS\Lookup Destination_Airport.Outputs[Lookup Match Output]" />
+                  startId="Package\Flights to NDS_Flights\Flights to FlightsNDS\Lookup Origin_Airport.Outputs[Lookup Match Output]" />
+                <path
+                  refId="Package\Flights to NDS_Flights\Flights to FlightsNDS.Paths[Lookup Match Output1]"
+                  endId="Package\Flights to NDS_Flights\Flights to FlightsNDS\Data Conversion 1.Inputs[Data Conversion Input]"
+                  name="Lookup Match Output"
+                  startId="Package\Flights to NDS_Flights\Flights to FlightsNDS\Lookup FlightBK from NDSFlight.Outputs[Lookup Match Output]" />
                 <path
                   refId="Package\Flights to NDS_Flights\Flights to FlightsNDS.Paths[Lookup No Match Output]"
                   endId="Package\Flights to NDS_Flights\Flights to FlightsNDS\Derived Column for not found Destination Airport.Inputs[Derived Column Input]"
@@ -13122,6 +13241,8 @@ WHERE t.rn = 1 -- CHỈ GIỮ LẠI 1 DÒNG DUY NHẤT</property>
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
           DTS:ThreadHint="0">
           <DTS:Variables />
+          <DTS:LoggingOptions
+            DTS:FilterKind="0" />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{3A988F0B-BE1A-493E-8BF2-60DB08ABC4D1}"
@@ -13918,6 +14039,29 @@ WHERE t.rn = 1 -- CHỈ GIỮ LẠI 1 DÒNG DUY NHẤT</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
+    design-time-name="Package\Airlines to AirlinesNDS\DFT_Load_Airlines_Stage_to_NDS\Lookup">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[AirlinesNDS]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\Airlines to AirlinesNDS\DFT_Load_Airlines_Stage_to_NDS\OLE DB Destination Insert New Airlines">
     <Properties>
       <Property>
@@ -13940,29 +14084,6 @@ WHERE t.rn = 1 -- CHỈ GIỮ LẠI 1 DÒNG DUY NHẤT</property>
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Airlines to AirlinesNDS\DFT_Load_Airlines_Stage_to_NDS\Lookup">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[AirlinesNDS]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -14672,7 +14793,7 @@ WHERE t.rn = 1 -- CHỈ GIỮ LẠI 1 DÒNG DUY NHẤT</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Flights to NDS_Flights\Flights to FlightsNDS.Paths[Lookup Match Output3]"
+          Id="Package\Flights to NDS_Flights\Flights to FlightsNDS.Paths[Lookup Match Output]"
           TopLeft="923.916628289969,223.320831008752">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -14696,7 +14817,7 @@ WHERE t.rn = 1 -- CHỈ GIỮ LẠI 1 DÒNG DUY NHẤT</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Flights to NDS_Flights\Flights to FlightsNDS.Paths[Lookup Match Output2]"
+          Id="Package\Flights to NDS_Flights\Flights to FlightsNDS.Paths[Lookup Match Output1]"
           TopLeft="565.649977468204,325.920830436216">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -14732,7 +14853,7 @@ WHERE t.rn = 1 -- CHỈ GIỮ LẠI 1 DÒNG DUY NHẤT</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Flights to NDS_Flights\Flights to FlightsNDS.Paths[Lookup Match Output1]"
+          Id="Package\Flights to NDS_Flights\Flights to FlightsNDS.Paths[Lookup Match Output3]"
           TopLeft="1198.58327565135,242.054164360166">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -14768,7 +14889,7 @@ WHERE t.rn = 1 -- CHỈ GIỮ LẠI 1 DÒNG DUY NHẤT</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Flights to NDS_Flights\Flights to FlightsNDS.Paths[Lookup Match Output]"
+          Id="Package\Flights to NDS_Flights\Flights to FlightsNDS.Paths[Lookup Match Output2]"
           TopLeft="619.583310710475,225.054164330032">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -15105,42 +15226,6 @@ WHERE t.rn = 1 -- CHỈ GIỮ LẠI 1 DÒNG DUY NHẤT</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Flights to NDS_Flights\Flights to FlightsNDS\NDS Flights">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Flights to NDS_Flights\Flights to FlightsNDS\Lookup Destination_Airport">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[AirportsNDS]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Flights to NDS_Flights\Flights to FlightsNDS\Lookup FlightBK from NDSFlight">
     <Properties>
       <Property>
@@ -15173,29 +15258,6 @@ WHERE t.rn = 1 -- CHỈ GIỮ LẠI 1 DÒNG DUY NHẤT</property>
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Flights to NDS_Flights\Flights to FlightsNDS\Lookup Origin_Airport">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[AirportsNDS]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -15236,6 +15298,29 @@ WHERE t.rn = 1 -- CHỈ GIỮ LẠI 1 DÒNG DUY NHẤT</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
+    design-time-name="Package\Flights to NDS_Flights\Flights to FlightsNDS\Lookup Origin_Airport">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[AirportsNDS]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\Flights to NDS_Flights\Flights to FlightsNDS\DQ_Error_Records 1">
     <Properties>
       <Property>
@@ -15245,6 +15330,42 @@ WHERE t.rn = 1 -- CHỈ GIỮ LẠI 1 DÒNG DUY NHẤT</property>
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Flights to NDS_Flights\Flights to FlightsNDS\NDS Flights">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Flights to NDS_Flights\Flights to FlightsNDS\Lookup Destination_Airport">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[AirportsNDS]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
